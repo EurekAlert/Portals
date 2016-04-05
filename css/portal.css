@@ -182,40 +182,40 @@ h1.portal_title {
   color: #ffffff;
 }
 #portal-navbar.red {
-  background: #eeeeee;
+  background: #222222;
 }
 #portal-navbar.red .dropdown-toggle {
   color: #C3C3C3;
-  background: #e2e2e2;
+  background: #161616;
 }
 #portal-navbar.red .dropdown-toggle:hover {
   color: #C3C3C3;
 }
 #portal-navbar.red .dropdown-toggle.collapsed {
-  color: #000000;
-  background: #eeeeee;
+  color: #ffffff;
+  background: #222222;
 }
 #portal-navbar.red .dropdown-toggle.collapsed:hover {
-  color: #000000;
+  color: #ffffff;
 }
 #portal-navbar.red #portal-nav ul li a {
-  color: #000000;
+  color: #ffffff;
 }
 #portal-navbar.red #portal-nav ul li a:hover {
-  color: #737373;
+  color: #bfbfbf;
 }
 #portal-navbar.red #portal-nav ul {
   padding: 10px 0;
 }
 #portal-navbar.red #portal-nav ul li {
   border-top: none;
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid #ffffff;
 }
 #portal-navbar.red #portal-nav ul li:first-child {
   border-left: none;
 }
 #portal-navbar.marine {
-  background: #425f6d;
+  background: #0a8cbf;
 }
 #portal-navbar.marine .dropdown-toggle {
   color: #C3C3C3;
@@ -226,7 +226,7 @@ h1.portal_title {
 }
 #portal-navbar.marine .dropdown-toggle.collapsed {
   color: #000000;
-  background: #425f6d;
+  background: #0a8cbf;
 }
 #portal-navbar.marine .dropdown-toggle.collapsed:hover {
   color: #000000;

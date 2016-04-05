@@ -308,30 +308,30 @@ h1.portal_title {
   }
 	
 	 &.red {
-    background: @gray-lighter;
+    background: @gray-darker;
 
     .dropdown-toggle {
       color: @footerHoverText;
-      background: darken(@gray-lighter, 5%);
+      background: darken(@gray-darker, 5%);
 
       &:hover {
         color: @footerHoverText;
       }
 
       &.collapsed {
-        color: @black;
-        background: @gray-lighter;
+        color: @white;
+        background: @gray-darker;
 
         &:hover {
-          color: @black;
+          color: @white;
         }
       }
     }
 		
 		 #portal-nav ul li a {
-			 color:@black;
+			 color:@white;
 			 &:hover {
-				 color: lighten(@black,45%);
+				 color: darken(@white,25%);
 			 }
 		 }
 		 
@@ -341,7 +341,7 @@ h1.portal_title {
       
       li {
         border-top: none;
-        border-left: 1px solid lighten(@black,80%);
+        border-left: 1px solid @white;
 				&:first-child {
           border-left: none;
         }
@@ -352,11 +352,11 @@ h1.portal_title {
   }
 	
 	&.marine {
-    background: #425f6d;
+    background: #0a8cbf;
 
     .dropdown-toggle {
       color: @footerHoverText;
-      background: darken(#425f6d, 85%);
+      background: darken(#0a8cbf, 85%);
 
       &:hover {
         color: @footerHoverText;
@@ -364,7 +364,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @black;
-        background: #425f6d;
+        background: #0a8cbf;
 
         &:hover {
           color: @black;
