@@ -1,0 +1,720 @@
+@import "mixins.less";
+@import "variables.less";
+
+// Variables
+@white: #ffffff;
+@black: #000000;
+
+@bgGray: #f1f1f1;
+@textGray: #4f4f4f;
+@activeGray: #2f2f2f;
+@fadeGray: #909090;
+
+@gray: #333333;
+@lightGray: #b9babc;
+@darkGray: #222222;
+
+@footerGray: #606060;
+@footerHoverText: #C3C3C3;
+
+@red: #dc0002;
+@navRed: #cb2121;
+
+@blue: #08a3f1;
+@lightBlue: #d2eeff;
+@darkBlue: #005283;
+@hoverBlue: #0e71ab;
+
+@linkBlue: #0088cc;
+
+@yellow: #ffdb3d;
+
+@blockYellow: #ffb134;
+@blockGreen: #66bc33;
+@blockPurple: #6666cc;
+@blockRed: #f6303d;
+
+
+.open-sans(@weight: 400) {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: @weight;
+}
+
+.no-border {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.animate (@element: all, @time: .2s, @transition: ease-in-out) {
+  -webkit-transition: @element @time @transition;
+  -moz-transition: @element @time @transition;
+  -o-transition: @element @time @transition;
+  -ms-transition: @element @time @transition;
+  transition: @element @time @transition;
+}
+
+#translucent {
+  .background(@color: @black, @alpha: 1) {
+    background-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+  }
+  .border(@color: @black, @alpha: 1) {
+    border-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+    background-clip: padding-box;
+  }
+}
+
+
+// Globals
+h1.portal_title {
+  color: @white;
+	text-shadow: 0px 1px 0px lighten(@black,25%);
+}
+
+
+// Minimal Header
+#navigation-minimal {
+  .logo-wrapper {
+    float: left;
+  }
+
+  .logo {
+    float: left;
+    width: auto;
+    margin: 0;
+    
+    img {
+      margin: 11px 0;
+      max-width: 125px;
+    }
+  }
+
+  .brand {
+    float: left;
+    width: auto;
+    
+    img {
+      max-height: 50px;
+    }
+  }
+
+  .nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-toggle {
+    margin: 3px -15px 3px 0;
+
+    span.icon-bar {
+      background-color: @white;
+    }
+  }
+
+  &.logged-in {
+    .navbar-toggle {
+      span.icon-bar {
+        background-color: @yellow;
+      }
+    }
+  }
+
+  .mega-dropdown {
+    float: right;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    left: 0;
+    right: 0;
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #90B8D0;
+    border-radius: 0;
+    background: lighten(@lightBlue, 4%);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    .navbar-nav {
+      margin: 0;
+      
+      li {
+        border-top: 1px solid #90B8D0;
+
+        &.highlight {
+          background: lighten(@yellow, 25%);
+        }
+
+        &:first-child,
+        &.first {
+          border-top: none;
+        }
+
+        &.dropdown-header {
+          background: @yellow;
+          color: @black;
+          text-transform: uppercase;
+        }
+
+        &.open {
+          > a {
+            background: @lightBlue;
+            border-bottom: 1px solid #90B8D0;
+          }
+
+          ul {
+            background: @white;
+
+            li {
+              border: none;
+
+              a {
+                // text-transform: uppercase;
+
+                &:active {
+                  color: @blue;
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          color: #353535;
+
+          &.secondary {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Top Banner
+#portal-top {
+  position: relative;
+  
+  .portal-bg {
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+     min-height: 180px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+#portal-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+
+  .aaas_badge {
+    display: inline-block;
+    padding: 10px 20px;
+    background: fade(@white, 30%);
+    color: @white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: auto;
+      max-width: 140px;
+      max-height: 100%;
+    }
+  }
+}
+
+#portal-navbar {
+  // Dropdown Button
+  .dropdown-toggle {
+    padding: 20px;
+
+    .fa {
+      float: right;
+      line-height: 20px;
+
+      &.fa-minus {
+        display: block;
+      }
+
+      &.fa-plus {
+        display: none;
+      }
+    }
+
+    &.collapsed {
+      .fa {
+        &.fa-minus {
+          display: none;
+        }
+
+        &.fa-plus {
+          display: block;
+        }
+      }
+    }
+  }
+
+
+  // Color Schemes
+  &.aqua {
+    background: #00a18e;
+
+    .dropdown-toggle {
+      color: @footerHoverText;
+      background: darken(#00a18e, 15%);
+
+      &:hover {
+        color: @footerHoverText;
+      }
+
+      &.collapsed {
+        color: @white;
+        background: #00a18e;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+  }
+	
+	 &.red {
+    background: @gray-lighter;
+
+    .dropdown-toggle {
+      color: @footerHoverText;
+      background: darken(@gray-lighter, 5%);
+
+      &:hover {
+        color: @footerHoverText;
+      }
+
+      &.collapsed {
+        color: @black;
+        background: @gray-lighter;
+
+        &:hover {
+          color: @black;
+        }
+      }
+    }
+		
+		 #portal-nav ul li a {
+			 color:@black;
+			 &:hover {
+				 color: lighten(@black,45%);
+			 }
+		 }
+		 
+		  #portal-nav {
+    ul {
+      padding: 10px 0;
+      
+      li {
+        border-top: none;
+        border-left: 1px solid lighten(@black,80%);
+				&:first-child {
+          border-left: none;
+        }
+			}
+			}
+		 }
+		 
+  }
+	
+	&.marine {
+    background: #425f6d;
+
+    .dropdown-toggle {
+      color: @footerHoverText;
+      background: darken(#425f6d, 85%);
+
+      &:hover {
+        color: @footerHoverText;
+      }
+
+      &.collapsed {
+        color: @black;
+        background: #425f6d;
+
+        &:hover {
+          color: @black;
+        }
+      }
+    }
+		
+		 #portal-nav ul li a {
+			 color:@white;
+			 &:hover {
+				 color: darken(@white,45%);
+			 }
+		 }
+  }
+	
+	
+}
+
+#portal-nav {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+
+  ul {
+    padding: 0;
+    
+    li {
+      border-top: 1px solid @white;
+      
+      a {
+        padding: 20px 10px;
+        color: @white;
+
+        &:hover {
+          color: @white;
+          background: none;
+        }
+
+        &:focus {
+          background: none;
+        }
+      }
+    }
+  }
+
+  .navbar-form {
+    position: relative;
+    top: -2px;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    min-width: 220px;
+
+    .form-control {
+      height: 30px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 13px;
+      background: #f1f1f1;
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      font-weight: 600;
+      border-radius: 4px 0 0 4px;
+      z-index: 0;
+			behavior: url('@{base-url}/css/vendor/pie/PIE.htc');
+
+      &::-webkit-input-placeholder {
+        color: @lightGray;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: @lightGray; 
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        color: @lightGray;
+      }
+
+      &:-ms-input-placeholder {  
+        color: @lightGray;
+      }
+    }
+
+    #search-btn-2 {
+      height: 30px;
+      border: none;
+      margin: 0;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      color: @lightGray;
+      background: #f1f1f1;
+      font-size: 17px;
+      z-index: 0;
+			behavior: url('@{base-url}/css/vendor/pie/PIE.htc');
+      border-radius: 0 4px 4px 0;
+
+      &:hover {
+        background: #f1f1f1;
+      }
+    }
+  }
+}
+
+
+// article headlines
+.portal-articles {
+  .trending {
+    header {
+      h2 {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      .meta_institute {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+
+// Sidebar Widgets
+
+	//Remove Class Used to Remove Calendar & Newsletter Widgets 3/24/16
+.remove {
+	display: none !important;
+}
+
+.thumbnail {
+  padding: 0;
+  background: none;
+  border: none;
+
+  .img-wrapper {
+    border: 1px solid @lightGray;
+    padding: 5px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .caption {
+    margin-top: 10px;
+    padding: 0;
+    color: @gray;
+  }
+}
+
+a.callout {
+  display: block;
+  border: 1px solid @lightGray;
+  margin: 0 auto -15px;
+  padding: 15px 15px 5px;
+  color: @gray;
+  max-width: 285px;
+
+  h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+
+    i.fa {
+      color: @lightGray;
+
+      &.orange {
+        color: #ff6600;
+      }
+    }
+  }
+}
+
+.newsletter {
+  border: 1px solid @lightGray;
+  margin: 0 auto -15px;
+  padding: 20px;
+	background: transparent url('@{base-url}/img/newsletter-bg.jpg') center center no-repeat;
+  background-size: cover;
+  max-width: 285px;
+	
+  h3 {
+    margin: 0 0 20px;
+  }
+
+  .input-group {
+    border: 1px solid @gray;
+
+    .form-control {
+      border: none;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+  .btn {
+    border-radius: 0;
+    padding: 7px 20px;
+    margin: 0 !important;
+    border: none;
+    white-space: nowrap;
+    background: @lightGray;
+
+    &.red {
+      background: @red;
+      color: @white;
+    }
+  }
+}
+
+
+//Typography Adjustment 3/24/16
+
+h1.page_title {
+	text-align: left;
+	small {
+		text-align: left;
+	}
+}
+// Change Login color to White 3/24/16
+
+ul.nav.navbar-nav li a{
+	color:@white;
+}
+
+//Search Adjustment 3/24/16
+
+.multimedia-toolbar .search-sub {
+	margin-right: auto;
+	margin-left: auto;
+  width: 315px;
+}
+
+//footer adjustment to deal with Removal of Calendar and Newsletter Widgets 3/24/16
+
+#sidebar-content {
+	margin-bottom:-99899px;
+}
+
+
+// Responsive
+
+@media (min-width: @screen-sm-min) {
+
+  #navigation-minimal {
+    .navbar.navbar-inverse .nav-pills > li > a {
+      padding: 11px 12px;
+    }
+  }
+
+  #portal-header {
+    text-align: left;
+    top: auto;
+    bottom: 0;
+    padding: 25px 20px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    
+    .aaas_badge {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      
+      span {
+        display: none;
+      }
+    }
+  }
+
+  #portal-nav {
+    ul {
+      padding: 10px 0;
+      
+      li {
+        border-top: none;
+        border-left: 1px solid @white;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &.active {
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin-left: -8px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid @bgGray;
+          }
+        }
+      }
+    }
+  }
+
+  .portal-articles {
+    .trending {
+      margin: 0 0 25px;
+    }
+  }
+
+  .newsletter {
+		background: transparent url('@{base-url}/img/newsletter-bg-tablet.jpg') center center no-repeat;
+    margin: -20px -20px -35px;
+    padding: 40px 80px;
+    max-width: none;
+    border: none;
+  }
+
+}
+
+@media (min-width: @screen-md-min) {
+
+  #navigation-minimal {
+    .navbar.navbar-inverse .nav-pills > li > a {
+      padding: 11px 18px;
+    }
+  }
+
+  .thumbnail {
+    .img-wrapper {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  a.callout {
+    max-width: none;
+    margin: -8px -8px -23px;
+  }
+
+  .newsletter {
+		background: transparent url('@{base-url}/img/newsletter-bg.jpg') center center no-repeat;
+    margin: -8px -8px -23px;
+    padding: 20px;
+    border: 1px solid @lightGray;
+  }
+
+}
+
+
