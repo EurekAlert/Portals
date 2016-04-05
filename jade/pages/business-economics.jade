@@ -1,0 +1,224 @@
+block variables
+  -var active = 'news'
+  -var title = 'Business & Economics'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.col-md-8
+        h1.page_title
+          small.red News by Subject
+          | Business &amp; Economics
+        
+        //- Filter
+        .toolbar
+          .row
+            .col-sm-6
+              select.form-control.pull-left.inline
+                option Filter by Keyword
+                option All Technology &amp; Engineering News
+                option Technology/Engineering/Computer Science
+                option Biomedical/Environmental/Chemical Engineering
+                option Biotechnology
+                option Chemical/Biological Weapons
+                option Civil Engineering
+                option Computer Science
+                option Electrical Engineering/Electronics
+                option Electromagnetics
+                option Hardware
+                option Industrial Engineering/Chemistry
+                option Internet
+                option Mechanical Engineering
+                option Multimedia/Networking/Interface Design
+                option Nanotechnology/Micromachines
+                option Research/Development
+                option Robotry/Artificial Intelligence
+                option Software Engineering
+                option Superconductors/Semiconductors
+                option System Security/Hackers
+                option Technology Transfer
+                option Telecommunications
+                option Theory/Design
+                option Urbanization
+                option Vehicles
+                option Weaponry
+            .col-sm-6.hidden-xs
+              form(role='search').search-sub
+                .input-group
+                  input(type='text', placeholder='SEARCH ARCHIVES').form-control
+                  span.input-group-btn
+                    button(type='button').search-sub-btn.btn.btn-default
+                      i.fa.fa-search
+        
+        //- News Posts
+        section.main
+          article.post
+            a(href='#')
+              header
+                small.meta_date
+                  time(datetime='2014-07-09', pubdate) 09 July
+                h2.post_title Ptooey!
+                span.author FlipperBot
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/120x200').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-07-09', pubdate) 09 Jul
+                h2.post_title Plenary speakers address challenges in the delivery of sustained antiretroviral therapy in developing countries, call for social scientists to take their place at the HIV/AIDS policy-making table, and stress the need for a long-term response to AIDS
+                span.author Research
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.red Meeting
+                dd International Conference on Computer Vision ICCV 2013
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/200x200').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-11-21', pubdate) 21 Nov
+                h2.post_title Moa's ark
+                span.author Feb. 1, 2012 webinar
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/200x140').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-09-17', pubdate) 17 Aug
+                h2.post_title How schizophrenia affects the brain
+                span.author Shape changers
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+          
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/60x100').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-09-04', pubdate) 04 Sep
+                h2.post_title First multi-country study of rape and partner violence finds that nearly a quarter of men report having committed at least one rape
+                span.author Discovery could lead to development of biomarkers and new targeted therapies
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/90x150').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-03-30', pubdate) 30 Mar
+                h2.post_title First ever federally-funded national smoking cessation campaign in USA helps at least 100,000 smokers to quit
+                span.author Lemur group sizes predict performance on cognitive tests of social abilities
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.purple Dissertations and Features
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/60x100').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-04-18', pubdate) 18 Apr
+                h2.post_title Tobacco companies' interests in smokeless tobacco products in Europe are driven by profit not health
+                span.author New research published in the Journal of Leukocyte Biology suggests compounds that stimulate the cannabinoid type 2 receptor in white blood cells, specifically macrophages, can weaken HIV-1 infection
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.purple Dissertations and Features
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/160x120').media-object
+              header
+                small.meta_date
+                  time(datetime='2014-06-06', pubdate) 06 Jun
+                h2.post_title Research from the 2013 Genitourinary Cancers Symposium highlights new insights on high-risk prostate cancer prevalence and treatment, compares benefit of surveillance and surgery for management of small kidney tumors
+                span.author Johns Hopkins researchers suggest neural stem cells may regenerate after anti-cancer treatment
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.red Meeting
+                dd International Conference on Computer Vision ICCV 2013
+
+        //- Pagination
+        .text-center
+          ul.pagination
+            li.active: a(href='#') 1
+            //- li: a(href='#') 2
+            //- li: a(href='#') 2
+            //- li: a(href='#')
+            //-   i.fa.fa-angle-right
+        
+        //- Archive Search
+        .archive-search-box
+          .panel.panel-default.hidden-xs
+            .panel-body
+              h2 Search Archives
+              form(role='search').search-sub
+                .input-group
+                  input(type='text', placeholder='FIND MORE BUSINESS & ECONOMICS NEWS').form-control
+                  span.input-group-btn
+                    button(type='button').search-sub-btn.btn.btn-default
+                      i.fa.fa-search
+          .visible-xs.mobile-archive-search-box
+            .col-md-12
+              form(role='search').search-sub
+                .input-group
+                  input(type='text', placeholder='SEARCH MORE NEWS IN THIS TOPIC').form-control
+                  span.input-group-btn
+                    button(type='button').search-sub-btn.btn.btn-default
+                      i.fa.fa-search
+
+
+
+      //- Sidebar
+      aside#sidebar-content.col-md-4
+        include ../partials/sidebar-subject
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

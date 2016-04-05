@@ -1,0 +1,111 @@
+block variables
+  -var active = 'multimedia'
+  -var title = 'Multimedia Item'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.white.col-md-8
+        article.article
+          header
+            h1.page_title
+              small.red
+                | Embargoed for release:&nbsp;
+                time(datetime='2014-10-15', pubdate)
+                  span.no-break-text 15-Oct-2014 13:00 ET 
+                  span.no-break-text (15-Oct-2014 17:00 GMT)
+              | Dissected Squid Mantles&nbsp;
+              span.type (Video)
+            p.meta_institute University of California - Santa Barbara
+            .toolbar
+              .social-share.pull-left
+                a(href='#').share-facebook.btn.btn-xs
+                  i.fa.fa-facebook.fa-fw
+                  //- span.hidden-xs 136
+                a(href='#').share-twitter.btn.btn-xs
+                  i.fa.fa-twitter.fa-fw
+                  //- span.hidden-xs 68
+                a(href='#').share-stumbleupon.btn.btn-xs
+                  i.fa.fa-stumbleupon.fa-fw
+                  //- span.hidden-xs 16
+                a(href='#').share-general.btn.btn-xs
+                  span.hidden-xs Share
+                  span.visible-xs
+                    i.fa.fa-plus.fa-fw
+              .article-tools.pull-right
+                a(href='#').btn.btn-xs
+                  i.fa.fa-share-alt.fa-fw
+                  span.hidden-xs &nbsp;Link
+                a(href='#').btn.btn-xs.hidden-xs
+                  i.fa.fa-print.fa-fw
+                  | &nbsp;Print
+                a(href='#').btn.btn-xs
+                  i.fa.fa-paper-plane.fa-fw
+                  span.hidden-xs &nbsp;E-Mail
+          figure.featured_image.single
+            .center-image
+              img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81238_web.jpg', alt='Featured Image')
+            figcaption.details
+              .well.yellow.primary
+                p
+                  a(href='#')
+                    | Download this video file [80312.mp4, 11MB]&nbsp;
+                    i.fa.fa-angle-right
+                  br
+                  a(href='#')
+                    | View a script for this video&nbsp;
+                    i.fa.fa-angle-right
+                p A broadcast-quality version of this video is available. Please contact Julie Cohen (<a href="mailto:julie.cohen@ia.ucsb.edu" target="_blank">julie.cohen@ia.ucsb.edu</a>) for more information.
+              .well
+                h4 Caption
+                p Dissected squid mantles highlight the iridescent and white stripes that only exist in the female squid. The white stripe goes from complete transparency to bright white, which mimics the male testis. Lorem ipsum Duis commodo ad incididunt commodo tempor officia deserunt Ut eiusmod consectetur nostrud irure esse non elit occaecat aute ad cupidatat do ut consequat.
+              .well
+                h4 Credit
+                p Matthew Joyce Tyson, Geraldine DeForde, Ella Semorskaya, Daniel DeMartini, and Daniel Morse, with permission from University of California Santa Barbara.
+              .well
+                h4 Usage Restrictions
+                p Please cite the owner of the video when publishing. This video may be freely used by reporters as part of news coverage, with proper attribution. Non-reporters must contact <em>Science</em> for permission.
+
+          .well.article_disclaimer
+            p <strong>Disclaimer:</strong> AAAS and EurekAlert! are not responsible for the accuracy of news releases posted to EurekAlert! by contributing institutions or for the use of any information through the EurekAlert system.
+          .toolbar
+            .social-share.pull-left
+              a(href='#').share-facebook.btn.btn-xs
+                i.fa.fa-facebook.fa-fw
+                //- span.hidden-xs 136
+              a(href='#').share-twitter.btn.btn-xs
+                i.fa.fa-twitter.fa-fw
+                //- span.hidden-xs 68
+              a(href='#').share-stumbleupon.btn.btn-xs
+                i.fa.fa-stumbleupon.fa-fw
+                //- span.hidden-xs 16
+              a(href='#').share-general.btn.btn-xs
+                span.hidden-xs Share
+                span.visible-xs
+                  i.fa.fa-plus.fa-fw
+            .article-tools.pull-right
+              a(href='#').btn.btn-xs
+                i.fa.fa-share-alt.fa-fw
+                span.hidden-xs &nbsp;Link
+              a(href='#').btn.btn-xs.hidden-xs
+                i.fa.fa-print.fa-fw
+                | &nbsp;Print
+              a(href='#').btn.btn-xs
+                i.fa.fa-paper-plane.fa-fw
+                span.hidden-xs &nbsp;E-Mail
+
+      //- Sidebar
+      aside#sidebar-content.white.col-md-4
+        include ../partials/sidebar-multimedia-item
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

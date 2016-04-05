@@ -1,0 +1,162 @@
+block variables
+  -var active = 'news'
+  -var title = 'Breaking News'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.col-md-8
+        h1.page_title
+          small.red Breaking News
+          | 25 September
+        
+        //- Filter
+        .toolbar
+          //- .btn-group.pull-left
+          //-   button(type='button', data-toggle='dropdown').btn.btn-default.dropdown-toggle
+          //-     | Select Date&nbsp;
+          //-     i.fa.fa-sort
+          //-   ul(role='menu').dropdown-menu
+          //-     li: a(href='#') 24 September
+          //-     li: a(href='#') 23 September
+          //-     li: a(href='#') 22 September
+          select.form-control.pull-left.inline
+            option Select Date
+            option 24 September
+            option 23 September
+            option 22 September
+          .btn-group(data-toggle='buttons').pull-right.hidden-xs
+            label.btn.btn-default.active
+              input(type='radio', name='view', id='summaries', checked)
+              | Summaries
+            label.btn.btn-default
+              input(type='radio', name='view', id='titles')
+              | Titles
+        
+        //- News Posts
+        section.main
+          article.post
+            a(href='#')
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/150x150').media-object
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/200x140').media-object
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+          
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/90x150').media-object
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.yellow Journal
+                dd: em JAMA: The Journal of the American Medical Association
+                dt.green Funder
+                dd NIH/National Cancer Institute, University of California, Tobacco Related Diseases Research Program, Hellmann Family Fund
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/180x120').media-object
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.purple Dissertations and Features
+
+          article.post
+            a(href='#').has-thumb
+              .thumb.center-image.pull-right
+                img(src='http://placehold.it/60x100').media-object
+              header
+                h2.post_title Hepatitis B immunization program in Taiwan associated with reduction in chronic liver disease deaths
+                span.author The Jama Network Journals
+              .entry.hidden-xs
+                p.intro Hepatitis B virus (HBV) infection causes infant fulminant hepatitis (IFH), and chronic HBV infection may progress to chronic liver disease (CLD) and hepatocellular carcinoma (HCC). Taiwan launched a nationwide HBV immunization program for newborns in July 1984, which has successfully lowered the prevalence of chronic HBV carriers, incidence of HCC, and mortality of IFH in vaccinated birth cohorts.
+              dl.dl-horizontal.meta.hidden-xs
+                dt.red Meeting
+                dd International Conference on Computer Vision ICCV 2013
+
+        //- Pagination
+        .text-center
+          ul.pagination
+            li: a(href='#')
+              i.fa.fa-angle-left
+            li: a(href='#') 3
+            li: a(href='#') 4
+            li.active: a(href='#') 5
+        
+        //- Next Date Link
+        a(href='#').next-date
+          .panel.panel-default.hidden-xs
+            .panel-body
+              h2 24 September
+              h4 New genomic study provides a glimpse of how whales could adapt to ocean
+              span.author BGI Shenzhen
+              h4 How living cells solved a needle in a haystack problem to produce electrical signals
+              span.author University of Washington
+              h4 Diamond 'flaws' pave way for nanoscale MRI
+              span.author University of Cambridge
+            i.arrow
+          span.visible-xs
+            | 24 September&nbsp;
+            i.fa.fa-angle-right
+
+
+
+      //- Sidebar
+      aside#sidebar-content.col-md-4
+        include ../partials/sidebar
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

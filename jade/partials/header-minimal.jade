@@ -1,0 +1,62 @@
+a(href='#content').sr-only Skip to main content
+header#navigation-minimal(class=(user === 'pios' || user === 'reporters' ? 'logged-in' : ''))
+  .navbar.navbar-static-top.navbar-inverse(role='navigation')
+    .container
+      .logo-wrapper
+        a(href='/').logo
+          img(src='/img/logo-footer.png', alt='EurekAlert! The Global Source for Science News')
+        a(href='http://aaas.org', target='_blank').brand
+          img(src='/img/brand.png', alt='AAAS - American Association for the Advancement of Science')
+      
+      // Mobile Navigation
+      .mega-dropdown.visible-xs
+        button(type='button', class='navbar-toggle').dropdown-toggle.visible-xs
+          span.sr-only Toggle Menu
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        
+        .dropdown-menu
+          ul.nav.navbar-nav
+            - if(user === 'pios')
+              li.highlight
+                a(href='/') PIO Home
+                a(href='#').secondary Log Out <i class="fa fa-angle-right"></i>
+            - else if(user === 'reporters')
+              li.highlight
+                a(href='/') Reporter Home
+                a(href='#').secondary Log Out <i class="fa fa-angle-right"></i>
+            - else
+              li
+                a(href='/') Home
+                a(href='#').secondary Log In <i class="fa fa-angle-right"></i>
+            li(class=active === 'news' ? 'active' : '')
+              a(href='#') News
+              //- include meganav-news
+            li(class=active === 'multimedia' ? 'active' : '')
+              a(href='#') Multimedia
+              //- include meganav-multimedia
+            li(class=active === 'meetings' ? 'active' : '')
+              a(href='#') Meetings
+              //- include meganav-meetings
+            li(class=active === 'about' ? 'active' : '')
+              a(href='#') About
+              //- include meganav-about
+      
+      // Desktop Navigation
+      ul.nav.nav-pills.pull-right.hidden-xs
+        li: a(href='/') Home
+        li(class=active === 'news' ? 'active' : '')
+          a(href='#') News
+          //- include meganav-news
+        li(class=active === 'multimedia' ? 'active' : '')
+          a(href='#') Multimedia
+          //- include meganav-multimedia
+        li(class=active === 'meetings' ? 'active' : '')
+          a(href='#') Meetings
+          //- include meganav-meetings
+        li(class=active === 'about' ? 'active' : '')
+          a(href='#') About
+          //- include meganav-about
+        li(class=active === 'login' ? 'active' : '')
+          a(href='/login') Login

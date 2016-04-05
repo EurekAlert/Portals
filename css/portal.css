@@ -1,0 +1,487 @@
+.no-border {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+h1.portal_title {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #404040;
+}
+#navigation-minimal .logo-wrapper {
+  float: left;
+}
+#navigation-minimal .logo {
+  float: left;
+  width: auto;
+  margin: 0;
+}
+#navigation-minimal .logo img {
+  margin: 11px 0;
+  max-width: 125px;
+}
+#navigation-minimal .brand {
+  float: left;
+  width: auto;
+}
+#navigation-minimal .brand img {
+  max-height: 50px;
+}
+#navigation-minimal .nav {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#navigation-minimal .navbar-toggle {
+  margin: 3px -15px 3px 0;
+}
+#navigation-minimal .navbar-toggle span.icon-bar {
+  background-color: #ffffff;
+}
+#navigation-minimal.logged-in .navbar-toggle span.icon-bar {
+  background-color: #ffdb3d;
+}
+#navigation-minimal .mega-dropdown {
+  float: right;
+}
+#navigation-minimal .dropdown-menu {
+  display: none;
+  left: 0;
+  right: 0;
+  width: 100%;
+  float: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #90B8D0;
+  border-radius: 0;
+  background: #e6f6ff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#navigation-minimal .dropdown-menu .navbar-nav {
+  margin: 0;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li {
+  border-top: 1px solid #90B8D0;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.highlight {
+  background: #fff3bd;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li:first-child,
+#navigation-minimal .dropdown-menu .navbar-nav li.first {
+  border-top: none;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.dropdown-header {
+  background: #ffdb3d;
+  color: #000000;
+  text-transform: uppercase;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.open > a {
+  background: #d2eeff;
+  border-bottom: 1px solid #90B8D0;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.open ul {
+  background: #ffffff;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.open ul li {
+  border: none;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li.open ul li a:active {
+  color: #08a3f1;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li a {
+  color: #353535;
+}
+#navigation-minimal .dropdown-menu .navbar-nav li a.secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  text-transform: uppercase;
+}
+#portal-top {
+  position: relative;
+}
+#portal-top .portal-bg {
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 180px;
+}
+#portal-top .portal-bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#portal-header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+#portal-header .aaas_badge {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#portal-header .aaas_badge img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 140px;
+  max-height: 100%;
+}
+#portal-navbar .dropdown-toggle {
+  padding: 20px;
+}
+#portal-navbar .dropdown-toggle .fa {
+  float: right;
+  line-height: 20px;
+}
+#portal-navbar .dropdown-toggle .fa.fa-minus {
+  display: block;
+}
+#portal-navbar .dropdown-toggle .fa.fa-plus {
+  display: none;
+}
+#portal-navbar .dropdown-toggle.collapsed .fa.fa-minus {
+  display: none;
+}
+#portal-navbar .dropdown-toggle.collapsed .fa.fa-plus {
+  display: block;
+}
+#portal-navbar.aqua {
+  background: #00a18e;
+}
+#portal-navbar.aqua .dropdown-toggle {
+  color: #C3C3C3;
+  background: #00554b;
+}
+#portal-navbar.aqua .dropdown-toggle:hover {
+  color: #C3C3C3;
+}
+#portal-navbar.aqua .dropdown-toggle.collapsed {
+  color: #ffffff;
+  background: #00a18e;
+}
+#portal-navbar.aqua .dropdown-toggle.collapsed:hover {
+  color: #ffffff;
+}
+#portal-navbar.red {
+  background: #eeeeee;
+}
+#portal-navbar.red .dropdown-toggle {
+  color: #C3C3C3;
+  background: #e2e2e2;
+}
+#portal-navbar.red .dropdown-toggle:hover {
+  color: #C3C3C3;
+}
+#portal-navbar.red .dropdown-toggle.collapsed {
+  color: #000000;
+  background: #eeeeee;
+}
+#portal-navbar.red .dropdown-toggle.collapsed:hover {
+  color: #000000;
+}
+#portal-navbar.red #portal-nav ul li a {
+  color: #000000;
+}
+#portal-navbar.red #portal-nav ul li a:hover {
+  color: #737373;
+}
+#portal-navbar.red #portal-nav ul {
+  padding: 10px 0;
+}
+#portal-navbar.red #portal-nav ul li {
+  border-top: none;
+  border-left: 1px solid #cccccc;
+}
+#portal-navbar.red #portal-nav ul li:first-child {
+  border-left: none;
+}
+#portal-navbar.marine {
+  background: #425f6d;
+}
+#portal-navbar.marine .dropdown-toggle {
+  color: #C3C3C3;
+  background: #000000;
+}
+#portal-navbar.marine .dropdown-toggle:hover {
+  color: #C3C3C3;
+}
+#portal-navbar.marine .dropdown-toggle.collapsed {
+  color: #000000;
+  background: #425f6d;
+}
+#portal-navbar.marine .dropdown-toggle.collapsed:hover {
+  color: #000000;
+}
+#portal-navbar.marine #portal-nav ul li a {
+  color: #ffffff;
+}
+#portal-navbar.marine #portal-nav ul li a:hover {
+  color: #8c8c8c;
+}
+#portal-nav {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+#portal-nav ul {
+  padding: 0;
+}
+#portal-nav ul li {
+  border-top: 1px solid #ffffff;
+}
+#portal-nav ul li a {
+  padding: 20px 10px;
+  color: #ffffff;
+}
+#portal-nav ul li a:hover {
+  color: #ffffff;
+  background: none;
+}
+#portal-nav ul li a:focus {
+  background: none;
+}
+#portal-nav .navbar-form {
+  position: relative;
+  top: -2px;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  min-width: 220px;
+}
+#portal-nav .navbar-form .form-control {
+  height: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 13px;
+  background: #f1f1f1;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 600;
+  border-radius: 4px 0 0 4px;
+  z-index: 0;
+  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+}
+#portal-nav .navbar-form .form-control::-webkit-input-placeholder {
+  color: #b9babc;
+}
+#portal-nav .navbar-form .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #b9babc;
+}
+#portal-nav .navbar-form .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b9babc;
+}
+#portal-nav .navbar-form .form-control:-ms-input-placeholder {
+  color: #b9babc;
+}
+#portal-nav .navbar-form #search-btn-2 {
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #b9babc;
+  background: #f1f1f1;
+  font-size: 17px;
+  z-index: 0;
+  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  border-radius: 0 4px 4px 0;
+}
+#portal-nav .navbar-form #search-btn-2:hover {
+  background: #f1f1f1;
+}
+.portal-articles .trending header h2 {
+  font-size: 17px;
+  line-height: 20px;
+}
+.portal-articles .trending header .meta_institute {
+  font-size: 12px;
+  line-height: 17px;
+}
+.remove {
+  display: none !important;
+}
+.thumbnail {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.thumbnail .img-wrapper {
+  border: 1px solid #b9babc;
+  padding: 5px;
+}
+.thumbnail img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.thumbnail .caption {
+  margin-top: 10px;
+  padding: 0;
+  color: #333333;
+}
+a.callout {
+  display: block;
+  border: 1px solid #b9babc;
+  margin: 0 auto -15px;
+  padding: 15px 15px 5px;
+  color: #333333;
+  max-width: 285px;
+}
+a.callout h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+a.callout h3 i.fa {
+  color: #b9babc;
+}
+a.callout h3 i.fa.orange {
+  color: #ff6600;
+}
+.newsletter {
+  border: 1px solid #b9babc;
+  margin: 0 auto -15px;
+  padding: 20px;
+  background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
+  background-size: cover;
+  max-width: 285px;
+}
+.newsletter h3 {
+  margin: 0 0 20px;
+}
+.newsletter .input-group {
+  border: 1px solid #333333;
+}
+.newsletter .input-group .form-control {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.newsletter .btn {
+  border-radius: 0;
+  padding: 7px 20px;
+  margin: 0 !important;
+  border: none;
+  white-space: nowrap;
+  background: #b9babc;
+}
+.newsletter .btn.red {
+  background: #dc0002;
+  color: #ffffff;
+}
+h1.page_title {
+  text-align: center;
+}
+h1.page_title small {
+  text-align: left;
+}
+ul.nav.navbar-nav li a {
+  color: #ffffff;
+}
+.multimedia-toolbar .search-sub {
+  margin-right: auto;
+  margin-left: auto;
+  width: 450px;
+}
+#sidebar-content {
+  margin-bottom: -99899px;
+}
+@media (min-width: 768px) {
+  #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
+    padding: 11px 12px;
+  }
+  #portal-header {
+    text-align: left;
+    top: auto;
+    bottom: 0;
+    padding: 25px 20px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  #portal-header .aaas_badge {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  #portal-header .aaas_badge span {
+    display: none;
+  }
+  #portal-nav ul {
+    padding: 10px 0;
+  }
+  #portal-nav ul li {
+    border-top: none;
+    border-left: 1px solid #ffffff;
+  }
+  #portal-nav ul li:first-child {
+    border-left: none;
+  }
+  #portal-nav ul li.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #f1f1f1;
+  }
+  .portal-articles .trending {
+    margin: 0 0 25px;
+  }
+  .newsletter {
+    background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg-tablet.jpg') center center no-repeat;
+    margin: -20px -20px -35px;
+    padding: 40px 80px;
+    max-width: none;
+    border: none;
+  }
+}
+@media (min-width: 992px) {
+  #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
+    padding: 11px 18px;
+  }
+  .thumbnail .img-wrapper {
+    border: none;
+    padding: 0;
+  }
+  a.callout {
+    max-width: none;
+    margin: -8px -8px -23px;
+  }
+  .newsletter {
+    background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
+    margin: -8px -8px -23px;
+    padding: 20px;
+    border: 1px solid #b9babc;
+  }
+}

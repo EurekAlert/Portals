@@ -1,0 +1,100 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li: a(href='#') Breaking News
+      li.dropdown
+        a(href='#', data-toggle='dropdown').dropdown-toggle
+          | News By Subject 
+          i.fa.fa-caret-down
+        ul.dropdown-menu
+          li: a(href='#') Agriculture
+          li: a(href='#') Archeology
+          li: a(href='#') Atmospheric Science
+          li: a(href='#') Biology
+          li: a(href='#') Business & Economics
+          li: a(href='#') Chemistry & Physics
+          li: a(href='#') Earth Science
+          li: a(href='#') Education
+          li: a(href='#') Mathematics
+          li: a(href='#') Medicine & Health
+          li: a(href='#') Policy & Ethics
+          li: a(href='#') Social & Behavioral
+          li: a(href='#') Space & Planetary
+          li: a(href='#') Tech & Engineering
+      li: a(href='#') Science Business News
+      li: a(href='#') Grants, Awards, Books
+      li.dropdown
+        a(href='#', data-toggle='dropdown').dropdown-toggle
+          | Languages 
+          i.fa.fa-caret-down
+        ul.dropdown-menu
+          li: a(href='#') Nachrichten in Deutsch
+          li: a(href='#') Noticias en Español
+          li: a(href='#') Nouvelles en Français
+          li: a(href='#') Notícias em Português
+          li: a(href='#', lang='ar', xml:lang='ar').arabic األخبارباللغةالعرب ية
+          li: a(href='#', lang='ja', xml:lang='ja') 日本のニュース
+          li: a(href='#') EurekAlert!中文版
+      li.dropdown
+        a(href='#', data-toggle='dropdown').dropdown-toggle
+          | Portals 
+          i.fa.fa-caret-down
+        ul.dropdown-menu
+          li: a(href='#') Climate Change
+          li: a(href='#') Cancer Research
+          li: a(href='#') Science Reporting for Kids
+          li: a(href='#') Marine Science
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#').btn
+            | Breaking News
+            i.fa.fa-angle-right.pull-right
+          li.break
+          li: a(href='#') Science Business News
+          li: a(href='#') Grants
+          li: a(href='#') Awards
+          li: a(href='#') Books
+          li.break
+          li: a(href='#')
+            i.fa.fa-rss
+            |  RSS Feeds
+      .col-sm-3
+        ul.nav.nav-stacked
+          li: a(href='#') Agriculture
+          li: a(href='#') Archeology
+          li: a(href='#') Atmospheric Science
+          li: a(href='#') Biology
+          li: a(href='#') Business & Economics
+          li: a(href='#') Chemistry & Physics
+          li: a(href='#') Earth Science
+      .col-sm-3.hide-pipe
+        ul.nav.nav-stacked
+          li: a(href='#') Education
+          li: a(href='#') Mathematics
+          li: a(href='#') Medicine & Health
+          li: a(href='#') Policy & Ethics
+          li: a(href='#') Social & Behavior
+          li: a(href='#') Space & Planetary
+          li: a(href='#') Tech & Engineering
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#')
+            span Nachrichten in Deutsch
+          li: a(href='#')
+            span Noticias en Español 
+          li: a(href='#')
+            span Nouvelles en Français 
+          li: a(href='#')
+            span Notícias em Português 
+          li: a(href='#')
+            span األخ بار ب ال لغة ال عرب ية
+          li: a(href='#')
+            span 日本のニュース
+          li: a(href='#')
+            strong EurekAlert! 中文版

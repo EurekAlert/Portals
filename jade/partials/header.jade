@@ -1,0 +1,73 @@
+a(href='#content').sr-only Skip to main content
+header#navigation
+  .header.navbar.navbar-static-top
+    .container.flush
+      .search-header.col-md-6.col-sm-4.col-md-push-6.col-sm-push-8
+        #search.collapse.navbar-collapse
+          form(role='search')
+            .row
+              .col-md-8.col-md-offset-4
+                .input-group
+                  input(type='text', placeholder='SEARCH NEWS RELEASES').form-control
+                  span.input-group-btn
+                    button(type='button')#search-btn.btn.btn-default
+                      i.fa.fa-search
+          a(href='#').advanced-search.hidden-xs Advanced Search
+      .clearfix
+        .col-md-6.col-sm-8.col-md-pull-6.col-sm-pull-4.col-xs-10.hidden-xs
+          a(href='/').logo
+            img(src='/img/logo.png', alt='EurekAlert! The Global Source for Science News')
+          a(href='http://aaas.org', target='_blank').brand
+            img(src='/img/brand.png', alt='AAAS - American Association for the Advancement of Science')
+        .col-md-6.col-sm-8.col-md-pull-6.col-sm-pull-4.col-xs-10.visible-xs
+          a(href='/').logo
+            img(src='/img/logo-2x.png', alt='EurekAlert! The Global Source for Science News')
+          a(href='http://aaas.org', target='_blank').brand
+            img(src='/img/brand.png', alt='AAAS - American Association for the Advancement of Science')
+        .search-wrapper.col-xs-2.visible-xs
+          button(type='button', data-toggle='collapse', data-target='#search').search-btn
+            i.fa.fa-search.fa-2x
+  .navbar.navbar-static-top.navbar-inverse(role='navigation')
+    .container
+      ul.nav.nav-pills.pull-left
+        li(class=active === 'news' ? 'active' : '').mega-dropdown
+          a(href='#').dropdown-toggle News
+          include meganav-news
+        li(class=active === 'multimedia' ? 'active' : '').mega-dropdown
+          a(href='#').dropdown-toggle Multimedia
+          include meganav-multimedia
+        li(class=active === 'meetings' ? 'active' : '').mega-dropdown
+          a(href='#').dropdown-toggle Meetings
+          include meganav-meetings
+        li(class=active === 'portals' ? 'active' : '').mega-dropdown.hidden-xs
+          a(href='#').dropdown-toggle Portals
+          include meganav-portals
+        li(class=active === 'about' ? 'active' : '').mega-dropdown
+          a(href='#').dropdown-toggle About
+          include meganav-about
+      ul.account.nav.nav-pills.pull-right
+        - if(loggedIn === true)
+          li(class=active === 'logout' ? 'active' : '').hidden-xs: a(href='/logout') Log Out
+          - if(user === 'pios')
+            li(class=active === 'pios' ? 'active' : '').mega-dropdown
+              a(href='#').dropdown-toggle.hidden-xs For PIOS
+              button(type='button', class='navbar-toggle').dropdown-toggle.visible-xs
+                span.sr-only Toggle Menu
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              include meganav-pios
+          -else if(user === 'reporters')
+            li(class=active === 'reporters' ? 'active' : '').mega-dropdown
+              a(href='#').dropdown-toggle.hidden-xs
+                span.hidden-sm For
+                |  Reporters
+              button(type='button', class='navbar-toggle').dropdown-toggle.visible-xs
+                span.sr-only Toggle Menu
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              include meganav-reporters
+        - else
+          li(class=active === 'login' ? 'active' : ''): a(href='/login') Login
+          li(class=active === 'register' ? 'active' : '').hidden-xs: a(href='/register') Register

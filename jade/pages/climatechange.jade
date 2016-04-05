@@ -1,0 +1,191 @@
+block variables
+  -var active = 'portal'
+  -var title = 'Climate Change Portal'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header-minimal
+
+  include ../partials/portal-climatechange
+  
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.col-md-8.portal-articles
+        
+        h2.subhead.text-left Trending News
+        article.trending
+          a(href='#')
+            header
+              h2 NIH-sponsored study identifies superior drug regimen for preventing mother-to-child HIV transmission
+              p.meta_institute University of Strathclyde
+        article.trending.has-thumb
+          a(href='#')
+            .thumb
+              img(src='http://placehold.it/180x100')
+            header
+              h2 Researchers show emissions from forests influence very first stage of cloud formation
+              p.meta_institute Referenz- und Translationszentrum fuer kardiale Stammzelltherapien (RTC) der Universitaet Rostock
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        article.trending.has-thumb
+          a(href='#')
+            .thumb
+              img(src='http://placehold.it/180x100')
+            header
+              h2 Strange behavior of bouncing drops demonstrates pilot-wave dynamics in action <b class="label-type">(Video)</b>
+              p.meta_institute American Institute of Physics
+        article.trending.has-thumb
+          a(href='#')
+            .thumb
+              img(src='http://placehold.it/180x100')
+            header
+              h2 Chemical interactions between silver nanoparticles and thiols: A comparison of mercaptohexanol again
+              p.meta_institute University of California
+        a(href='#').view-all
+          | view all latest news&nbsp;
+          i.fa.fa-angle-right.hidden-xs
+        
+        //- Featured Multimedia (Tablet)
+        hr.major.visible-sm.visible-xs
+        section.widget.visible-sm.visible-xs
+          h2.subhead.secondary.text-left Featured Multimedia
+          .thumbnail
+            .img-wrapper
+              img(src='/img/trending-2_480x300.jpg', alt='Video Cover')
+            .caption
+              p Corals that have adapted to live in the hottest seas might now find themselves in danger due to global warming, according University of Southampton researchers. Learn more from Professor Jörg Wiedenmann in this video and on EurekAlert!.
+          a(href='#').view-all
+            | view all climate change multimedia&nbsp;
+            i.fa.fa-angle-right.hidden-xs
+
+        //- Breaking News
+        hr.major.visible-sm.visible-xs
+        h2.subhead.text-left Breaking News
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        article.trending
+          a(href='#')
+            header
+              h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+              p.meta_institute The JAMA Network Journals
+        a(href='#').view-all
+          | view all breaking news&nbsp;
+          i.fa.fa-angle-right.hidden-xs
+
+        hr.major.visible-sm.visible-xs
+
+      //- Sidebar
+      aside#sidebar-content.white.col-md-4
+        section.widget.hidden-xs.hidden-sm
+          h2.subhead.secondary Featured Multimedia
+          .thumbnail
+            .img-wrapper
+              img(src='/img/trending-2_480x300.jpg', alt='Video Cover')
+            .caption
+              p Corals that have adapted to live in the hottest seas might now find themselves in danger due to global warming, according University of Southampton researchers. Learn more from Professor Jörg Wiedenmann in this video and on EurekAlert!.
+          a(href='#').view-all.hidden-sm
+            | view all climate change multimedia&nbsp;
+            i.fa.fa-angle-right.hidden-xs
+
+        hr.hidden-xs.hidden-sm
+
+        section.widget
+          h3.widget-title.green Climate Change Events
+          .widget-content
+            ul.article-links
+              li: a(href='#')
+                i.fa.fa-fw.fa-calendar
+                time(datetime='2013-12-08', pubdate).date 8 Dec – 31 May
+                | Fascination of Plants Day
+                span Washington, DC, USA
+              li: a(href='#')
+                i.fa.fa-fw.fa-calendar
+                time(datetime='2013-05-19', pubdate).date 19 May – 5 June
+                | 2015 ASCO Annual Conference
+                span Chicago, IL, USA
+              li: a(href='#')
+                i.fa.fa-fw.fa-calendar
+                time(datetime='2013-05-24', pubdate).date 24 May – 27 May
+                | 9th Annual Canadian Climate Change Meeting
+                span Vancouver, British Columbia, Canada
+            
+          a(href='#').view-all
+            | view all events&nbsp;
+            i.fa.fa-angle-right.hidden-xs
+
+        hr.major
+
+        section.widget
+          a(href='#').callout
+            h3
+              i.fa.fa-fw.fa-rss.orange
+              | RSS Feed
+            p The latest climate change headlines and summaries, updated throughout the day.
+
+        hr.hidden-xs.hidden-sm
+        hr.major.visible-sm.visible-xs
+
+        section.widget
+          .newsletter
+            .row
+              .col-sm-6.col-md-12
+                h3 Get the latest climate change news delivered to your inbox.
+              .col-sm-6.col-md-12
+                p Sign up for EurekAlert! Express to receive daily updates.
+                form
+                  .input-group
+                    input(type='text', placeholder='Email Address').form-control
+                    span.input-group-btn
+                      button(type='button').btn.btn-default.red Sign Up
+
+        hr.major
+
+        section.widget
+          h3.widget-title.green Climate Change News from <em>Science</em>
+          .widget-content
+            ul.article-links
+              li: a(href='#')
+                | Findings: How viral infection disrupts neural development in offspring, increasing risk of autism
+              li: a(href='#')
+                | Scientists rig hospital-grade light blood flow imager on the cheap
+              li: a(href='#')
+                | Strange behavior of bouncing drops demonstrates pilot-wave dynamics in action <b class="label">(Video)</b>
+              li: a(href='#')
+                | Massive spruce beetle outbreak in Colorado tied to drought, according to new CU study
+          .text-center
+            a(href='#').view-all
+              | view all news from <em>Science</em>&nbsp;
+              i.fa.fa-angle-right.hidden-xs
+
+        hr.hidden-xs.hidden-sm
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

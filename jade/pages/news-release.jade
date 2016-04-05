@@ -1,0 +1,130 @@
+block variables
+  -var active = 'news'
+  -var title = 'News Release'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.white.col-md-8
+        article.article
+          header
+            h1.page_title
+              small
+                | Public Release Date:&nbsp;
+                time(datetime='2014-09-25', pubdate) 25 September 2014
+              | True colors: Female squid have two ways of changing color, according to a UCSB study
+            p.summary Researchers have discovered that the female market squid possesses a pair of rainbow iridescent stripes that flank a bright white stripe, which mimics the appearance of a male.
+            p.meta_institute University of California - Santa Barbara
+            .toolbar
+              .social-share.pull-left
+                a(href='#').share-facebook.btn.btn-xs
+                  i.fa.fa-facebook.fa-fw
+                  //- span.hidden-xs 136
+                a(href='#').share-twitter.btn.btn-xs
+                  i.fa.fa-twitter.fa-fw
+                  //- span.hidden-xs 68
+                a(href='#').share-stumbleupon.btn.btn-xs
+                  i.fa.fa-stumbleupon.fa-fw
+                  //- span.hidden-xs 16
+                a(href='#').share-general.btn.btn-xs
+                  span.hidden-xs Share
+                  span.visible-xs
+                    i.fa.fa-plus.fa-fw
+              .article-tools.pull-right
+                a(href='#').btn.btn-xs
+                  i.fa.fa-share-alt.fa-fw
+                  span.hidden-xs &nbsp;Link
+                a(href='#').btn.btn-xs.hidden-xs
+                  i.fa.fa-print.fa-fw
+                  | &nbsp;Print
+                a(href='#').btn.btn-xs
+                  i.fa.fa-paper-plane.fa-fw
+                  span.hidden-xs &nbsp;E-Mail
+          figure.featured_image
+            .center-image
+              img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81161_web.jpg', alt='Featured Image')
+            figcaption.caption
+              p
+                strong Image:&nbsp;
+                | This photo shows female-specific iridescent stripes in the skin of the common market squid <em>(Doryteuthis Opalescens)</em>. <a href="#">view more <i class="fa fa-angle-right"></i></a>
+              p.credit Credit: Daniel Demartini, Daniel Morse, with permission from Univeristy of California
+          .entry
+            ul
+              li: a(href='#anchor-1') Anchor 1
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat.
+            p Pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur.
+            p Do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat.
+            p Pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur.
+            p Do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat.
+            p Pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur.
+            p Do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat.
+            p Pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur.
+            a(name='anchor-1')
+            h3 Anchor 1
+            p Do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+            
+            figure.thumbnail.pull-right
+              .img-wrapper
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81097_web.jpg', alt='Photo Description')
+              figcaption.caption
+                p
+                  strong Video:&nbsp;
+                  | Dissected squid mangtles highlight the iridescent and white stripes that only exist in the female squid. The white stripe goes from complete transparency to bright white, which mimics the appearance of a male. <a href="#">view more <i class="fa fa-angle-right"></i></a>
+                p.credit Credit: Matthew Joyce Tyson, Geraldine Deforde, Ella Semorskaya, Daniel Demartini, and Daniel Morse, with permission from University of California Santa Barbara.
+            
+            p Lorem ipsum Proident nulla dolore in magna Ut laboris tempor irure ut voluptate sunt <a href="#" class="break-text">http://online.liebertpub.com/doi/full/10.1089/jwh.2014.4792</a> Duis et nisi aliqua officia consequat dolore elit dolore quis magna amet in dolor exercitation.
+            p Id in id voluptate esse qui deserunt sint ut et dolor dolore laboris veniam dolor qui id dolore in pariatur sit cupidatat in reprehenderit incididunt eiusmod veniam adipisicing Excepteur proident dolore elit Duis nulla occaecat dolore cillum ut nisi do commodo qui est enim in nostrud pariatur laborum esse ut in aliquip amet Duis voluptate exercitation laboris ad exercitation labore id minim incididunt enim in sit Duis fugiat esse aliquip amet ut eiusmod laboris officia nulla elit occaecat pariatur irure anim in commodo labore labore in est dolore do nulla Ut ut mollit cupidatat dolore sunt quis anim anim tempor Ut proident in consequat do sed in eiusmod Excepteur reprehenderit fugiat incididunt ad est pariatur do do laboris occaecat ad labore pariatur id Ut incididunt Ut in aute dolore adipisicing anim magna ad dolore elit nulla nulla velit veniam culpa quis anim labore ad non et culpa aliqua.
+            p Minim nostrud nisi aliquip aliqua dolore velit ea dolore non non occaecat eu laborum laborum laboris officia in nulla id tempor laborum anim Excepteur ad in eu mollit elit pariatur amet ullamco nulla cillum in eiusmod.
+          .well.article_disclaimer
+            p <strong>Disclaimer:</strong> AAAS and EurekAlert! are not responsible for the accuracy of news releases posted to EurekAlert! by contributing institutions or for the use of any information through the EurekAlert system.
+          .toolbar
+            .social-share.pull-left
+              a(href='#').share-facebook.btn.btn-xs
+                i.fa.fa-facebook.fa-fw
+                //- span.hidden-xs 136
+              a(href='#').share-twitter.btn.btn-xs
+                i.fa.fa-twitter.fa-fw
+                //- span.hidden-xs 68
+              a(href='#').share-stumbleupon.btn.btn-xs
+                i.fa.fa-stumbleupon.fa-fw
+                //- span.hidden-xs 16
+              a(href='#').share-general.btn.btn-xs
+                span.hidden-xs Share
+                span.visible-xs
+                  i.fa.fa-plus.fa-fw
+            .article-tools.pull-right
+              a(href='#').btn.btn-xs
+                i.fa.fa-share-alt.fa-fw
+                span.hidden-xs &nbsp;Link
+              a(href='#').btn.btn-xs.hidden-xs
+                i.fa.fa-print.fa-fw
+                | &nbsp;Print
+              a(href='#').btn.btn-xs
+                i.fa.fa-paper-plane.fa-fw
+                span.hidden-xs &nbsp;E-Mail
+
+      //- Sidebar
+      aside#sidebar-content.white.col-md-4
+        include ../partials/sidebar-news-release
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

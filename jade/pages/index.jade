@@ -1,0 +1,484 @@
+block variables
+  -var active = 'home'
+  -var title = 'Home'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    .row.equal-height
+      //- Main Area
+      #main-content.col-md-8
+        
+        //- Trending Science News
+        h2.subhead Trending Science News
+        .row
+          .col-sm-5.hidden-xs
+            article.trending.photo
+              a(href='#')
+                img(src='/img/trending-1_480x300.jpg', alt='Photo Desc')
+                header
+                  h2 Could summer camp be the key to world peace?
+                  p.meta_institute Chicago Booth School of Business
+            article.trending.highlight
+              a(href='#')
+                header
+                  h2 African American women with breast cancer less likely to have newer, recommended surgical procedure
+                  p.meta_institute University of Texas M. D. Anderson Cancer Center
+            article.trending.photo
+              a(href='#')
+                img(src='/img/trending-2_480x300.jpg', alt='Photo Desc')
+                header
+                  h2 New anesthesia technique helps show cause of obstruction in sleep apnea
+                  p.meta_institute Wolters Kluwer Health
+            article.trending.highlight
+              a(href='#')
+                header
+                  h2 IQWiG: Reliable assessment of drugs is only possible on the basis of clinical study reports (CSRs)
+                  p.meta_institute Institute for Quality and Efficiency in Health Care
+          .col-sm-7
+            article.trending.featured
+              a(href='#')
+                img(src='/img/trending-featured-1_640x360.jpg', alt='Photo Desc')
+                header
+                  h2 Sun and photocatalysts will clean polluted water–cheaply and quickly <b class="label-type">(Video)</b>
+                  p.meta_institute Institute of Physical Chemistry/Polish Academy of Science
+            article.trending
+              a(href='#')
+                header
+                  h2 NIH-sponsored study identifies superior drug regimen for preventing mother-to-child HIV transmission
+                  p.meta_institute University of Strathclyde
+            article.trending.has-thumb
+              a(href='#')
+                .thumb
+                  img(src='http://placehold.it/180x100')
+                header
+                  h2 Researchers show emissions from forests influence very first stage of cloud formation
+                  p.meta_institute Referenz- und Translationszentrum fuer kardiale Stammzelltherapien (RTC) der Universitaet Rostock
+            article.trending
+              a(href='#')
+                header
+                  h2 Use of hypothermia does not improve outcomes for adults with severe meningitis; may be harmful
+                  p.meta_institute The JAMA Network Journals
+            article.trending.has-thumb
+              a(href='#')
+                .thumb
+                  img(src='http://placehold.it/180x100')
+                header
+                  h2 Strange behavior of bouncing drops demonstrates pilot-wave dynamics in action <b class="label-type">(Video)</b>
+                  p.meta_institute American Institute of Physics
+            article.trending.has-thumb
+              a(href='#')
+                .thumb
+                  img(src='http://placehold.it/180x100')
+                header
+                  h2 Chemical interactions between silver nanoparticles and thiols: A comparison of mercaptohexanol again
+                  p.meta_institute University of California
+            a(href='#').view-all.hidden-sm
+              | view all science news&nbsp;
+              i.fa.fa-angle-right.hidden-xs
+        a(href='#').view-all.visible-sm
+          | view all trending science news&nbsp;
+          i.fa.fa-angle-right.hidden-xs
+        //- END: Trending Science News
+
+        //- Breaking News
+        hr.major.visible-sm.visible-xs
+        .visible-sm.visible-xs
+          h2.subhead Breaking Science News
+          ul.article-links
+            li.icon-right
+              a(href='#').hero
+                | NSF awards $12 million to SDSC to deply 'Comet' supercomputer
+                p.meta_institute
+                  | University of California - San Diego
+                  span.icon
+                    i.fa.fa-clock-o
+                    | &nbsp;5s
+            hr.minor
+            li.icon-right
+              a(href='#')
+                | Water for future Mars astronauts?
+                p.meta_institute.icon
+                  | DOE/Los Alamos National Laboratory
+                  span.icon
+                    i.fa.fa-clock-o
+                    | &nbsp;44s
+            hr.minor
+            li.icon-right
+              a(href='#')
+                | Scientists rig hospital-grade light blood flow imager on the cheap
+                p.meta_institute
+                  | National Oceanic and Atmospheric Administration in Office of Ocean Exploration and Research
+                  span.icon
+                    i.fa.fa-clock-o
+                    | &nbsp;7m
+            hr.minor
+            li.icon-right
+              a(href='#')
+                | S-equol supplements associated with improved measures of reproductive health in postmenopausal women
+                p.meta_institute
+                  | California Institute of Technology
+                  span.icon
+                    i.fa.fa-clock-o
+                    | &nbsp;1h
+          a(href='#').view-all.visible-xs.visible-sm
+            | more breaking news&nbsp;
+            i.fa.fa-angle-right.hidden-xs
+        hr.major.visible-sm.visible-xs
+        //- END: Breaking News
+        
+        //- News by Subject
+        h2.subhead News by Subject
+        .hidden-xs
+          .row
+            .col-sm-4
+              h3.subject_title Medicince &amp; Health
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Scientists shed light on the brain mechanisms behind a debilitating sleep disorder
+                      p.meta_institute University of Toronto
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Sticks and stones: Brain releases natural painkillers during social rejection, U-M study finds
+                      p.meta_institute University of Michigan Health System
+              a(href='#').view-more
+                | more medicine &amp; health&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Biology
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hunter-gatherer and immigrant farmers lived together for 2,000 years in Central Europe
+                      p.meta_institute Johannes Gutenberg Universitaet Mainz
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Massive spruce beetle outbreak in Colorado tied to drought, according to new CU study
+                      p.meta_institute University of Colorado at Boulder
+              a(href='#').view-more
+                | more biology&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Tech &amp; Engineering
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Boston Children's Hospital to lead NIH-funded Rare Diseases Consortium studying autism and intellect
+                      p.meta_institute International Performance Assessment Centre for Geological Storage of Carbon Dioxide (IPAC-CO2)
+              a(href='#').view-more
+                | more tech &amp; engineering&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+          .row
+            .col-sm-4
+              h3.subject_title Social &amp; Behavioral
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more social &amp; behavioral&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Chemistry &amp; Physics
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more chemistry &amp; physics&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Archaeology
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more archaeology&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+          .row
+            .col-sm-4
+              h3.subject_title Space &amp; Planetary
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more space &amp; planetary&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Agriculture
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more agriculture&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Earth Science
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more earth science&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+          .row
+            .col-sm-4
+              h3.subject_title Atmospheric Science
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more atmospheric science&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Mathematics
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more mathematics&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Education
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more education&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+          .row
+            .col-sm-4
+              h3.subject_title Business &amp; Economics
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more business &amp; economics&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+            .col-sm-4
+              h3.subject_title Policy &amp; Ethics
+              .subject-articles
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Hybrid cars are a status symbol of sorts for seniors, Baylor consumer study shows
+                      p.meta_institute Baylor University
+                article
+                  a(href='#').article-link
+                    header
+                      h2.news_title Pulp friction cleans up 'Brockovich' chemical
+                      p.meta_institute Inderscience Publishers
+              a(href='#').view-more
+                | more policy &amp; ethics&nbsp;
+                i.fa.fa-angle-right.hidden-xs
+        .visible-xs
+          ul.subject-links-mobile
+            li: a(href='#')
+              | Agriculture
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Archaeology
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Atmospheric Science
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Biology
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Business &amp; Economics
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Chemistry &amp; Physics
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Earth Science
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Education
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Mathematics
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Medicine &amp; Health
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Poly &amp; Ethics
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Social &amp; Behavioral
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Space &amp; Planetary
+              i.fa.fa-angle-right
+            li: a(href='#')
+              | Tech &amp; Engineering
+              i.fa.fa-angle-right
+        hr.major.visible-sm.visible-xs
+        section.hidden-xs
+          h2.subhead Science Business News
+          article
+            a(href='#').article-link
+              header
+                h2.news_title New app provides new direction for researchers examining how children learn from nature
+                p.meta_institute Agency for Science, Technology and Research (A*Star), Singapore
+          article
+            a(href='#').article-link
+              header
+                h2.news_title Environmental Defense Fund launches toolkit to help fishermmen and managers
+                p.meta_institute Environmental Defense Fund
+          a(href='#').view-more.text-center-sm
+            | more science business news&nbsp;
+            i.fa.fa-angle-right
+        hr.major.visible-sm
+        section.hidden-xs
+          h2.subhead Grants
+          article
+            a(href='#').article-link
+              header
+                h2.news_title IPM receives 2 awards from USAID to advance HIV prevention technologies for women
+                p.meta_institute International Partnership for Microbicides (IPM)
+          article
+            a(href='#').article-link
+              header
+                h2.news_title Using physics to design better drugs: Albert Einstein College of Medicine awarded $9 million NIH grant
+                p.meta_institute Albert Einstein College of Medicine
+          a(href='#').view-more.text-center-sm
+            | more grants&nbsp;
+            i.fa.fa-angle-right
+        hr.major.visible-sm
+        section.hidden-xs
+          h2.subhead Awards
+          article
+            a(href='#').article-link
+              header
+                h2.news_title Physicist Andreas Ludwig chosen for Alexander von Humboldt Professorship
+                p.meta_institute University of Cologne
+          article
+            a(href='#').article-link
+              header
+                h2.news_title Leader of smoking cessation and tobaco prevention efforts receives Institute of Medicine's 2013 Lienhard Award
+                p.meta_institute National Academy of Sciences
+          a(href='#').view-more.text-center-sm
+            | more awards&nbsp;
+            i.fa.fa-angle-right
+        hr.major.visible-sm
+        section.hidden-xs
+          h2.subhead Books
+          article
+            a(href='#').article-link
+              header
+                h2.news_title Historian traces the origins of rent control in World War I-era New York
+                p.meta_institute Massachusetts Institute of Technology
+          article
+            a(href='#').article-link
+              header
+                h2.news_title New Rocky Mountain field guide demonstrates the area's dynamic, enigmatic nature
+                p.meta_institute Geological Society of America
+          a(href='#').view-more.text-center-sm
+            | more books&nbsp;
+            i.fa.fa-angle-right
+        hr.major.visible-sm
+
+      //- Sidebar
+      aside#sidebar-content.white.col-md-4
+        include ../partials/sidebar-home
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

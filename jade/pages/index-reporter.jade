@@ -1,0 +1,22 @@
+block variables
+  -var active = 'home'
+  -var title = 'Home'
+  -var loggedIn = true
+  -var user = 'reporters'
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content.container
+    .row
+      .col-md-8
+        h1 Main Content
+      .col-md-4
+        h2 Sidebar
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

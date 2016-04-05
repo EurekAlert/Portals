@@ -1,0 +1,178 @@
+/*-----Social Buttons-----*/
+
+.social-share {
+  margin-bottom: 20px;
+
+  a.btn {
+		font-size:14px;
+    border-radius: 2px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    border: 1px solid;
+
+    i.fa {
+      // margin-right: 5px;
+    }
+
+    &.share-facebook {
+      // background: #3162a2;
+      // color: @white;
+      border-color: #3162a2;
+      color: #3162a2;
+    }
+
+    &.share-twitter {
+      // background: #2eb1eb;
+      // color: @white;
+      border-color: #2eb1eb;
+      color: #2eb1eb;
+    }
+
+    &.share-stumbleupon {
+      // background: #c15842;
+      // color: @white;
+      border-color: #c15842;
+      color: #c15842;
+    }
+
+    &.share-general {
+      // background: #aaaaaa;
+      // color: @white;
+      border-color: #aaaaaa;
+      color: #aaaaaa;
+    }
+  }
+}
+
+
+/*-----Article Buttons-----*/
+
+.article-tools {
+  margin-bottom: 20px;
+
+  a.btn {
+		font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    color: #7b7b7b;
+    border: 1px solid;
+    border-radius: 2px;
+  }
+}
+
+/*-----Article Links-----*/
+
+.article-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 20px 0;
+
+    &.icon-right {
+      a {
+        padding-right: 30px;
+      }
+    }
+
+    a {
+      display: block;
+      position: relative;
+      font-weight: 400;
+      // font-size: 14px;
+      // line-height: 17px;
+      font-size: 14px;
+      line-height: 17px;
+      color: @gray;
+			
+			&.breakingnews:visited {
+				color: #aaaaaa;
+			}
+
+      &.hero {
+         font-size: 20px;
+         line-height: 24px;
+//        font-size: 17px;
+//        line-height: 20px;
+      }
+
+      .date {
+        display: block;
+        font-size: 10px;
+        font-style: italic;
+        color: #aaaaaa;
+      }
+
+      > i.fa {
+        position: absolute;
+        left: -20px;
+        top: 2px;
+        color: #aaaaaa;
+      }
+
+      span,
+      p.meta_institute {
+        display: block;
+        position: relative;
+        // font-size: 10px;
+        // line-height: 14px;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: @fadeGray;
+        .animate;
+
+        span.icon {
+          position: absolute;
+          top: 0;
+          right: -30px;
+          text-transform: none;
+          font-style: italic;
+          font-size: 11px;
+        }
+      }
+			
+			.calendar-links li a:visited {
+				color: #333333 !important;
+			}
+			
+    }
+  }
+}
+
+/*-----Individual Article Links-----*/
+a.article-link {
+  &:hover,
+  &:active {
+		h2,
+		
+    p.meta_institute,
+    span {
+      color: #aaaaaa;
+    }
+  }
+}
+
+a.article-link:visited {
+	h2 {
+		color: #aaaaaa;
+	}
+}
+
+/*-----View Links-----*/
+
+a.view-more {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  margin: 10px 0 30px;
+}
+
+/*-----Article Labels-----*/
+
+b.label-type {
+  font-weight: 300;
+  text-transform: uppercase;
+}

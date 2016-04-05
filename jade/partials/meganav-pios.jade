@@ -1,0 +1,62 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li.dropdown-header.text-center For PIOS
+      li.first: a(href='#') My releases
+      li: a(href='#') My experts
+      li: a(href='#') Real-time report
+      li: a(href='#') Monthly reports
+      li: a(href='#') Journal contributors
+      li: a(href='#') Journal directory
+      li: a(href='#') Search for media contacts
+      li: a(href='#') Subscription information
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#').btn.btn-primary.btn-icon
+            strong SUBMIT: 
+            em News releases, multimedia, experts &amp; more 
+            i.fa.fa-angle-right.pull-right
+          li.break
+          li: a(href='#') My releases
+          li: a(href='#') My experts
+          li: a(href='#') Real-time traffic report
+          li: a(href='#') Monthly reports
+          li: a(href='#')
+            strong Subscription information
+      .col-sm-3
+        h3 Resources
+        ul.nav.nav-stacked.secondary
+          li: a(href='#')
+            | Journal Contributors:
+            br
+            em Info on forthcoming papers
+          li.break
+          li: a(href='#') Peer-reviewed journals
+          li: a(href='#'): em Science Sources
+          li: a(href='#') Search for experts
+          li: a(href='#') E!-Merging Topics
+      .col-sm-3
+        h3 News
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') Breaking News
+          li: a(href='#') Science Business News
+          li: a(href='#') Grants, Awards, Books
+          li: a(href='#') Meeting Announcements
+          li.break
+          li: a(href='#') Multimedia
+      .col-sm-3
+        h3 My Account
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') Edit profile
+          li: a(href='#') Change password
+          li: a(href='#') My EurekAlert!
+          li.break
+          li: a(href='#').btn.btn-icon
+            | EurekAlert! Express <br>E-mail Alerts
+            i.fa.fa-angle-right.pull-right

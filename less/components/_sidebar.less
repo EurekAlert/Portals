@@ -1,0 +1,541 @@
+#sidebar-content {
+  background: @white;
+
+  h2.subhead:first-child {
+    margin-top: -20px;
+  }
+
+  hr {
+    margin: 0 -20px;
+    border-color: @lightGray;
+
+    &.major {
+      height: 8px;
+      background: @bgGray;
+      margin-right: -21px;
+      border-bottom: 1px solid @lightGray;
+    }
+  }
+
+  .nav-stacked>li+li {
+    margin: 2px 0;
+  }
+
+  .widget {
+    margin: 20px 0 35px 0;
+
+    h3 {
+      &.widget-title {
+        text-align: left;
+        text-transform: none;
+        font-size: 14px;
+        color: @darkGray;
+        // margin: 0 0 20px 0;
+        margin: 0 -20px 18px 0;
+        padding: 10px 15px;
+        border-left: 4px solid;
+
+        &.blue {
+          background: #D2EDF6;
+          border-color: #96E0F9;
+        }
+
+        &.red {
+          background: #fee5e0;
+          border-color: #fea09e;
+        }
+
+        &.yellow {
+          background: #feedcf;
+          border-color: #fbd894;
+        }
+
+        &.green {
+          background: #dbfffc;
+          border-color: #27ccc0;
+        }
+
+        &.purple {
+          background: #f7ebff;
+          border-color: #c299ff;
+        }
+      }
+    }
+
+    h4 {
+      &.widget-subtitle {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 4px;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: #2b2b2b;
+        text-transform: uppercase;
+        border-bottom: 1px solid @lightGray;
+      }
+    }
+
+    .ad {
+      position: relative;
+      border-color: @black;
+      .no-border;
+      padding: 0;
+      margin: 12px -8px;
+      max-width: 302px;
+
+      &.single {
+        margin-bottom: -22px;
+      }
+
+      &:first-child {
+        margin-top: -8px;
+      }
+
+      .byline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: @gray;
+        background: fade(@black, 60%);
+        padding: 2px 15px;
+        color: @white;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+		
+		.sponsored_content { 
+			header {   /* BEGIN NEW BLOCK - Sponsored Content */
+  			position: absolute;
+  			bottom: 0;
+  			left: 0;
+  			padding: 8px 20px;
+  			width: 100%;
+  			background: rgba(0, 0, 0, 0.57);
+  			color: #ffffff;
+  			font-weight: 300;
+  			-webkit-transition: all 0.2s ease-in-out;
+  			-moz-transition: all 0.2s ease-in-out;
+  			-o-transition: all 0.2s ease-in-out;
+  			-ms-transition: all 0.2s ease-in-out;
+  			transition: all 0.2s ease-in-out;
+				
+				h2 {
+  			font-size: 14px;
+				margin: 0;
+			}
+				p.meta_institute {
+					color: @white;
+				}
+				
+		}
+		
+		div.sponsored_content_whatsthis {
+			width: 300px;
+  		margin: 10px auto;
+			a {
+				font-style:italic;
+				color: #888888;
+			}
+			}	
+	}
+		
+		
+
+    .article-links {
+			a {
+				.breakingnews:visited {
+					color:#aaaaaa;
+				}
+			}
+      a:hover,
+      a:active {
+        color: #aaaaaa;
+
+        span,
+        p.meta_institute {
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
+}
+
+.subject-links {
+  font-size: 15px;
+
+  .btn {
+    display: block;
+    border: 1px solid @black;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    text-align: left;
+    z-index: 0;
+		behavior: url('@{base-url}/css/vendor/pie/PIE.htc');
+
+    &.btn-red {
+      border-color: transparent;
+      color: @red;
+
+      .fa {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: @red;
+      }
+    }
+  }
+
+  .break {
+    height: 30px;
+  }
+
+  .nav li {
+    a {
+      color: @darkGray;
+      font-weight: 400;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      padding: 7px 15px;
+      z-index: 0;
+			behavior: url('@{base-url}/css/vendor/pie/PIE.htc');
+
+      &:hover {
+        background: @white;
+        color: @darkGray;
+        border-color: @red;
+        // font-weight: 600;
+      }
+
+      .fa {
+        font-size: 18px;
+      }
+    }
+    &.active {
+      a {
+        border-color: @red;
+        background: @white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+a.agency {
+  .clearfix;
+  .no-border;
+  margin: 0;
+  display: table;
+  border: none;
+  background: none;
+  color: @darkBlue;
+  font-size: 15.25px;
+  font-weight: 300;
+
+  img {
+    max-width: 60px;
+    max-height: 60px;
+    -webkit-backface-visibility: hidden;
+    .animate;
+  }
+
+  .btn {
+    border: none !important;
+    display: table-cell !important;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .fa {
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+
+    .btn {
+      color: @hoverBlue;
+    }
+
+    img {
+      .opacity(.8);
+    }
+  }
+
+  &:visited {
+    .btn {
+      color: @darkBlue;
+    }
+  }
+}
+
+.widget-content {
+  margin-left: 20px;
+
+  hr {
+    margin: 40px 0 !important;
+  }
+}
+
+aside.more {
+  a {
+    color: @gray;
+
+    p.meta_institute {
+      color: @gray;
+    }
+
+    &:hover {
+      color: #aaaaaa;
+
+      p.meta_institute {
+        color: #aaaaaa;
+      }
+    }
+  }
+
+  a.inactive {
+    color: #aaaaaa;
+    cursor: default;
+
+    p.meta_institute {
+      color: #aaaaaa;
+    }
+  }
+  
+  h3 {
+    margin: 18px 0 2px;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 500;
+		color: #888888;
+  }
+
+  p.meta_institute {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  dl.meta {
+    margin: 0;
+  }
+}
+
+ul.tags {
+  margin: 0 -3px 10px;;
+  padding: 0;
+  list-style: none;
+  .clearfix;
+
+  li {
+    float: left;
+    margin: 3px;
+
+    a {
+      display: inline-block;
+      background: @lightGray;
+      color: @white;
+      padding: 2px 7px;
+      text-transform: uppercase;
+      font-size: 11.5px;
+
+      &:hover {
+        background: #aaaaaa;
+      }
+    }
+
+    &.active {
+      a {
+        background: #888888;
+      }
+    }
+  }
+}
+
+.translations-nav {
+  a {
+    display: block;
+    margin-bottom: 20px;
+    color: @darkGray;
+
+    &.red {
+      color: @red;
+    }
+
+    &:hover {
+      color: #888888;
+    }
+
+    i.fa {
+      font-size: 18px;
+    }
+  }
+
+  &.pull-up {
+    margin-bottom: -25px;
+  }
+}
+
+a.view-all {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+
+  /*mobile*/
+  margin: 30px 0;
+  padding: 12px 0;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 3px;
+	behavior: url('@{base-url}/css/vendor/pie/PIE.htc');
+}
+
+a.multimedia {
+  .clearfix;
+  .no-border;
+  background: none;
+  border: none;
+  margin: 5px 0;
+  padding: 0;
+
+  .center-image {
+    margin-right: 10px;
+    padding: 3px;
+    width: 87px;
+    height: 87px;
+    border: 1px solid @lightGray;
+    .animate;
+  }
+
+  img {
+    -webkit-backface-visibility: hidden;
+    .animate;
+  }
+
+  .desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: @gray;
+    .animate;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .view-more {
+      color: @blue;
+      color: #0088cc;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 15px;
+      .animate;
+    }
+  }
+
+  &:hover,
+  &:visited,
+  &:focus {
+    background: none !important;
+  }
+  
+  // hover/active state
+  &:hover,
+  &:active {
+    .desc {
+      color: #aaaaaa;
+
+      .view-more {
+        color: @blue;
+      }
+    }
+
+    .center-image {
+      background: @bgGray;
+    }
+
+    img {
+      .opacity(.8);
+    }
+  }
+
+  // active state
+  &.active {
+    background: none;
+
+    .desc {
+      color: #aaaaaa;
+    }
+
+    .center-image {
+      background: @bgGray;
+    }
+
+    img {
+      .opacity(.8);
+    }
+
+    &:hover {
+      background: none;
+
+      .desc {
+        color: #aaaaaa;
+      }
+    }
+  }
+}
+
+.mm_sidebar {
+  font-size: 14px;
+  color: #333333;
+}
+
+.widget .portal {
+  text-align: center;
+  height: 150px;
+
+  a {
+    display: block;
+    padding: 0 20px;
+
+    &:hover {
+      .title {
+        color: #888888;
+
+        span {
+          color: @blue;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 14px;
+    color: @gray;
+    
+    span {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #0088cc;
+    }
+  }
+}
+
+.contact-info,
+.original-source {
+  font-size: 13.25px;
+}

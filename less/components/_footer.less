@@ -1,0 +1,66 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  background: @footerGray;
+  color: @white;
+  font-weight: 300;
+  padding: 35px 0 25px;
+
+  a {
+    color: @white;
+    line-height: 39px;
+    white-space: nowrap;
+
+    i.fa {
+      margin-right: 10px;
+      font-size: 16px;
+      width: 16px;
+    }
+
+    &:hover {
+      color: @footerHoverText;
+
+      i.fa-eurekalert {
+        .opacity(.5);
+      }
+    }
+  }
+
+  .stack-5 {
+    a {
+      line-height: 30px;
+    }
+  }
+
+  .logo {
+    width: 60%;
+    max-width: 200px;
+
+    img {
+      max-width: 100%;
+
+      &.image-hidden-xs {
+        display: none;
+      }
+
+      &.image-visible-xs {
+        display: inline-block;
+      }
+    }
+  }
+
+  .brand {
+    width: 40%;
+    max-width: 110px;
+  }
+
+  p.copy {
+    line-height: 30px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

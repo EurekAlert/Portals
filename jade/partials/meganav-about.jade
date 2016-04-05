@@ -1,0 +1,39 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li: a(href='#') About EurekAlert!
+      li: a(href='#') For Reporters
+      li: a(href='#') For PIOs
+      li: a(href='#') Help / FAQ
+      li: a(href='#') Contact EurekAlert!
+      li: a(href='#') Terms & Conditions
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#') About EurekAlert!
+          li: a(href='#') Help / FAQ
+          li: a(href='#') Subscribe
+          li: a(href='#') Sponsor
+          li.break
+          li: a(href='#') Contact EurekAlert!
+      .col-sm-3
+        h3 For Reporters
+        p.fixed-height EurekAlert! is the premier source for embargoed and breaking science news.
+        a(href='#').inverse: strong
+          | Learn more 
+          i.fa.fa-angle-right
+      .col-sm-3
+        h3 For PIOS
+        p.fixed-height EurekAlert! is the world's leading science and health news distribution service.
+        a(href='#').inverse: strong
+          | Learn more 
+          i.fa.fa-angle-right
+      .col-sm-3
+        img(src='/img/AAAS-logotype_195x83.png', alt='AAAS Logo').contain.push
+        br
+        p.sub-minor EurekAlert! is a service of the American Association for the Advancement of Science.

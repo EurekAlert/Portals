@@ -1,0 +1,69 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li: a(href='#') Hello World
+      li: a(href='#') Foo Bar
+      li.dropdown
+        a(href='#', data-toggle='dropdown').dropdown-toggle
+          | Dropdown Menu 
+          i.fa.fa-caret-down
+        ul.dropdown-menu
+          li: a(href='#') Hello World
+          li: a(href='#') Foo Bar
+      li: a(href='#') Another Link
+      li: a(href='#') The Last Item
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        //-
+          ul.nav.nav-stacked.primary
+            li: a(href='#').btn.btn-icon
+              | U.S. Department of Energy on EurekAlert!
+              i.fa.fa-angle-right.pull-right
+            li.break
+            li: a(href='#').btn.btn-icon
+              | U.S. National Institutes of Health on EurekAlert!
+              i.fa.fa-angle-right.pull-right
+            li.break
+            li: a(href='#').btn.btn-icon
+              | U.S. National Science Foundation on EurekAlert!
+              i.fa.fa-angle-right.pull-right
+        .text-center.portal
+          a(href='#')
+            img(src='/img/portal-1_60x60.png',alt='Portals Image').img-circle
+            div.title Climate Change
+              small Climate change news, multimedia, and resources
+            .inverse
+              | More 
+              i.fa.fa-angle-right
+      .col-sm-3
+        .text-center.portal
+          a(href='#')
+            img(src='/img/portal-2_60x60.png',alt='Portals Image').img-circle
+            div.title Cancer Research News
+              small news and resources on cancer research, treatment, and prevention
+            .inverse
+              | More 
+              i.fa.fa-angle-right
+      .col-sm-3
+        .text-center.portal
+          a(href='#')
+            img(src='/img/portal-3_60x60.png',alt='Portals Image').img-circle
+            div.title Science Reporting for Kids
+              small News, games, and more for young audiences
+            .inverse
+              | More 
+              i.fa.fa-angle-right
+      .col-sm-3
+        .text-center.portal
+          a(href='#')
+            img(src='/img/portal-4_60x60.png',alt='Portals Image').img-circle
+            div.title Marine Science
+              small Marine research news, multimedia, and resources
+            .inverse
+              | More 
+              i.fa.fa-angle-right

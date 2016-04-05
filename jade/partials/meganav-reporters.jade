@@ -1,0 +1,55 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li.dropdown-header.text-center For Reporters
+      li.first: a(href='#')
+        strong Embargoed News &amp; Journals
+      li: a(href='#') Meeting Announcements
+      li: a(href='#') Press Announcements 
+      li: a(href='#') Releases from News Media
+      li: a(href='#') Search for experts
+      li: a(href='#') Search for media contacts
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#', style='letter-spacing: -1px;').btn.btn-primary.btn-icon
+            | Embargoed News &amp; Journals 
+            i.fa.fa-angle-right.pull-right
+          li.break
+          li: a(href='#') Breaking News
+          li: a(href='#') Meeting Announcements
+          li: a(href='#') Press Announcements
+          li: a(href='#') Science Business News
+          li: a(href='#') Grants, Awards, Books
+          li: a(href='#') Releases from News Media
+      .col-sm-3
+        h3 Multimedia
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') All Multimedia
+          li.break
+          li: a(href='#') Images
+          li: a(href='#') Video
+          li: a(href='#') Audio
+      .col-sm-3
+        h3 Experts
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') Search for Experts
+          li: a(href='#') E!-Merging Topics
+        h3 Media contacts
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') Search for media contacts
+      .col-sm-3
+        h3 My Account
+        ul.nav.nav-stacked.secondary
+          li: a(href='#') Edit profile
+          li: a(href='#') Change password
+          li: a(href='#') My EurekAlert!
+          li.break
+          li: a(href='#').btn.btn-icon
+            | EurekAlert! Express <br>E-mail Alerts
+            i.fa.fa-angle-right.pull-right

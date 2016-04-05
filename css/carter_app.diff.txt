@@ -1,0 +1,730 @@
+12c12
+<   *behavior: url(/css/vendor/boxsizing.htc);
+---
+>   *behavior: url('http://beta01.eurekalert.org/css/vendor/boxsizing.htc');
+
+30c30
+<   background: #eaeaea;
+---
+>   background: #dedede; CHECK
+
+34a35,37
+> p.fixed-height {
+>   min-height: 120px;
+> }
+
+55c58
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+58c61
+<   background: #dddddd; 
+---
+>   background: #FFDBDB; CHECK
+
+61c64
+<   background: #dddddd;
+---
+>   background: #FFDBDB; CHECK
+
+74,76c77
+< 
+< /* Replaces h1.page_title small, which is messing up Google results */
+< div.release_date {
+---
+> h1.page_title small {
+83,84c84
+<   margin-top: 23px;
+<   margin-bottom: -18px;
+---
+>   margin-bottom: 10px;
+86c86
+< div.release_date .red {
+---
+> h1.page_title small.red {
+89,93d88
+< div.release_date .lite {
+<   color: #333333;
+<   font-weight: 400;
+< }
+
+
+< 
+115c110
+<   text-align: left;
+---
+>   text-align: center; check
+
+
+120c115
+<   margin: 20px 0 15px;
+---
+>   margin: 30px 0; check
+
+
+
+122a118,124
+> h2.subhead.secondary {
+>   color: #333333;
+>   border: none;
+> }
+> h2.subhead.text-left {
+>   text-align: left;
+> }  CHECK
+
+
+
+176,181d177
+< hr.trending {
+<   height: 1px;
+<   background: #b9babc;
+<   margin: 20px -20px 20px -20px;
+<   border: none;
+< }  check
+
+
+192,194d187
+< .lightgraypanel {
+<   background-color: #e7e7e7;
+< } check
+
+
+210c203
+<   background: url('http://www.eurekalert.org/images/e4/icn.eurekalert.png');
+---
+>   background: url('http://beta01.eurekalert.org/img/icn.eurekalert.png');
+306c299
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+325c318
+<   background: #cb2121 url('http://www.eurekalert.org/images/e4/bg.header-mobile.png') center center no-repeat;
+---
+>   background: #cb2121 url('http://beta01.eurekalert.org/img/bg.header-mobile.png') center center no-repeat;
+404c397
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+412d404
+< 
+418d409
+< 
+436c427
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+516c507
+<   background: transparent url('http://www.eurekalert.org/images/e4/bg.meganav-o.png') top center repeat;
+---
+>   background: transparent url('http://beta01.eurekalert.org/img/bg.meganav-o.png') top center repeat;
+
+
+
+532,534d522
+< .nav > li.mega-dropdown > ul.dropdown-menu p.aboutblurb {
+<   height: 75px;
+< } check
+
+
+555,556d542
+<   padding-top: 10px;
+<   padding-bottom: 10px;  check
+
+
+635c621
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+679c665
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+
+729c715
+<   color: #959595;
+---
+>   color: #737373; check
+
+
+754d739
+<   font-size: 14px; check
+
+781d765
+<   font-size: 14px; check
+
+
+804,805c788,789
+<   font-size: 14px;
+<   line-height: 17px;
+---
+>   font-size: 17px;
+>   line-height: 20px; check
+
+
+808,810d791
+< .article-links li a.breakingnews:visited {
+<   color: #aaaaaa;
+< } check
+
+
+812,813c793,794
+<   font-size: 20px;
+<   line-height: 24px;
+---
+>   font-size: 17px;
+>   line-height: 20px;  check
+
+
+
+831,833c812,814
+<   font-size: 10px;
+<   line-height: 14px;
+<   font-weight: 400;
+---
+>   font-size: 12px;
+>   line-height: 17px;
+>   font-weight: 300; check
+
+
+851,854d831
+< /* Override visited state for calendar links */
+< .calendar-links li a:visited {
+<   color: #333333 !important;
+< } check
+
+
+858d834
+< a.article-link:visited h2, check
+906c882
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+925c901
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+972c948
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+986c962
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+
+1005c981,983
+<   margin-bottom: 15px;
+---
+>   padding: 18px 10px;
+>   margin: 0 -10px;
+>   border-bottom: 1px solid #b9babc;  check
+
+
+1007a986,988
+> .trending:first-child {
+>   padding-top: 0;
+> }  Check
+
+
+1009a991
+>   position: relative; There was no position:relative at this line in either file....
+
+1023c1005
+<   color: #888888;
+---
+>   color: #666666; check
+
+
+1026c1008
+<   color: #888888;
+---
+>   color: #666666; check
+
+
+1032,1034d1013
+< .trending a:visited header h2 {
+<   color: #888888;
+< } check
+
+
+1050c1029,1030
+<   font-size: 14px;
+---
+>   font-size: 17px;
+>   line-height: 20px; check
+
+
+1052a1033,1036
+> .trending header .meta_institute {
+>   font-size: 12px;
+>   line-height: 17px;
+> }       CHeck
+
+
+1110,1115d1093
+< .trending.photo a:visited header h2 {
+<   color: #c3c3c3;
+< }
+< .trending.photo a:visited header p.meta_institute {
+<   color: #c3c3c3; check
+< }
+
+1130c1108
+<   font-weight: 400;
+---
+>   font-weight: 300; check
+
+
+1140c1118
+<   min-height: 220px;
+---
+>   min-height: 200px; check
+
+
+1149c1127,1128
+<   padding: 10px 0;
+---
+>   margin-right: -10px;
+>   padding: 10px 10px 10px 0; Check... TAKE A SECOND LOOK at it on live site and see if there any other changes we can make to make run smoother
+
+1162d1140 check
+< 
+
+
+1184c1162
+<   color: #333333;
+---
+>   color: #505050; check
+
+
+1186,1188d1163
+< .post a header div.reltime {
+<    margin-bottom: 2px;
+< }  CHECK
+
+
+1195,1213d1169
+< .post a header .meta_date_embargoed {
+<   color: #dc0002;
+<   letter-spacing: -0.28px;
+<   font-size: 12px;
+<   text-transform: uppercase;
+<   font-weight: 600;
+< }
+< .post a header .meta_date_embargoed_lite {
+<   letter-spacing: -0.28px;
+<   font-size: 12px;
+<   text-transform: uppercase;
+<   font-weight: 400;
+< }
+< .post a:hover header h2.post_title {
+<   color: #888888;
+< }
+< .post a:visited header h2.post_title {
+<   color: #888888;
+< } CHECK CHECK CHECK CHECK
+
+
+1261c1217
+<   color: #888888;
+---
+>   color: #aaaaaa; check
+
+
+
+
+1346c1302
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+1360c1316
+<   background: transparent url('http://www.eurekalert.org/images/e4/next-day-chevron_84x232.png') 0 0 no-repeat;
+---
+>   background: transparent url('http://beta01.eurekalert.org/img/next-day-chevron_84x232.png') 0 0 no-repeat;
+1383c1339
+<   background-image: url('http://www.eurekalert.org/images/e4/next-day-chevron_84x232-hover.png');
+---
+>   background-image: url('http://beta01.eurekalert.org/img/next-day-chevron_84x232-hover.png');
+1391c1347
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+1398d1353
+< 
+1403d1357
+< 
+1415c1369
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+1431d1384
+< 
+1436d1388
+< 
+
+
+
+1553,1554c1505
+<   background: #ffffff;
+<   border: 1px solid #b9babc;
+---
+>   background: #dedede; check
+
+
+
+1606,1607c1557
+< .article .featured_image .details .well.yellow a:active,
+< .article .featured_image .details .well.yellow a:visited {
+---
+> .article .featured_image .details .well.yellow a:active { syntax.... CHECK
+
+
+1627,1628c1577,1579
+< .article .entry {
+<   font-size: 14px;
+---
+> .article .entry p {
+>   margin-bottom: 34px;
+>   font-size: 13.5px; Check
+
+
+1632,1635d1582
+< .article .entry p {
+<   margin-top: 5px;
+<   margin-bottom: 15px;
+< } Check
+
+
+1691,1692d1637 Check
+< 
+< 
+
+
+1782,1817d1726
+< 
+
+< #sidebar-content .widget .sponsored_content header {   /* BEGIN NEW BLOCK - Sponsored Content */
+<   position: absolute;
+<   bottom: 0;
+<   left: 0;
+<   padding: 8px 20px;
+<   width: 100%;
+<   background: rgba(0, 0, 0, 0.57);
+<   color: #ffffff;
+<   font-weight: 300;
+<   -webkit-transition: all 0.2s ease-in-out;
+<   -moz-transition: all 0.2s ease-in-out;
+<   -o-transition: all 0.2s ease-in-out;
+<   -ms-transition: all 0.2s ease-in-out;
+<   transition: all 0.2s ease-in-out;
+< }
+< 
+< #sidebar-content .widget .sponsored_content header h2 {
+<   font-size: 14px;
+<   margin: 0;
+< }
+< 
+< #sidebar-content .widget .sponsored_content header p.meta_institute {
+<   color: #ffffff;
+< }
+< 
+< #sidebar-content div.sponsored_content_whatsthis {
+<   width: 300px;
+<   margin: 10px auto;
+< }
+< 
+< #sidebar-content div.sponsored_content_whatsthis a {
+<   font-style:italic;
+<   color: #888888;
+< }                                                      /* END NEW BLOCK - Sponsored Content */ CHECK
+< CHECK CHECK CHECK CHECK CHECK
+
+
+
+
+
+
+1822,1824d1730
+< .article-links a.breakingnews:visited {
+<   color: #aaaaaa;
+< } CHECK
+
+
+
+
+
+1843c1749
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+1860c1766
+<   font-weight: 400;
+---
+>   font-weight: 300; CHECK
+
+
+1865c1771
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+
+
+1970d1875
+<   color: #888888; CHECK
+
+
+1976c1881
+<   font-weight: 400;
+---
+>   font-weight: 300; CHECK
+
+
+1983c1888
+<   margin: 0 -3px 10px;
+---
+>   margin: 0 -3px; CHECK
+
+
+2028c1933
+<   margin-bottom: -25px;
+---
+>   margin-bottom: -35px;
+2036d1940 CHECK
+< 
+
+
+
+2042c1946
+<   behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>   behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+
+2109,2119d2012
+< a.multimedia .mm_sidebar {
+<   font-size: 14px;
+<   color: #333333;
+< }
+< a.multimedia .mm_sidebar span {
+<   font-size: 10px;
+<   color: #aaaaaa;
+<   display: block !important;
+<   text-transform: uppercase;
+<   font-weight: 400;
+< } CHECK
+
+
+2189,2190d2081 CHECK
+< 
+< 
+
+
+2213c2104
+<   color: #c3c3c3;
+---
+>   color: #C3C3C3;
+2245d2135 SYNTAX... lowercase vs uppecase...
+
+
+< 
+2291c2181
+<     height: 150px;
+---
+>     height: 250px;
+2294d2183 CHECK
+<
+
+
+
+2299,2314d2187
+<   .trending header h2 {
+<     font-size: 17px;
+<     line-height: 20px;
+<   }
+<   .trending header .meta_institute {
+<     font-size: 12px;
+<     line-height: 17px;
+<   }
+<   .article-links li a {
+<     font-size: 17px;
+<     line-height: 20px;
+<   }
+<   .article-links li a p.meta_institute {
+<     font-size: 12px;
+<     line-height: 17px;
+<   }
+2319,2320d2191
+<   #sidebar-content .widget .ad {
+<     margin: 0 auto;
+
+
+2322,2323d2192
+< }
+< 
+
+
+2327a2197,2200
+>   hr.minor {
+>     height: 2px;
+>     background: #f1f1f1;
+>   }..... Kept app.css version... CHECK... Look at original pages Figure out what's going on here... Why does it not show up in live site
+
+
+2434c2307
+<     behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>     behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+2442c2315
+<     behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
+---
+>     behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+
+
+2449a2323,2337
+>   .trending {
+>     position: relative;
+>     margin: 0 0 15px;
+>     padding: 0;
+>     border-bottom: none;
+>     overflow: hidden;
+>   }
+>   .trending header h2 {
+>     font-size: 14px;
+>     line-height: 1.1;
+>   }
+>   .trending header .meta_institute {
+>     font-size: 10px;
+>     line-height: 14px;
+>   } Check... Investigate
+
+
+
+2482a2371,2373
+>   .article-links li a {
+>     font-size: 14px;
+>     line-height: 17px; Left app.css Please let me know if needs removing. KEEp CHECK
+
+
+
+2484,2487c2375,2377
+< 
+< @media (min-width: 768px) and (max-width: 991px) {
+<   h2.subhead {
+<     margin: 30px 0 30px;
+---
+>   .article-links li a.hero {
+>     font-size: 20px;
+>     line-height: 24px; CHECK... Left app.css part as is.. let me know if needs to be removed
+
+
+2488a2379,2385
+>   .article-links li a span,
+>   .article-links li a p.meta_institute {
+>     font-size: 10px;
+>     line-height: 14px;
+>   }
+> } 
+> @media (min-width: 768px) and (max-width: 991px) {   CHECK... left app.css.... let me know if needs rm.
+
+2501c2398
+<     padding: 0px 0px 0px 5px;
+---
+>     padding: 0 0 0 5px; SYNTAX.. CHECK
+
+
+2513,2515d2409
+<   #sidebar-content .widget .ad {
+<     margin: 0 auto;
+<   } CHECK
+
+2541,2542d2434
+<   .post a.has-thumb {
+<     min-height:185px; CHECK
+
+2544,2545d2435 CHECK
+< }
+< 
+
+
+2548c2438
+<     background: #f1f1f1 url('http://www.eurekalert.org/images/e4/bg.gradient.png') 0 140px repeat-x;
+---
+>     background: #f1f1f1 url('http://beta01.eurekalert.org/img/bg.gradient.png') 0 50px repeat-x;
+2551c2441
+<     background: #cb2121 url('http://www.eurekalert.org/images/e4/bg.header.png') center center no-repeat;
+---
+>     background: #cb2121 url('http://beta01.eurekalert.org/img/bg.header.png') center center no-repeat;
+
+2575,2577d2464
+<   .post a.has-thumb {
+<     min-height:125px;
+<   } CHECK... left app.css... Let me know if you want removed.
+
+
+2601,2606d2487
+<   .article-tools a.btn {
+<     font-size: 12px;
+<   }
+<   .social-share a.btn {
+<     font-size: 12px;
+<   } CHECK
+
+
+
+2625c2506
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-photo.jpg') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-photo.jpg') right bottom no-repeat;
+2628c2509
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-video.jpg') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-video.jpg') right bottom no-repeat;
+2631c2512
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-audio.jpg') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-audio.jpg') right bottom no-repeat;
+
+2635c2516
+<     height: 130px;
+---
+>     height: 145px; CHECK
+2638,2639d2518 CHECK
+< 
+< 
+2642c2521
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-photo@2x.png') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-photo@2x.png') right bottom no-repeat;
+2646c2525
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-video@2x.png') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-video@2x.png') right bottom no-repeat;
+2650c2529
+<     background: url('http://www.eurekalert.org/images/e4/bg.media-audio@2x.png') right bottom no-repeat;
+---
+>     background: url('http://beta01.eurekalert.org/img/bg.media-audio@2x.png') right bottom no-repeat;
+2653,2671d2531
+< }
+< 
+< 
+< @media print {
+< 
+<   /* "equal-height" is causing IE to print out 100+ pages for news releases
+<      This should fix that issue */
+< 
+<   .equal-height > * {
+<     margin-bottom: 0px;
+<     padding-bottom: 0px;
+<   }
+< 
+<   /* Bootstrap by default shows the full URL for links in print view.  This prevents that behavior. */
+< 
+<   a[href]:after {
+<     content: "";
+<   }
+< 

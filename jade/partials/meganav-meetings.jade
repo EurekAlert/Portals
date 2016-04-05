@@ -1,0 +1,46 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li: a(href='#') Meeting Announcement
+      li: a(href='#') Meetings Calendar
+      li
+        h4 Featured Meeting:
+        .text-center
+          strong AAAS Annual Meeting
+          br
+          em 13-17 February, 2014
+          p Chicago Illinois
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#') Meetings Announcement
+          li: a(href='#') Meetings Calendar
+          //-
+            li.break
+            li: a(href='#')
+              | Submit your event 
+              i.fa.fa-angle-right
+      .col-sm-9
+        .panel
+          .panel-body
+            .row.equal-height.pipe
+              .col-sm-6
+                h3 Featured Meeting
+                p
+                  | AAAS Annual Meeting
+                  br
+                  | 13-17 February, 2014
+                  br
+                  | Chicago, Illinois
+                a(href='#')
+                  | More Information 
+                  i.fa.fa-angle-right
+              .col-sm-6
+                .pipe-left
+                  .center-image(style='height: 115px;')
+                    img(src='/img/featured-meeting-logo_300x100.png')

@@ -1,0 +1,45 @@
+section#portal-banner.container
+  .row
+    #portal-top
+      .portal-bg(style='background-image:url("/img/bg.portal-header-1.jpg");')
+        img(src='/img/bg.portal-header-1.jpg', alt='Portal Header Image - Desktop').hidden-xs.hidden-sm
+        img(src='/img/bg.portal-header-1-tablet.jpg', alt='Portal Header Image - Tablet').visible-sm
+        img(src='/img/bg.portal-header-1-mobile.jpg', alt='Portal Header Image - Mobile').visible-xs
+      
+      header#portal-header
+        h1.portal_title Climate Change
+        .aaas_badge
+          | Sponsored by<span> AAAS</span>
+          img(src='/img/brand-small.png', alt='AAAS - American Association for the Advancement of Science').hidden-xs
+
+
+    nav#portal-navbar.aqua
+      
+      a(role="button", data-toggle="collapse", href="#portal-nav", aria-expanded="false", aria-controls="portal-nav").dropdown-toggle.collapsed.visible-xs
+        | Topic Home
+        i.fa.fa-plus
+        i.fa.fa-minus
+        
+      #portal-nav.collapse.navbar-collapse
+        // Mobile Navigation
+        ul.nav.nav-stacked.visible-xs
+          li: a(href='#') Topic Home
+          li: a(href='#') Breaking News
+          li: a(href='#') Multimedia
+          li: a(href='#') Search
+          li.bold: a(href='#') Subscribe
+
+        // Desktop Navigation
+        .hidden-xs
+          ul.nav.nav-justified
+            li.active: a(href='#') Topic Home
+            li: a(href='#') Breaking News
+            li: a(href='#') Multimedia
+            li: a(href='#') Subscribe
+            li
+              form(role='search').navbar-form
+                .input-group
+                  input(type='text', placeholder='Search').form-control
+                  span.input-group-btn
+                    button(type='button')#search-btn-2.btn.btn-default
+                      i.fa.fa-search

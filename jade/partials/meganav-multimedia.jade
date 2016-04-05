@@ -1,0 +1,41 @@
+ul.dropdown-menu
+
+  // Mobile Navigation
+  li.visible-xs
+    ul.nav.navbar-nav
+      li: a(href='#')
+        strong All multimedia
+      li: a(href='#') Images
+      li: a(href='#') Video
+      li: a(href='#') Audio
+      li: a(href='#')
+        strong Search multimedia
+  
+  // Desktop Navigation
+  li.hidden-xs.full-height
+    .container.equal-height.full-height.pipe
+      .col-sm-3
+        ul.nav.nav-stacked.primary
+          li: a(href='#').btn
+            | All Multimedia 
+            i.fa.fa-angle-right.pull-right
+          li.break
+          li: a(href='#') Search Multimedia
+      .col-sm-3
+        a(href='#').thumbnail
+          img(src='/img/browse-images_195x121.jpg')
+          div.title
+            | Images 
+            i.fa.fa-angle-right
+      .col-sm-3
+        a(href='#').thumbnail
+          img(src='/img/browse-video_195x121.jpg')
+          div.title
+            | Video 
+            i.fa.fa-angle-right
+      .col-sm-3
+        a(href='#').thumbnail
+          img(src='/img/browse-audio_195x121.jpg')
+          div.title
+            | Audio 
+            i.fa.fa-angle-right

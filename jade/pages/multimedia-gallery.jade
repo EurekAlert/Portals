@@ -1,0 +1,174 @@
+block variables
+  -var active = 'multimedia'
+  -var title = 'Browse All Multimedia'
+  -var bodyClass = 'gray'
+  -var loggedIn = false
+  -var user = null
+
+extends ../layout
+
+block body
+  include ../partials/header
+  #content(role='main').container
+    h1.page_title
+      small.red Multimedia
+      | Browse All Multimedia
+    .toolbar.multimedia-toolbar
+      .pull-left
+        a(href='#').search-sub-mobile.btn.visible-xs
+          i.fa.fa-search
+          | &nbsp;Search
+        form(role='search').search-sub.pull-left.hidden-xs
+          .input-group
+            input(type='text', placeholder='SEARCH ALL MULTIMEDIA').form-control
+            span.input-group-btn
+              button(type='button').search-sub-btn.btn.btn-default
+                i.fa.fa-search
+          a(href='#').advanced-search Advanced Search
+      .pull-right
+        .btn-group(data-toggle='buttons').pull-right
+          label.btn.btn-default
+            input(type='radio', name='view', id='titles')
+            | Photos
+          label.btn.btn-default
+            input(type='radio', name='view', id='titles')
+            | Video
+          label.btn.btn-default
+            input(type='radio', name='view', id='titles')
+            | Audio
+          label.btn.btn-default.active
+            input(type='radio', name='view', id='summaries', checked)
+            | All
+    section.multimedia-gallery
+      .row
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81011_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | The Doppler-On-Wheels on the Road
+                  small National Sciene Foundation
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81015_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Researchers Measuring Hemoglobin Levels in Children
+                  small Wildlife Conservation Society
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81125_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | LiCoO2
+                  small American Institute of Physics
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81162_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Diatom Algae Populations Tell a Story about Climate Change in Greenland
+                  small DOE/Los Alamos National Laboratory
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81188_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Study challenges soil testing for potassium and the fertilizer value of potassium chloride
+                  small University of Illinois College of Agriculture and Environmental Sciences
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81211_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Solvation Snapshots
+                  small American Institute of Physics
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.video
+          a(href='#')
+            .label
+              i.fa.fa-play
+              | Video
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81221_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | TRMM Flyby of Melissa 
+                  b.label-type (Video)
+                  small NASA/Goddard Space Flight Center
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81257_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | MODIS Image of Melissa
+                  small NASA/Goddard Space Flight Center
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81269_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | TRMM Image of Melissa
+                  small NASA/Goddard Space Flight Center
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81262_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Cyclone 04B Seen by TRMM
+                  small NASA/Goddard Space Flight Center
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.photo
+          a(href='#')
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81307_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | New Imaging Research shows Increased Iron in the Brain in Earliest Stages of Multiple Sclerosis
+                  small University of Maryland School of Medicine
+        article.multimedia-item.col-md-3.col-sm-4.col-xs-6.audio
+          a(href='#')
+            .label
+              i.fa.fa-play
+              | Audio
+            figure
+              .center-image
+                img(src='http://media.eurekalert.org/multimedia_prod/pub/web/81281_web.jpg')
+              figcaption.multimedia_card
+                h3
+                  | Hearing Test: Babble (Without Algorithm) 
+                  b.label-type (Audio)
+                  small Ohio State University
+      
+      //- Pagination
+      .text-center
+        ul.pagination
+          li.active: a(href='#') 1
+          li: a(href='#') 2
+          li: a(href='#') 3
+          li: a(href='#')
+            i.fa.fa-angle-right
+
+block scripts
+  script.
+    $(document).ready(function() {
+
+    });

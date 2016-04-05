@@ -1,0 +1,42 @@
+footer#footer
+  .container
+    .row
+      .col-sm-5.col-sm-push-7
+        a(href='/').logo
+          //- img(src='/img/logo.png', alt='EurekAlert! The Global Source for Science News').image-hidden-xs
+          img(src='/img/logo-footer.png', alt='EurekAlert! The Global Source for Science News')
+        a(href='http://aaas.org', target='_blank').brand
+          img(src='/img/brand.png', alt='AAAS - American Association for the Advancement of Science')
+        p.copy.hidden-xs Copyright &copy; 2014 by the American Association for the Advancement of Science (AAAS)
+      .col-sm-7.col-sm-pull-5
+        .row
+          .col-sm-6
+            ul.list-unstyled
+              li: a(href='#')
+                i.fa.fa-rss
+                | Breaking News RSS Feed
+              li: a(href='#')
+                i.fa.fa-eurekalert
+                | All EurekAlert! RSS Feeds
+              li: a(href='#')
+                i.fa.fa-twitter
+                | @EurekAlertAAAS
+              li: a(href='#')
+                i.fa.fa-facebook
+                | facebook.com/EurekAlert
+          .col-sm-6
+            hr.visible-xs
+            ul.list-unstyled.stack-5
+              li: a(href='#') Help / FAQ
+              li: a(href='#') Disclaimer
+              li: a(href='#') Privacy Policy
+              li: a(href='#') Terms &amp; Conditions
+              li: a(href='#') Contact EurekAlert!
+            hr.visible-xs
+            p.copy.visible-xs
+              | Copyright &copy; 2014 by the American Association for the Advancement of Science (AAAS)
+              br
+              if active !== 'home'
+                a(href='/') home
+                | &nbsp;|&nbsp;
+              a(href='#') Visit Desktop Site
