@@ -319,9 +319,6 @@ h1.portal_title {
   font-size: 12px;
   line-height: 17px;
 }
-.remove {
-  display: none !important;
-}
 .thumbnail {
   padding: 0;
   background: none;
