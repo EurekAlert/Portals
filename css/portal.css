@@ -39,6 +39,9 @@ h1.portal_title {
 #navigation-minimal.logged-in .navbar-toggle span.icon-bar {
   background-color: #ffdb3d;
 }
+#navigation-minimal.logged-in .navbar-nav li a {
+  color: #ffdb3d;
+}
 #navigation-minimal .mega-dropdown {
   float: right;
 }
