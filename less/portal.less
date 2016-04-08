@@ -317,19 +317,19 @@ h1.portal_title {
   }
 	
 	 &.red {
-    background: @gray-darker;
+    background: @lightGray;
 
     .dropdown-toggle {
-      color: @footerHoverText;
-      background: darken(@gray-darker, 5%);
+      color: @bgGray;
+      background: darken(@lightGray, 15%);
 
       &:hover {
-        color: @footerHoverText;
+        color: @white;
       }
 
       &.collapsed {
         color: @white;
-        background: @gray-darker;
+        background: @lightGray;
 
         &:hover {
           color: @white;
@@ -338,45 +338,44 @@ h1.portal_title {
     }
 		
 		 #portal-nav ul li a {
-			 color:@white;
+			 color:@bgGray;
 			 &:hover {
-				 color: darken(@white,25%);
+				 color: lighten(@bgGray,25%);
 			 }
 		 }
 		 
-		  #portal-nav {
-    ul {
-      padding: 10px 0;
-      
-      li {
-        border-top: none;
-        border-left: 1px solid @white;
-				&:first-child {
-          border-left: none;
-        }
-			}
-			}
-		 }
+//		  #portal-nav {
+//    ul {
+//     
+//     
+//      li {
+//        border-left: 1px solid @bgGray;
+//				&:first-child {
+//          border-left: none;
+//        }
+//			}
+//			}
+//		 }
 		 
   }
 	
 	&.marine {
-    background: #0a8cbf;
+    background: #6d8957;
 
     .dropdown-toggle {
       color: @footerHoverText;
-      background: darken(#0a8cbf, 85%);
+      background: darken(#6d8957, 15%);
 
       &:hover {
         color: @footerHoverText;
       }
 
       &.collapsed {
-        color: @black;
-        background: #0a8cbf;
+        color: @white;
+        background: #6d8957;
 
         &:hover {
-          color: @black;
+          color: darken(@white,15%);
         }
       }
     }
@@ -416,6 +415,9 @@ h1.portal_title {
           background: none;
         }
       }
+			&.active {
+				font-weight:bold;
+			}
     }
   }
 
@@ -657,6 +659,7 @@ ul.nav.navbar-nav li a{
         }
 
         &.active {
+					font-weight: bold;
           &:after {
             content: '';
             display: block;
@@ -674,6 +677,7 @@ ul.nav.navbar-nav li a{
       }
     }
   }
+
 
   .portal-articles {
     .trending {
