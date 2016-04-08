@@ -259,6 +259,9 @@ h1.portal_title {
 #portal-nav ul li a:focus {
   background: none;
 }
+#portal-nav ul li.active {
+  font-weight: bold;
+}
 #portal-nav .navbar-form {
   position: relative;
   top: -2px;
@@ -441,6 +444,9 @@ ul.nav.navbar-nav li a {
   }
   #portal-nav ul li:first-child {
     border-left: none;
+  }
+  #portal-nav ul li.active {
+    font-weight: bold;
   }
   #portal-nav ul li.active:after {
     content: '';

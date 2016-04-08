@@ -185,54 +185,44 @@ h1.portal_title {
   color: #ffffff;
 }
 #portal-navbar.red {
-  background: #222222;
+  background: #b9babc;
 }
 #portal-navbar.red .dropdown-toggle {
-  color: #C3C3C3;
-  background: #161616;
+  color: #f1f1f1;
+  background: #929397;
 }
 #portal-navbar.red .dropdown-toggle:hover {
-  color: #C3C3C3;
+  color: #ffffff;
 }
 #portal-navbar.red .dropdown-toggle.collapsed {
   color: #ffffff;
-  background: #222222;
+  background: #b9babc;
 }
 #portal-navbar.red .dropdown-toggle.collapsed:hover {
   color: #ffffff;
 }
 #portal-navbar.red #portal-nav ul li a {
-  color: #ffffff;
+  color: #f1f1f1;
 }
 #portal-navbar.red #portal-nav ul li a:hover {
-  color: #bfbfbf;
-}
-#portal-navbar.red #portal-nav ul {
-  padding: 10px 0;
-}
-#portal-navbar.red #portal-nav ul li {
-  border-top: none;
-  border-left: 1px solid #ffffff;
-}
-#portal-navbar.red #portal-nav ul li:first-child {
-  border-left: none;
+  color: #ffffff;
 }
 #portal-navbar.marine {
-  background: #0a8cbf;
+  background: #6d8957;
 }
 #portal-navbar.marine .dropdown-toggle {
   color: #C3C3C3;
-  background: #000000;
+  background: #485a39;
 }
 #portal-navbar.marine .dropdown-toggle:hover {
   color: #C3C3C3;
 }
 #portal-navbar.marine .dropdown-toggle.collapsed {
-  color: #000000;
-  background: #0a8cbf;
+  color: #ffffff;
+  background: #6d8957;
 }
 #portal-navbar.marine .dropdown-toggle.collapsed:hover {
-  color: #000000;
+  color: #d9d9d9;
 }
 #portal-navbar.marine #portal-nav ul li a {
   color: #ffffff;
@@ -261,6 +251,9 @@ h1.portal_title {
 }
 #portal-nav ul li a:focus {
   background: none;
+}
+#portal-nav ul li.active {
+  font-weight: bold;
 }
 #portal-nav .navbar-form {
   position: relative;
@@ -441,6 +434,9 @@ ul.nav.navbar-nav li a {
   }
   #portal-nav ul li:first-child {
     border-left: none;
+  }
+  #portal-nav ul li.active {
+    font-weight: bold;
   }
   #portal-nav ul li.active:after {
     content: '';
