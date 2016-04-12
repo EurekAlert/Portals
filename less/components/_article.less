@@ -33,6 +33,7 @@
     &.single {
       .center-image {
         background: @white;
+				border: 1px solid #b9babc;
         padding: 10px;
       }
 
@@ -96,7 +97,9 @@
             font-weight: 600;
 
             &:hover,
-            &:active {
+            &:active,
+						&:visited {
+							//4/11/16
               color: #aaaaaa;
             }
           }
@@ -127,12 +130,12 @@
   }
 
   .entry {
+		font-size: 14px;
+    line-height: 23px;
+    color: @gray;
     p {
       margin-top: 5px;  
 			margin-bottom: 15px;
-      font-size: 14px;
-      line-height: 23px;
-      color: @gray;
     }
   }
 

@@ -9,7 +9,7 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('http://beta01.eurekalert.org/css/vendor/boxsizing.htc');
+  *behavior: url('http://www.eurekalert.org/css/vendor/boxsizing.htc');
 }
 html {
   min-height: 100%;
@@ -32,9 +32,6 @@ body.gray {
 p.sub {
   color: #4f4f4f;
 }
-p.fixed-height {
-  min-height: 120px;
-}
 p.sub-minor {
   color: #696969;
   font-size: 12.75px;
@@ -55,7 +52,7 @@ img.contain {
 }
 img.img-circle {
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 ::-moz-selection {
   background: #dddddd;
@@ -74,17 +71,23 @@ h1.page_title {
   margin: 25px 0;
   letter-spacing: -0.34px;
 }
-h1.page_title small {
+/* Replaces h1.page_title small, which is messing up Google results 4/11/16 */
+.release_date {
   display: block;
   text-transform: uppercase;
   color: #333333;
   font-size: 12.5px;
   font-weight: 600;
   letter-spacing: normal;
-  margin-bottom: 10px;
+  margin-top: 23px;
+  margin-bottom: -18px;
 }
-h1.page_title small.red {
+.release_date.red {
   color: #dc0002;
+}
+.release_date.lite {
+  color: #333333;
+  font-weight: 400;
 }
 h2 {
   font-weight: 500;
@@ -209,7 +212,7 @@ hr.trending {
 .fa-eurekalert:before {
   content: '';
   display: block;
-  background: url('http://beta01.eurekalert.org/img/icn.eurekalert.png');
+  background: url('http://www.eurekalert.org/images/e4/icn.eurekalert.png');
   width: 13px;
   height: 13px;
   -webkit-background-size: 13px 13px;
@@ -305,7 +308,7 @@ hr.trending {
   border-color: #0088cc;
   color: #0088cc;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .pagination > li a:hover {
   border-color: #0088cc;
@@ -324,7 +327,7 @@ hr.trending {
 /*-----Navigation-----*/
 .navbar {
   border: none;
-  background: #cb2121 url('http://beta01.eurekalert.org/img/bg.header-mobile.png') center center no-repeat;
+  background: #cb2121 url('http://www.eurekalert.org/images/e4/bg.header-mobile.png') center center no-repeat;
   margin-bottom: 0;
   min-height: 40px;
 }
@@ -403,7 +406,7 @@ hr.trending {
   font-weight: 600;
   border-radius: 4px 0 0 4px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 #search .form-control::-webkit-input-placeholder {
   text-transform: uppercase;
@@ -433,7 +436,7 @@ hr.trending {
   background: #f1f1f1;
   font-size: 17px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
   border-radius: 0 4px 4px 0;
 }
 #search #search-btn:hover {
@@ -513,7 +516,7 @@ hr.trending {
   border: none;
   border-bottom: 1px solid #90B8D0;
   border-radius: 0;
-  background: transparent url('http://beta01.eurekalert.org/img/bg.meganav-o.png') top center repeat;
+  background: transparent url('http://www.eurekalert.org/images/e4/bg.meganav-o.png') top center repeat;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -632,7 +635,7 @@ hr.trending {
   text-align: left;
   margin-left: -10px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .nav > li.mega-dropdown .nav-stacked .btn.btn-primary {
   background: #ffffff;
@@ -676,7 +679,7 @@ hr.trending {
   -webkit-box-shadow: none;
   box-shadow: none;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .nav > li.mega-dropdown .panel a {
   display: block;
@@ -848,7 +851,8 @@ hr.trending {
   font-style: italic;
   font-size: 11px;
 }
-.article-links li a .calendar-links li a:visited {
+/* Override visited state for calendar links */
+.calendar-links li a:visited {
   color: #333333 !important;
 }
 /*-----Individual Article Links-----*/
@@ -904,7 +908,7 @@ b.label-type {
   border-color: #909090;
   max-width: 100%;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .toolbar select:focus {
   border-color: #909090;
@@ -923,7 +927,7 @@ b.label-type {
   font-weight: 500;
   text-transform: uppercase;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -970,7 +974,7 @@ b.label-type {
   border-right: none;
   font-size: 12px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .search-sub .form-control:before,
 .search-sub .form-control:after {
@@ -984,7 +988,7 @@ b.label-type {
   border-color: #909090;
   border-left: none;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .search-sub .search-sub-btn:hover,
 .search-sub .search-sub-btn:active,
@@ -1005,9 +1009,6 @@ b.label-type {
   position: relative;
   margin-bottom: 15px;
   overflow: hidden;
-}
-.trending:first-child {
-  padding-top: 0;
 }
 .trending a {
   display: block;
@@ -1033,6 +1034,9 @@ b.label-type {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
+.trending a:visited header h2 {
+  color: #888888;
+}
 .trending .thumb {
   position: absolute;
   right: 0;
@@ -1051,10 +1055,6 @@ b.label-type {
   font-size: 14px;
   margin: 0;
 }
-.trending header .meta_institute {
-  font-size: 12px;
-  line-height: 17px;
-}
 .trending.has-thumb {
   min-height: 50px;
 }
@@ -1063,7 +1063,7 @@ b.label-type {
 }
 .trending.highlight {
   border: 1px solid #ccc;
-  height: 130px;
+  height: 150px;
 }
 .trending.highlight header {
   padding: 20px;
@@ -1112,13 +1112,18 @@ b.label-type {
 .trending.photo a:hover header p.meta_institute {
   color: #c3c3c3;
 }
+.trending.photo a:visited header h2 {
+  color: #c3c3c3;
+}
+.trending.photo a:visited header p.meta_institute {
+  color: #c3c3c3;
+}
 .trending.featured img {
   display: block;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  border: 1px solid #b9babc;
 }
 .trending.featured header {
   padding: 0;
@@ -1182,10 +1187,10 @@ b.label-type {
   padding: 18px 0;
   color: #333333;
 }
-.post a header .div.reltime {
+.post a header div.reltime {
   margin-bottom: 2px;
 }
-.post a header .small.meta_date {
+.post a header small.meta_date {
   color: #aaaaaa;
   letter-spacing: -0.28px;
   font-size: 11px;
@@ -1208,6 +1213,10 @@ b.label-type {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
+}
+.post a:hover header h2.post_title,
+.post a:visited header h2.post_title {
+  color: #888888;
 }
 .post a .entry p.intro {
   color: #505050;
@@ -1342,7 +1351,7 @@ dl.meta.stacked dd.red {
   box-shadow: none;
   border: none;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .next-date .panel .panel-body,
 .archive-search-box .panel .panel-body {
@@ -1356,7 +1365,7 @@ dl.meta.stacked dd.red {
   width: 42px;
   height: 131px;
   margin-top: -65px;
-  background: transparent url('http://beta01.eurekalert.org/img/next-day-chevron_84x232.png') 0 0 no-repeat;
+  background: transparent url('http://www.eurekalert.org/images/e4/next-day-chevron_84x232.png') 0 0 no-repeat;
   background-size: 42px 131px;
 }
 .next-date h2,
@@ -1379,7 +1388,7 @@ dl.meta.stacked dd.red {
   background: none;
 }
 .next-date:hover .panel i.arrow {
-  background-image: url('http://beta01.eurekalert.org/img/next-day-chevron_84x232-hover.png');
+  background-image: url('http://www.eurekalert.org/images/e4/next-day-chevron_84x232-hover.png');
 }
 .archive-search-box .panel .panel-body {
   padding: 30px;
@@ -1387,7 +1396,7 @@ dl.meta.stacked dd.red {
 .archive-search-box .search-sub .form-control {
   border-color: #aaaaaa;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .archive-search-box .search-sub .form-control::-webkit-input-placeholder {
   color: #aaaaaa;
@@ -1409,7 +1418,7 @@ dl.meta.stacked dd.red {
 .archive-search-box .search-sub .search-sub-btn {
   border-color: #aaaaaa;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .archive-search-box .search-sub .search-sub-btn i.fa {
   color: #aaaaaa;
@@ -1546,6 +1555,7 @@ dl.meta.stacked dd.red {
 }
 .article .featured_image.single .center-image {
   background: #ffffff;
+  border: 1px solid #b9babc;
   padding: 10px;
 }
 .article .featured_image.single img {
@@ -1597,7 +1607,8 @@ dl.meta.stacked dd.red {
   font-weight: 600;
 }
 .article .featured_image .details .well.yellow a:hover,
-.article .featured_image .details .well.yellow a:active {
+.article .featured_image .details .well.yellow a:active,
+.article .featured_image .details .well.yellow a:visited {
   color: #aaaaaa;
 }
 .article .toolbar {
@@ -1617,12 +1628,14 @@ dl.meta.stacked dd.red {
   font-weight: 400;
   color: #aaaaaa;
 }
-.article .entry p {
-  margin-top: 5px;
-  margin-bottom: 15px;
+.article .entry {
   font-size: 14px;
   line-height: 23px;
   color: #333333;
+}
+.article .entry p {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 .article .thumbnail {
   width: 288px;
@@ -1791,11 +1804,11 @@ dl.meta.stacked dd.red {
 #sidebar-content .widget .sponsored_content header p.meta_institute {
   color: #ffffff;
 }
-#sidebar-content .widget .sponsored_content div.sponsored_content_whatsthis {
+#sidebar-content .widget .sponsored_content div .sponsored_content_whatsthis {
   width: 300px;
   margin: 10px auto;
 }
-#sidebar-content .widget .sponsored_content div.sponsored_content_whatsthis a {
+#sidebar-content .widget .sponsored_content div .sponsored_content_whatsthis a {
   font-style: italic;
   color: #888888;
 }
@@ -1824,7 +1837,7 @@ dl.meta.stacked dd.red {
   font-size: 15px;
   text-align: left;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .subject-links .btn.btn-red {
   border-color: transparent;
@@ -1846,7 +1859,7 @@ dl.meta.stacked dd.red {
   border-radius: 3px;
   padding: 7px 15px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 .subject-links .nav li a:hover {
   background: #ffffff;
@@ -2022,7 +2035,7 @@ a.view-all {
   text-transform: uppercase;
   border: 1px solid;
   border-radius: 3px;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 a.multimedia {
   -webkit-border-radius: 0;
@@ -2130,9 +2143,16 @@ a.multimedia.active:hover {
 a.multimedia.active:hover .desc {
   color: #aaaaaa;
 }
-.mm_sidebar {
+a.multimedia .mm_sidebar {
   font-size: 14px;
   color: #333333;
+}
+a.multimedia .mm_sidebar span {
+  font-size: 10px;
+  color: #aaaaaa;
+  display: block !important;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .widget .portal {
   text-align: center;
@@ -2296,10 +2316,6 @@ a.multimedia.active:hover .desc {
   body {
     background: #f1f1f1;
   }
-  hr.minor {
-    height: 2px;
-    background: #f1f1f1;
-  }
   h1.page_title {
     margin: 25px 0;
   }
@@ -2406,7 +2422,7 @@ a.multimedia.active:hover .desc {
     text-transform: none;
     border: none;
     border-radius: 0;
-    behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+    behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
   }
   .next-date,
   .archive-search-box {
@@ -2414,28 +2430,13 @@ a.multimedia.active:hover .desc {
     margin: 50px 0;
     border: 1px solid #aaaaaa;
     z-index: 0;
-    behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+    behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
   }
   .next-date:hover {
     border-color: #08a3f1;
   }
   .next-date:hover .panel {
     background: #ecf4f8;
-  }
-  .trending {
-    position: relative;
-    margin: 0 0 15px;
-    padding: 0;
-    border-bottom: none;
-    overflow: hidden;
-  }
-  .trending header h2 {
-    font-size: 14px;
-    line-height: 1.1;
-  }
-  .trending header .meta_institute {
-    font-size: 10px;
-    line-height: 14px;
   }
   .article .featured_image {
     margin-left: 0;
@@ -2469,19 +2470,6 @@ a.multimedia.active:hover .desc {
   }
   .multimedia-item a .multimedia_card h3 {
     margin: 15px 0 0;
-  }
-  .article-links li a {
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .article-links li a.hero {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .article-links li a span,
-  .article-links li a p.meta_institute {
-    font-size: 10px;
-    line-height: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2546,10 +2534,10 @@ a.multimedia.active:hover .desc {
 }
 @media (min-width: 992px) {
   body {
-    background: #f1f1f1 url('http://beta01.eurekalert.org/img/bg.gradient.png') 0 50px repeat-x;
+    background: #f1f1f1 url('http://www.eurekalert.org/images/e4/bg.gradient.png') 0 50px repeat-x;
   }
   .navbar {
-    background: #cb2121 url('http://beta01.eurekalert.org/img/bg.header.png') center center no-repeat;
+    background: #cb2121 url('http://www.eurekalert.org/images/e4/bg.header.png') center center no-repeat;
   }
   h2.subhead {
     text-align: left;
@@ -2572,6 +2560,9 @@ a.multimedia.active:hover .desc {
     border: 1px solid #b9babc;
     background: #ffffff;
     padding: 4px;
+  }
+  .post a.has-thumb {
+    min-height: 125px;
   }
   .post a.has-thumb header,
   .post a.has-thumb .entry,
@@ -2596,7 +2587,8 @@ a.multimedia.active:hover .desc {
   .article .featured_image img {
     max-height: 600px;
   }
-  .article-tools a.btn {
+  .article-tools a.btn,
+  .social-share a.btn {
     font-size: 12px;
   }
   #content {
@@ -2617,13 +2609,13 @@ a.multimedia.active:hover .desc {
     height: 150px;
   }
   .multimedia-item.photo .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-photo.jpg') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-photo.jpg') right bottom no-repeat;
   }
   .multimedia-item.video .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-video.jpg') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-video.jpg') right bottom no-repeat;
   }
   .multimedia-item.audio .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-audio.jpg') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-audio.jpg') right bottom no-repeat;
   }
   .trending.photo,
   .trending.highlight {
@@ -2632,15 +2624,15 @@ a.multimedia.active:hover .desc {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 992px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 992px), only screen and (min-device-pixel-ratio: 2) and (min-width: 992px), only screen and (min-resolution: 192dpi) and (min-width: 992px), only screen and (min-resolution: 2dppx) and (min-width: 992px) {
   .multimedia-item.photo .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-photo@2x.png') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-photo@2x.png') right bottom no-repeat;
     background-size: 170px 100px;
   }
   .multimedia-item.video .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-video@2x.png') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-video@2x.png') right bottom no-repeat;
     background-size: 170px 100px;
   }
   .multimedia-item.audio .multimedia_card {
-    background: url('http://beta01.eurekalert.org/img/bg.media-audio@2x.png') right bottom no-repeat;
+    background: url('http://www.eurekalert.org/images/e4/bg.media-audio@2x.png') right bottom no-repeat;
     background-size: 170px 100px;
   }
 }

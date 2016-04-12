@@ -275,7 +275,7 @@ h1.portal_title {
   font-weight: 600;
   border-radius: 4px 0 0 4px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
 }
 #portal-nav .navbar-form .form-control::-webkit-input-placeholder {
   color: #b9babc;
@@ -301,7 +301,7 @@ h1.portal_title {
   background: #f1f1f1;
   font-size: 17px;
   z-index: 0;
-  behavior: url('http://beta01.eurekalert.org/css/vendor/pie/PIE.htc');
+  behavior: url('http://www.eurekalert.org/css/vendor/pie/PIE.htc');
   border-radius: 0 4px 4px 0;
 }
 #portal-nav .navbar-form #search-btn-2:hover {
@@ -359,7 +359,7 @@ a.callout h3 i.fa.orange {
   border: 1px solid #b9babc;
   margin: 0 auto -15px;
   padding: 20px;
-  background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
+  background: transparent url('http://www.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
   background-size: cover;
   max-width: 285px;
 }
@@ -455,7 +455,7 @@ ul.nav.navbar-nav li a {
     margin: 0 0 25px;
   }
   .newsletter {
-    background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg-tablet.jpg') center center no-repeat;
+    background: transparent url('http://www.eurekalert.org/img/newsletter-bg-tablet.jpg') center center no-repeat;
     margin: -20px -20px -35px;
     padding: 40px 80px;
     max-width: none;
@@ -475,7 +475,7 @@ ul.nav.navbar-nav li a {
     margin: -8px -8px -23px;
   }
   .newsletter {
-    background: transparent url('http://beta01.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
+    background: transparent url('http://www.eurekalert.org/img/newsletter-bg.jpg') center center no-repeat;
     margin: -8px -8px -23px;
     padding: 20px;
     border: 1px solid #b9babc;

@@ -100,9 +100,9 @@ p {
     color: @textGray;
   }
 
-  &.fixed-height {
-    min-height: 120px;
-  }
+//  &.fixed-height {
+//    min-height: 120px;
+//  }
 
   &.sub-minor {
     color: #696969;
@@ -163,22 +163,28 @@ h1 {
     color: @gray;
     margin: 25px -0;
     letter-spacing: -0.34px;
-
-    small {
-      display: block;
-      text-transform: uppercase;
-      color: @gray;
-      font-size: 12.5px;
-      font-weight: 600;
-      letter-spacing: normal;
-      margin-bottom: 10px;
-
-      &.red {
-        color: @red;
-      }
-    }
   }
 }
+
+/* Replaces h1.page_title small, which is messing up Google results 4/11/16 */ 
+.release_date {
+	display: block;
+  text-transform: uppercase;
+  color: @gray;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: normal;
+	margin-top: 23px;
+  margin-bottom: -18px;
+	&.red {
+        color: @red;
+      }
+	&.lite {
+		color: @gray;
+		font-weight:400;
+	}
+}
+
 
 h2 {
   font-weight: 500;
@@ -320,7 +326,7 @@ hr {
   &:before {
     content: '';
     display: block;
-		background: url('@{base-url}/img/icn.eurekalert.png');
+		background: url('@{base-url}/images/e4/icn.eurekalert.png');
     width: 13px;
     height: 13px;
     -webkit-background-size: 13px 13px;

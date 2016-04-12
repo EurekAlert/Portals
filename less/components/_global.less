@@ -132,14 +132,13 @@
           font-style: italic;
           font-size: 11px;
         }
-      }
-			
-			.calendar-links li a:visited {
-				color: #333333 !important;
-			}
-			
+      }	
     }
   }
+}
+/* Override visited state for calendar links */
+.calendar-links li a:visited {
+  color: #333333 !important;
 }
 
 /*-----Individual Article Links-----*/
@@ -153,13 +152,13 @@ a.article-link {
       color: #aaaaaa;
     }
   }
-}
-
-a.article-link:visited {
-	h2 {
+	&:visited {
+		h2 {
 		color: #aaaaaa;
+	}	
 	}
 }
+
 
 /*-----View Links-----*/
 

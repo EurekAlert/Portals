@@ -124,13 +124,13 @@
   body {
     background: @bgGray;
   }
-
-  hr {
-    &.minor {
-      height: 2px;
-      background: @bgGray;
-    }
-  }
+//4/16/11 Reconcilation
+//  hr {
+//    &.minor {
+//      height: 2px;
+//      background: @bgGray;
+//    }
+//  }
 
 
   h1 {
@@ -318,26 +318,26 @@
       background: #ecf4f8;
     }
   }
-
-  .trending {
-  position: relative;
-  margin: 0 0 15px;
-  padding: 0;
-  border-bottom: none;
-  overflow: hidden;
-
-  header {
-    h2 {
-      font-size: 14px;
-      line-height: 1.1;
-    }
-
-    .meta_institute {
-      font-size: 10px;
-      line-height: 14px;
-    }
-  }
-}
+// 4/11/16 Reconciliation
+//  .trending {
+//  position: relative;
+//  margin: 0 0 15px;
+//  padding: 0;
+//  border-bottom: none;
+//  overflow: hidden;
+//
+//  header {
+//    h2 {
+//      font-size: 14px;
+//      line-height: 1.1;
+//    }
+//
+//    .meta_institute {
+//      font-size: 10px;
+//      line-height: 14px;
+//    }
+//  }
+//}
 
   .article {
     .featured_image {
@@ -387,25 +387,26 @@
     }
   }
 
-  .article-links {
-    li {
-      a {
-        font-size: 14px;
-        line-height: 17px;
-
-        &.hero {
-          font-size: 20px;
-          line-height: 24px;
-        }
-
-        span,
-        p.meta_institute {
-          font-size: 10px;
-          line-height: 14px;
-        }
-      }
-    }
-  }
+	// 4/11/16 Reconiliation
+//  .article-links {
+//    li {
+//      a {
+//        font-size: 14px;
+//        line-height: 17px;
+//
+//        &.hero {
+//          font-size: 20px;
+//          line-height: 24px;
+//        }
+//
+//        span,
+//        p.meta_institute {
+//          font-size: 10px;
+//          line-height: 14px;
+//        }
+//      }
+//    }
+//  }
 
 }
 
@@ -500,11 +501,11 @@
 @media (min-width: @screen-md-min) {
   
   body {
-		background: @bgGray url('@{base-url}/img/bg.gradient.png') 0 50px repeat-x;
+		background: @bgGray url('@{base-url}/images/e4/bg.gradient.png') 0 50px repeat-x;
   }
 
   .navbar {
-		background: @navRed url('@{base-url}/img/bg.header.png') center center no-repeat;
+		background: @navRed url('@{base-url}/images/e4/bg.header.png') center center no-repeat;
   }
 
   h2 {
@@ -542,6 +543,7 @@
       }
 
       &.has-thumb {
+				min-height:125px;
         header,
         .entry,
         dl.meta {
@@ -577,9 +579,10 @@
     }
   }
 	
-	.article-tools a.btn {
+	.article-tools a.btn, .social-share a.btn {
     font-size: 12px;
   }
+	
 
   #content {
     background: none;
@@ -608,19 +611,19 @@
 
     &.photo {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-photo.jpg') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-photo.jpg') right bottom no-repeat;
       }
     }
 
     &.video {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-video.jpg') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-video.jpg') right bottom no-repeat;
       }
     }
 
     &.audio {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-audio.jpg') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-audio.jpg') right bottom no-repeat;
       }
     }
   }
@@ -645,21 +648,21 @@ only screen and (min-resolution: 2dppx) and (min-width: @screen-md-min) {
   .multimedia-item {
     &.photo {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-photo@2x.png') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-photo@2x.png') right bottom no-repeat;
         background-size: 170px 100px;
       }
     }
 
     &.video {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-video@2x.png') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-video@2x.png') right bottom no-repeat;
         background-size: 170px 100px;
       }
     }
 
     &.audio {
       .multimedia_card {
-				background: url('@{base-url}/img/bg.media-audio@2x.png') right bottom no-repeat;
+				background: url('@{base-url}/images/e4/bg.media-audio@2x.png') right bottom no-repeat;
         background-size: 170px 100px;
       }
     }
