@@ -72,7 +72,7 @@ h1.page_title {
   letter-spacing: -0.34px;
 }
 /* Replaces h1.page_title small, which is messing up Google results 4/11/16 */
-.release_date {
+div.release_date {
   display: block;
   text-transform: uppercase;
   color: #333333;
@@ -82,10 +82,10 @@ h1.page_title {
   margin-top: 23px;
   margin-bottom: -18px;
 }
-.release_date.red {
+div.release_date .red {
   color: #dc0002;
 }
-.release_date.lite {
+div.release_date .lite {
   color: #333333;
   font-weight: 400;
 }
@@ -1209,14 +1209,14 @@ b.label-type {
   text-transform: uppercase;
   font-weight: 400;
 }
+.post a header:hover header h2.post_title,
+.post a header:visited header h2.post_title {
+  color: #888888;
+}
 .post a header span {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
-}
-.post a:hover header h2.post_title,
-.post a:visited header h2.post_title {
-  color: #888888;
 }
 .post a .entry p.intro {
   color: #505050;
@@ -1233,15 +1233,6 @@ b.label-type {
   background: #ffffff;
   padding: 4px;
   margin: 18px 0;
-}
-.post a:hover {
-  background: #f1f1f1;
-}
-.post a:hover header h2 .post_title {
-  color: #888888;
-}
-.post a:visited header h2 .post_title {
-  color: #888888;
 }
 .post a:active header {
   color: #888;
@@ -1804,14 +1795,6 @@ dl.meta.stacked dd.red {
 #sidebar-content .widget .sponsored_content header p.meta_institute {
   color: #ffffff;
 }
-#sidebar-content .widget .sponsored_content div .sponsored_content_whatsthis {
-  width: 300px;
-  margin: 10px auto;
-}
-#sidebar-content .widget .sponsored_content div .sponsored_content_whatsthis a {
-  font-style: italic;
-  color: #888888;
-}
 #sidebar-content .widget .article-links a .breakingnews:visited {
   color: #aaaaaa;
 }
@@ -1824,6 +1807,14 @@ dl.meta.stacked dd.red {
 #sidebar-content .widget .article-links a:hover p.meta_institute,
 #sidebar-content .widget .article-links a:active p.meta_institute {
   color: #aaaaaa;
+}
+#sidebar-content div.sponsored_content_whatsthis {
+  width: 300px;
+  margin: 10px auto;
+}
+#sidebar-content div.sponsored_content_whatsthis a {
+  font-style: italic;
+  color: #888888;
 }
 .subject-links {
   font-size: 15px;
@@ -2534,7 +2525,7 @@ a.multimedia .mm_sidebar span {
 }
 @media (min-width: 992px) {
   body {
-    background: #f1f1f1 url('http://www.eurekalert.org/images/e4/bg.gradient.png') 0 50px repeat-x;
+    background: #f1f1f1 url('http://www.eurekalert.org/images/e4/bg.gradient.png') 0 140px repeat-x;
   }
   .navbar {
     background: #cb2121 url('http://www.eurekalert.org/images/e4/bg.header.png') center center no-repeat;

@@ -167,7 +167,7 @@ h1 {
 }
 
 /* Replaces h1.page_title small, which is messing up Google results 4/11/16 */ 
-.release_date {
+div.release_date {
 	display: block;
   text-transform: uppercase;
   color: @gray;
@@ -176,10 +176,10 @@ h1 {
   letter-spacing: normal;
 	margin-top: 23px;
   margin-bottom: -18px;
-	&.red {
+	.red {
         color: @red;
       }
-	&.lite {
+	.lite {
 		color: @gray;
 		font-weight:400;
 	}
@@ -212,7 +212,7 @@ h2 {
     text-transform: uppercase;
     margin: 20px 0 15px;
     padding: 0;
-
+		// Used for Portal Page  "Featured Multimedia"
     &.secondary {
       color: @gray;
       border: none;

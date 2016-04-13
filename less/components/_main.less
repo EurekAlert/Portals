@@ -389,23 +389,24 @@
   			font-weight: 400;
 			}
 			
-
+			&:hover, 
+			&:visited {
+				header {
+					h2 {
+						&.post_title {
+						color: #888888;
+					}
+				}
+			}
+		}
+			
       span {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 12px;
       }
     }
-		&:hover, 
-		&:visited {
-			header {
-				h2 {
-					&.post_title {
-						color: #888888;
-					}
-				}
-			}
-		}
+		
 
     .entry {
       p.intro {
@@ -426,27 +427,27 @@
       padding: 4px;
       margin: 18px 0;
     }
-
-    &:hover {
-      background: @bgGray;
-			header{
-			h2{
-				.post_title {
-  				color: #888888;
-				}
-			}
-			}
-		}
-		
-		&:visited {
-			header{
-			h2{
-				.post_title {
-  				color: #888888;
-				}
-			}
-			}
-		}
+//
+//    &:hover {
+//      background: @bgGray;
+//			header{
+//			h2{
+//				.post_title {
+//  				color: #888888;
+//				}
+//			}
+//			}
+//		}
+//		
+//		&:visited {
+//			header{
+//			h2{
+//				.post_title {
+//  				color: #888888;
+//				}
+//			}
+//			}
+//		}
 
     &:active {
 
