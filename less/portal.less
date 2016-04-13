@@ -242,12 +242,12 @@ h1.portal_title {
   .aaas_badge {
     display: inline-block;
     padding: 10px 20px;
-    background: fade(@white, 30%);
+    background: fade(@black, 40%);
     color: @white;
     font-size: 11px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
 
     img {
@@ -295,11 +295,11 @@ h1.portal_title {
 
   // Color Schemes
   &.aqua {
-    background: #00a18e;
+    background: #005080;
 
     .dropdown-toggle {
       color: @footerHoverText;
-      background: darken(#00a18e, 15%);
+      background: darken(#005080, 15%);
 
       &:hover {
         color: @footerHoverText;
@@ -307,7 +307,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @white;
-        background: #00a18e;
+        background: #005080;
 
         &:hover {
           color: @white;
@@ -317,11 +317,11 @@ h1.portal_title {
   }
 	
 	 &.red {
-    background: @lightGray;
+    background: #c11726;
 
     .dropdown-toggle {
       color: @bgGray;
-      background: darken(@lightGray, 15%);
+      background: darken(#c11726, 15%);
 
       &:hover {
         color: @white;
@@ -329,7 +329,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @white;
-        background: @lightGray;
+        background: #c11726;
 
         &:hover {
           color: @white;
@@ -360,11 +360,12 @@ h1.portal_title {
   }
 	
 	&.marine {
-    background: #6d8957;
+    background: #008875;
+//		#gradient.horizontal(#c7c097, #00a18e,35%,65%);
 
     .dropdown-toggle {
       color: @footerHoverText;
-      background: darken(#6d8957, 15%);
+      background: darken(#008875, 15%);
 
       &:hover {
         color: @footerHoverText;
@@ -372,7 +373,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @white;
-        background: #6d8957;
+        background: #008875;
 
         &:hover {
           color: darken(@white,15%);
@@ -696,6 +697,10 @@ ul.nav.navbar-nav li a{
 }
 
 @media (min-width: @screen-md-min) {
+	
+	body {
+		background: @bgGray url('@{base-url}/images/e4/bg.gradient.png') 0 50px repeat-x;
+  }
 
   #navigation-minimal {
     .navbar.navbar-inverse .nav-pills > li > a {

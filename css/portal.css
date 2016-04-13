@@ -132,12 +132,12 @@ h1.portal_title {
 #portal-header .aaas_badge {
   display: inline-block;
   padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   color: #ffffff;
   font-size: 11px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 #portal-header .aaas_badge img {
@@ -168,35 +168,35 @@ h1.portal_title {
   display: block;
 }
 #portal-navbar.aqua {
-  background: #00a18e;
+  background: #005080;
 }
 #portal-navbar.aqua .dropdown-toggle {
   color: #C3C3C3;
-  background: #00554b;
+  background: #002034;
 }
 #portal-navbar.aqua .dropdown-toggle:hover {
   color: #C3C3C3;
 }
 #portal-navbar.aqua .dropdown-toggle.collapsed {
   color: #ffffff;
-  background: #00a18e;
+  background: #005080;
 }
 #portal-navbar.aqua .dropdown-toggle.collapsed:hover {
   color: #ffffff;
 }
 #portal-navbar.red {
-  background: #b9babc;
+  background: #c11726;
 }
 #portal-navbar.red .dropdown-toggle {
   color: #f1f1f1;
-  background: #929397;
+  background: #7d0f19;
 }
 #portal-navbar.red .dropdown-toggle:hover {
   color: #ffffff;
 }
 #portal-navbar.red .dropdown-toggle.collapsed {
   color: #ffffff;
-  background: #b9babc;
+  background: #c11726;
 }
 #portal-navbar.red .dropdown-toggle.collapsed:hover {
   color: #ffffff;
@@ -208,18 +208,18 @@ h1.portal_title {
   color: #ffffff;
 }
 #portal-navbar.marine {
-  background: #6d8957;
+  background: #008875;
 }
 #portal-navbar.marine .dropdown-toggle {
   color: #C3C3C3;
-  background: #485a39;
+  background: #003c33;
 }
 #portal-navbar.marine .dropdown-toggle:hover {
   color: #C3C3C3;
 }
 #portal-navbar.marine .dropdown-toggle.collapsed {
   color: #ffffff;
-  background: #6d8957;
+  background: #008875;
 }
 #portal-navbar.marine .dropdown-toggle.collapsed:hover {
   color: #d9d9d9;
@@ -463,6 +463,9 @@ ul.nav.navbar-nav li a {
   }
 }
 @media (min-width: 992px) {
+  body {
+    background: #f1f1f1 url('http://www.eurekalert.org/images/e4/bg.gradient.png') 0 50px repeat-x;
+  }
   #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
     padding: 11px 18px;
   }
