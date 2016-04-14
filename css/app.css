@@ -1735,6 +1735,10 @@ dl.meta.stacked dd.red {
   background: #f7ebff;
   border-color: #c299ff;
 }
+#sidebar-content .widget h3.widget-title.climate-feature {
+  background: rgba(236, 238, 240, 0.77);
+  border-color: #005080;
+}
 #sidebar-content .widget h4.widget-subtitle {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -2565,7 +2569,7 @@ a.multimedia .mm_sidebar span {
   }
   a.view-all {
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
   }
   .next-date .panel,
   .archive-search-box .panel {

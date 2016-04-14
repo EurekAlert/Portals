@@ -39,6 +39,11 @@ h1.portal_title {
 #navigation-minimal.logged-in .navbar-toggle span.icon-bar {
   background-color: #ffdb3d;
 }
+#navigation-minimal.logged-in .navbar-nav {
+  border: 1px solid #777777;
+  border-radius: 2px;
+  margin-right: .5px;
+}
 #navigation-minimal.logged-in .navbar-nav li a {
   color: #ffdb3d;
 }
@@ -185,7 +190,8 @@ h1.portal_title {
   color: #ffffff;
 }
 #portal-navbar.red {
-  background: #c11726;
+  background: #74624a;
+  opacity: .8;
 }
 #portal-navbar.red .dropdown-toggle {
   color: #f1f1f1;
@@ -316,9 +322,10 @@ h1.portal_title {
   line-height: 17px;
 }
 .thumbnail {
-  padding: 0;
+  padding: 20px 25px 50px 25px;
   background: none;
-  border: none;
+  border: 1px solid #b9babc;
+  border-radius: 0;
 }
 .thumbnail .img-wrapper {
   border: 1px solid #b9babc;

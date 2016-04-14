@@ -119,6 +119,10 @@ h1.portal_title {
     }
 		//Added 4/6/16
 		.navbar-nav {
+			border: 1px solid @gray-light;
+//			background: rgba(128, 128, 128, 0.24);
+			border-radius: 2px;
+			margin-right: .5px;
 			li {
 				a {
 				color: @yellow;
@@ -317,7 +321,8 @@ h1.portal_title {
   }
 	
 	 &.red {
-    background: #c11726;
+    background: #74624a;
+		opacity: .8;
 
     .dropdown-toggle {
       color: @bgGray;
@@ -500,11 +505,12 @@ h1.portal_title {
 }
 
 
-
+// 4/14/16 Changed border value (none), Changed padding value (0) 
 .thumbnail {
-  padding: 0;
+	padding: 20px 25px 50px 25px;
   background: none;
-  border: none;
+  border: 1px solid @lightGray;
+	border-radius: 0;
 
   .img-wrapper {
     border: 1px solid @lightGray;
