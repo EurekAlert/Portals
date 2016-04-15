@@ -190,19 +190,18 @@ h1.portal_title {
   color: #ffffff;
 }
 #portal-navbar.red {
-  background: #74624a;
-  opacity: .8;
+  background: #b9babc;
 }
 #portal-navbar.red .dropdown-toggle {
   color: #f1f1f1;
-  background: #7d0f19;
+  background: #9e222d;
 }
 #portal-navbar.red .dropdown-toggle:hover {
   color: #ffffff;
 }
 #portal-navbar.red .dropdown-toggle.collapsed {
   color: #ffffff;
-  background: #c11726;
+  background: #d43946;
 }
 #portal-navbar.red .dropdown-toggle.collapsed:hover {
   color: #ffffff;
@@ -322,14 +321,16 @@ h1.portal_title {
   line-height: 17px;
 }
 .thumbnail {
-  padding: 20px 25px 50px 25px;
+  margin: -30px auto -20px auto;
+  padding: 20px;
   background: none;
   border: 1px solid #b9babc;
   border-radius: 0;
+  text-transform: none;
 }
 .thumbnail .img-wrapper {
   border: 1px solid #b9babc;
-  padding: 5px;
+  margin: 15px 0;
 }
 .thumbnail img {
   display: block;
@@ -411,6 +412,9 @@ ul.nav.navbar-nav li a {
 #sidebar-content {
   margin-bottom: -99899px;
 }
+#sidebar-content h2.subhead.secondary {
+  margin: 0;
+}
 @media (min-width: 768px) {
   #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
     padding: 11px 12px;
@@ -468,6 +472,31 @@ ul.nav.navbar-nav li a {
     max-width: none;
     border: none;
   }
+  .thumbnail {
+    margin: 50px auto;
+    padding: 20px;
+    background: none;
+    border: 1px solid #b9babc;
+    border-radius: 0;
+    text-transform: none;
+  }
+  .thumbnail .img-wrapper {
+    border: 1px solid #b9babc;
+    margin: 15px 0;
+  }
+  .thumbnail img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .thumbnail .caption {
+    margin-top: 10px;
+    padding: 0;
+    color: #333333;
+  }
 }
 @media (min-width: 992px) {
   body {
@@ -475,6 +504,9 @@ ul.nav.navbar-nav li a {
   }
   #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
     padding: 11px 18px;
+  }
+  .thumbnail {
+    margin: -30px auto -20px auto;
   }
   .thumbnail .img-wrapper {
     border: none;

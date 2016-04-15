@@ -115,12 +115,23 @@ h2.subhead {
   font-weight: 600;
   color: #dc0002;
   text-transform: uppercase;
-  margin: 20px 0 15px;
+  margin: 20 0 25px 0;
   padding: 0;
 }
 h2.subhead.secondary {
   color: #333333;
   border: none;
+  border-left: 2px solid #005080;
+  padding-left: 8px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+h2.subhead.secondary.marine {
+  border-left: 2px solid #008875;
+}
+h2.subhead.secondary.cancer {
+  border-left: 2px solid #d43946;
 }
 h2.subhead.text-left {
   text-align: left;
@@ -1739,6 +1750,29 @@ dl.meta.stacked dd.red {
   background: rgba(236, 238, 240, 0.77);
   border-color: #005080;
 }
+#sidebar-content .widget h3.widget-title.climate-news {
+  background: none;
+  border-color: #005080;
+  color: #b9babc;
+}
+#sidebar-content .widget h3.widget-title.marine-feature {
+  background: rgba(236, 238, 240, 0.77);
+  border-color: #008875;
+}
+#sidebar-content .widget h3.widget-title.marine-news {
+  background: rgba(0, 136, 117, 0.88);
+  border-color: #008875;
+  color: #ffffff;
+}
+#sidebar-content .widget h3.widget-title.cancer-feature {
+  background: rgba(236, 238, 240, 0.77);
+  border-color: #d43946;
+}
+#sidebar-content .widget h3.widget-title.cancer-news {
+  background: rgba(212, 57, 70, 0.88);
+  border-color: #d43946;
+  color: #ffffff;
+}
 #sidebar-content .widget h4.widget-subtitle {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -2306,6 +2340,9 @@ a.multimedia .mm_sidebar span {
   #sidebar-content .widget .ad {
     margin: 0 auto;
   }
+  div.thumbnail {
+    margin: 20px auto;
+  }
 }
 @media (min-width: 768px) {
   body {
@@ -2476,17 +2513,6 @@ a.multimedia .mm_sidebar span {
   }
   hr.major {
     border-color: #cdcdcd !important;
-  }
-  #sidebar-content .widget h3.widget-title {
-    text-align: left;
-    font-size: 13px;
-    font-weight: 600;
-    color: #222222;
-    margin: 30px 0;
-    padding: 0 0 0 5px;
-    border: none;
-    background: none !important;
-    border-left: 4px solid;
   }
   #sidebar-content .widget h4.widget-subtitle {
     border: none;

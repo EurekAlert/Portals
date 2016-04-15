@@ -321,12 +321,11 @@ h1.portal_title {
   }
 	
 	 &.red {
-    background: #74624a;
-		opacity: .8;
+    background: @lightGray;
 
     .dropdown-toggle {
       color: @bgGray;
-      background: darken(#c11726, 15%);
+      background: darken(#d43946, 15%);
 
       &:hover {
         color: @white;
@@ -334,7 +333,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @white;
-        background: #c11726;
+        background: #d43946;
 
         &:hover {
           color: @white;
@@ -505,16 +504,19 @@ h1.portal_title {
 }
 
 
-// 4/14/16 Changed border value (none), Changed padding value (0) 
+// 4/15/16 Changed border value (none), Changed padding value (0), added margin,
 .thumbnail {
-	padding: 20px 25px 50px 25px;
+	margin: -30px auto -20px auto;
+	padding: 20px;
   background: none;
   border: 1px solid @lightGray;
 	border-radius: 0;
-
+	text-transform: none;
+// 4/15/16 Added margin: 15px 0;
   .img-wrapper {
     border: 1px solid @lightGray;
-    padding: 5px;
+//    padding: 5px;
+		margin: 15px 0;
   }
 
   img {
@@ -620,6 +622,9 @@ ul.nav.navbar-nav li a{
 
 #sidebar-content {
 	margin-bottom:-99899px;
+	h2.subhead.secondary {
+		margin: 0;
+	}
 }
 
 
@@ -699,6 +704,37 @@ ul.nav.navbar-nav li a{
     max-width: none;
     border: none;
   }
+	
+	
+	.thumbnail {
+	margin: 50px auto;
+	padding: 20px;
+  background: none;
+  border: 1px solid @lightGray;
+	border-radius: 0;
+	text-transform: none;
+// 4/15/16 Added margin: 15px 0;
+  .img-wrapper {
+    border: 1px solid @lightGray;
+//    padding: 5px;
+		margin: 15px 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .caption {
+    margin-top: 10px;
+    padding: 0;
+    color: @gray;
+  }
+}
 
 }
 
@@ -715,6 +751,7 @@ ul.nav.navbar-nav li a{
   }
 
   .thumbnail {
+		margin: -30px auto -20px auto;
     .img-wrapper {
       border: none;
       padding: 0;

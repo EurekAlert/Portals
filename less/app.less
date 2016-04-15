@@ -210,12 +210,27 @@ h2 {
     font-weight: 600;
     color: #dc0002;
     text-transform: uppercase;
-    margin: 20px 0 15px;
+    margin: 20 0 25px 0;
     padding: 0;
 		// Used for Portal Page  "Featured Multimedia"
+		//Updated 4/15/16, original = border:none, color,gray
+		//Updated 4/15/16, add marine & cancer colorways
     &.secondary {
       color: @gray;
-      border: none;
+			border: none;
+      border-left: 2px solid #005080;
+			padding-left: 8px;
+			text-transform: none;
+//			margin-bottom: 20px;
+			font-weight:400;
+			font-size:15px;
+			
+			&.marine {
+				border-left: 2px solid #008875;
+			}
+			&.cancer {
+				border-left: 2px solid #d43946;
+			}
     }
 
     &.text-left {
