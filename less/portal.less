@@ -325,7 +325,7 @@ h1.portal_title {
 
     .dropdown-toggle {
       color: @bgGray;
-      background: darken(#d43946, 15%);
+      background: darken(@lightGray, 15%);
 
       &:hover {
         color: @white;
@@ -333,7 +333,7 @@ h1.portal_title {
 
       &.collapsed {
         color: @white;
-        background: #d43946;
+        background: @lightGray;
 
         &:hover {
           color: @white;
@@ -362,6 +362,68 @@ h1.portal_title {
 //		 }
 		 
   }
+	
+	
+	
+	 &.red2 {
+    background: #d43946;
+
+    .dropdown-toggle {
+      color: @bgGray;
+      background: darken(#d43946, 15%);
+
+      &:hover {
+        color: @white;
+      }
+
+      &.collapsed {
+        color: @white;
+        background: #d43946;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+		
+		 #portal-nav ul li a {
+			 color:@bgGray;
+			 &:hover {
+				 color: lighten(@bgGray,25%);
+			 }
+		 }
+  }
+	
+	&.red3 {
+    background: #979797;
+
+    .dropdown-toggle {
+      color: @bgGray;
+      background: darken(#979797, 15%);
+
+      &:hover {
+        color: @white;
+      }
+
+      &.collapsed {
+        color: @white;
+        background: #979797;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+		
+		 #portal-nav ul li a {
+			 color:@bgGray;
+			 &:hover {
+				 color: lighten(@bgGray,25%);
+			 }
+		 }
+  }
+	
+	
 	
 	&.marine {
     background: #008875;
