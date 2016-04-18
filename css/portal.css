@@ -39,13 +39,13 @@ h1.portal_title {
 #navigation-minimal.logged-in .navbar-toggle span.icon-bar {
   background-color: #ffdb3d;
 }
-#navigation-minimal.logged-in .navbar-nav {
-  border: 1px solid #777777;
-  border-radius: 2px;
-  margin-right: .5px;
-}
 #navigation-minimal.logged-in .navbar-nav li a {
   color: #ffdb3d;
+  border: 1px solid #777777;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-right: 8px;
+  padding: 6px 5px;
 }
 #navigation-minimal .mega-dropdown {
   float: right;
