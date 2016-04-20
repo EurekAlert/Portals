@@ -376,7 +376,6 @@ h1.portal_title {
 }
 .thumbnail .img-wrapper {
   border: 1px solid #b9babc;
-  margin: 15px 0;
 }
 .thumbnail img {
   display: block;
@@ -456,7 +455,8 @@ ul.nav.navbar-nav li a {
   width: 450px;
 }
 #sidebar-content {
-  margin-bottom: -99899px;
+  margin-bottom: 0;
+  padding-bottom: 400px;
 }
 #sidebar-content h2.subhead.secondary {
   margin: 0;
@@ -520,7 +520,6 @@ ul.nav.navbar-nav li a {
   }
   .thumbnail {
     margin: 50px auto;
-    padding: 20px;
     background: none;
     border: 1px solid #b9babc;
     border-radius: 0;
@@ -552,10 +551,10 @@ ul.nav.navbar-nav li a {
     padding: 11px 18px;
   }
   .thumbnail {
-    margin: -30px auto -20px auto;
+    margin: -30px auto -20px -8px;
+    width: 301.671px;
   }
   .thumbnail .img-wrapper {
-    border: none;
     padding: 0;
   }
   a.callout {
@@ -568,4 +567,8 @@ ul.nav.navbar-nav li a {
     padding: 20px;
     border: 1px solid #b9babc;
   }
+}
+div.release_date {
+  margin-top: 0;
+  margin-bottom: 5px;
 }

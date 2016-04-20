@@ -584,7 +584,6 @@ h1.portal_title {
   .img-wrapper {
     border: 1px solid @lightGray;
 //    padding: 5px;
-		margin: 15px 0;
   }
 
   img {
@@ -686,10 +685,11 @@ ul.nav.navbar-nav li a{
   width: 450px;
 }
 
-//footer adjustment to deal with Removal of Calendar and Newsletter Widgets 3/24/16
+//footer adjustment to deal with Removal of Calendar and Newsletter Widgets 4/20/16
 
 #sidebar-content {
-	margin-bottom:-99899px;
+	margin-bottom:0;
+	padding-bottom: 400px;
 	h2.subhead.secondary {
 		margin: 0;
 	}
@@ -776,7 +776,7 @@ ul.nav.navbar-nav li a{
 	
 	.thumbnail {
 	margin: 50px auto;
-	padding: 20px;
+//	padding: 20px;
   background: none;
   border: 1px solid @lightGray;
 	border-radius: 0;
@@ -819,9 +819,9 @@ ul.nav.navbar-nav li a{
   }
 
   .thumbnail {
-		margin: -30px auto -20px auto;
+		margin: -30px auto -20px -8px;
+		width: 301.671px;
     .img-wrapper {
-      border: none;
       padding: 0;
     }
   }
@@ -838,6 +838,11 @@ ul.nav.navbar-nav li a{
     border: 1px solid @lightGray;
   }
 
+}
+
+div.release_date {
+	margin-top: 0;
+	margin-bottom:5px;
 }
 
 

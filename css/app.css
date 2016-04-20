@@ -124,8 +124,8 @@ h2.subhead.secondary {
   border-left: 2px solid #005080;
   padding-left: 8px;
   text-transform: none;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 14px;
 }
 h2.subhead.secondary.marine {
   border-left: 2px solid #008875;
@@ -135,6 +135,15 @@ h2.subhead.secondary.cancer {
 }
 h2.subhead.text-left {
   text-align: left;
+}
+h2.headline {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #dc0002;
+  text-transform: uppercase;
+  margin: 20 0 25px 0;
+  padding: 0;
 }
 h3.subject_title {
   color: #333333;
@@ -1747,7 +1756,7 @@ dl.meta.stacked dd.red {
   border-color: #c299ff;
 }
 #sidebar-content .widget h3.widget-title.climate-feature {
-  background: rgba(236, 238, 240, 0.77);
+  background: #80cfff;
   border-color: #005080;
 }
 #sidebar-content .widget h3.widget-title.climate-news {
@@ -1756,16 +1765,15 @@ dl.meta.stacked dd.red {
   color: #b9babc;
 }
 #sidebar-content .widget h3.widget-title.marine-feature {
-  background: rgba(236, 238, 240, 0.77);
+  background: #5af0da;
   border-color: #008875;
 }
 #sidebar-content .widget h3.widget-title.marine-news {
-  background: rgba(0, 136, 117, 0.88);
+  background: #13d1b6;
   border-color: #008875;
-  color: #ffffff;
 }
 #sidebar-content .widget h3.widget-title.cancer-feature {
-  background: rgba(236, 238, 240, 0.77);
+  background: #efb7bb;
   border-color: #d43946;
 }
 #sidebar-content .widget h3.widget-title.cancer-news {
