@@ -123,7 +123,7 @@ h2.subhead.secondary {
   border: none;
   border-left: 2px solid #005080;
   padding-left: 8px;
-  text-transform: none;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
@@ -1758,7 +1758,7 @@ dl.meta.stacked dd.red {
   border-color: #c299ff;
 }
 #sidebar-content .widget h3.widget-title.climate-feature {
-  background: #80cfff;
+  background: #d8e4eb;
   border-color: #005080;
 }
 #sidebar-content .widget h3.widget-title.climate-news {
@@ -1771,11 +1771,11 @@ dl.meta.stacked dd.red {
   border-color: #008875;
 }
 #sidebar-content .widget h3.widget-title.marine-news {
-  background: #13d1b6;
+  background: #dbf6f7;
   border-color: #008875;
 }
 #sidebar-content .widget h3.widget-title.cancer-feature {
-  background: #efb7bb;
+  background: #f8e1e3;
   border-color: #d43946;
 }
 #sidebar-content .widget h3.widget-title.cancer-news {

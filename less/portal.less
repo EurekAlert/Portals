@@ -430,6 +430,36 @@ h1.portal_title {
   }
 	
 	
+	&.red4 {
+    background: #7f222a ;
+
+    .dropdown-toggle {
+      color: @bgGray;
+      background: darken(#979797, 15%);
+
+      &:hover {
+        color: @white;
+      }
+
+      &.collapsed {
+        color: @white;
+        background: #979797;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+		
+		 #portal-nav ul li a {
+			 color:@bgGray;
+			 &:hover {
+				 color: lighten(@bgGray,25%);
+			 }
+		 }
+  }
+	
+	
 	
 	&.marine {
     background: #008875;

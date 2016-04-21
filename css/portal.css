@@ -258,6 +258,29 @@ h1.portal_title {
 #portal-navbar.red3 #portal-nav ul li a:hover {
   color: #ffffff;
 }
+#portal-navbar.red4 {
+  background: #7f222a ;
+}
+#portal-navbar.red4 .dropdown-toggle {
+  color: #f1f1f1;
+  background: #717171;
+}
+#portal-navbar.red4 .dropdown-toggle:hover {
+  color: #ffffff;
+}
+#portal-navbar.red4 .dropdown-toggle.collapsed {
+  color: #ffffff;
+  background: #979797;
+}
+#portal-navbar.red4 .dropdown-toggle.collapsed:hover {
+  color: #ffffff;
+}
+#portal-navbar.red4 #portal-nav ul li a {
+  color: #f1f1f1;
+}
+#portal-navbar.red4 #portal-nav ul li a:hover {
+  color: #ffffff;
+}
 #portal-navbar.marine {
   background: #008875;
 }
