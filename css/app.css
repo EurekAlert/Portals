@@ -136,15 +136,6 @@ h2.subhead.secondary.cancer {
 h2.subhead.text-left {
   text-align: left;
 }
-h2.headline {
-  text-align: left;
-  font-size: 13px;
-  font-weight: 600;
-  color: #dc0002;
-  text-transform: uppercase;
-  margin: 20 0 25px 0;
-  padding: 0;
-}
 h3.subject_title {
   color: #333333;
   font-size: 15px;
@@ -1538,6 +1529,17 @@ dl.meta.stacked dd.red {
 .multimedia-item a:hover .multimedia_card h3 small {
   color: #888888;
 }
+/*-----Portal Trending 4/21/16-----*/
+.portal-articles .headline header h2 {
+  color: #ffdb3d;
+  font-size: 17px;
+  line-height: 20px;
+}
+.portal-articles .headline header .meta_institute {
+  font-size: 12px;
+  line-height: 17px;
+}
+/*-----End Portal Trending 4/21/16-----*/
 .article .page_title {
   color: #2b2b2b;
   margin: 25px 0 0;
@@ -2511,6 +2513,11 @@ a.multimedia .mm_sidebar span {
   .multimedia-item a .multimedia_card h3 {
     margin: 15px 0 0;
   }
+  /*-----Portal Trending 4/21/16-----*/
+  .headline .trending {
+    margin: 0 0 25px;
+  }
+  /*-----End Portal Trending 4/21/16-----*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   h2.subhead {
