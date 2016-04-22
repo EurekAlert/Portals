@@ -1533,7 +1533,7 @@ dl.meta.stacked dd.red {
 }
 /*-----Portal Trending 4/21/16-----*/
 .portal-articles .headline header h2 {
-  color: #ffdb3d;
+  color: #333333;
   font-size: 17px;
   line-height: 20px;
 }
@@ -2515,11 +2515,11 @@ a.multimedia .mm_sidebar span {
   .multimedia-item a .multimedia_card h3 {
     margin: 15px 0 0;
   }
-  /*-----Portal Trending 4/21/16-----*/
-  .headline .trending {
+  /*-----Portal "headline" Trending 4/21/16-----*/
+  .portal-articles .headline {
     margin: 0 0 25px;
   }
-  /*-----End Portal Trending 4/21/16-----*/
+  /*-----End Portal "headline" Trending 4/21/16-----*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   h2.subhead {
