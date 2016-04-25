@@ -385,6 +385,8 @@ h1.portal_title {
 .headline {
   position: relative;
   padding: 5px 5px;
+  margin-right: -10px;
+  margin-left: -10px;
   border-bottom: 1px solid #b9babc;
   overflow: hidden;
 }
