@@ -497,12 +497,17 @@ ul.nav.navbar-nav li a {
 a.view-all-breaking-news {
   margin: 50px;
 }
-.science-thumb img {
+.science-thumb {
   max-width: 60px;
   height: auto;
   margin-left: 13px;
-  padding: 2px;
-  float: right;
+  padding: 4px;
+  border: 1px solid #b9babc;
+  background: #ffffff;
+}
+.science-thumb img {
+  width: 100%;
+  height: auto;
 }
 #sidebar-content .widget .article-links li {
   margin: 0 0 30px 0;
@@ -565,7 +570,7 @@ a.view-all-breaking-news {
   .headline {
     border-bottom: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 25px;
   }
   .newsletter {
     background: transparent url('http://www.eurekalert.org/img/newsletter-bg-tablet.jpg') center center no-repeat;

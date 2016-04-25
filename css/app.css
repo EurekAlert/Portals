@@ -1536,6 +1536,7 @@ dl.meta.stacked dd.red {
   color: #333333;
   font-size: 17px;
   line-height: 20px;
+  margin-bottom: 0;
 }
 .headline header .meta_institute {
   font-size: 12px;
