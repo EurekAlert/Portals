@@ -384,11 +384,15 @@ h1.portal_title {
 .trending,
 .headline {
   position: relative;
-  padding: 5px 5px;
+  padding: 18px 10px;
   margin-right: -10px;
   margin-left: -10px;
   border-bottom: 1px solid #b9babc;
   overflow: hidden;
+}
+.trending .thumb,
+.headline .thumb {
+  margin-top: 20px;
 }
 .portal-articles .trending header h2 {
   font-size: 17px;
@@ -542,6 +546,10 @@ a.view-all-breaking-news {
   .portal-articles .trending {
     margin: 0 0 25px;
     border-bottom: none;
+    padding: 0;
+  }
+  .portal-articles .trending .thumb {
+    margin-top: 0;
   }
   .headline {
     border-bottom: none;
