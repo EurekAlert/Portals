@@ -582,7 +582,16 @@ h1.portal_title {
     }
   }
 }
-
+//Added dividers back to trending and breaking news sections 4/25/16
+.trending,
+.headline {
+	position: relative;
+	padding: 5px 5px;
+//	margin: 0 -10px;
+	border-bottom: 1px solid #b9babc;
+  overflow: hidden;
+	
+}
 
 // article headlines
 .portal-articles {
@@ -696,7 +705,7 @@ a.callout {
 //Typography Adjustment 3/24/16
 
 h1.page_title {
-	text-align: center;
+	text-align: left;
 	small {
 		text-align: left;
 	}
@@ -715,14 +724,19 @@ ul.nav.navbar-nav li a{
   width: 450px;
 }
 
-//footer adjustment to deal with Removal of Calendar and Newsletter Widgets 4/20/16
+//footer adjustment to deal with Removal of Calendar and Newsletter Widgets 4/20/16.. Removed 4/25/16
 
 #sidebar-content {
-	margin-bottom:0;
-	padding-bottom: 400px;
+//	margin-bottom:0;
+//	padding-bottom: 400px;
 	h2.subhead.secondary {
 		margin: 0;
 	}
+}
+
+// Added  4/25/16
+a.view-all-breaking-news {
+	margin: 50px;
 }
 
 
@@ -792,8 +806,17 @@ ul.nav.navbar-nav li a{
   .portal-articles {
     .trending {
       margin: 0 0 25px;
+			border-bottom: none;
     }
   }
+	
+	// Added Dividers back into Trending & Breaking News Articles 4/25/16
+	
+	.headline {
+		border-bottom: none;
+		padding: 0;
+		margin: 0;
+	}
 
   .newsletter {
 		background: transparent url('@{base-url}/img/newsletter-bg-tablet.jpg') center center no-repeat;

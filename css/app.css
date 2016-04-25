@@ -121,18 +121,18 @@ h2.subhead {
 h2.subhead.secondary {
   color: #005080;
   border: none;
-  border-left: 2px solid #005080;
+  border-left: 2px solid #333333;
   padding-left: 8px;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
 h2.subhead.secondary.marine {
-  border-left: 2px solid #008875;
+  border-left: 2px solid #333333;
   color: #008875;
 }
 h2.subhead.secondary.cancer {
-  border-left: 2px solid #d43946;
+  border-left: 2px solid #333333;
   color: #d43946;
 }
 h2.subhead.text-left {
