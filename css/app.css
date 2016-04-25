@@ -2515,10 +2515,7 @@ a.multimedia .mm_sidebar span {
   .multimedia-item a .multimedia_card h3 {
     margin: 15px 0 0;
   }
-  /*-----Portal "headline" Trending 4/21/16-----*/
-  .portal-articles .headline {
-    margin: 0 0 25px;
-  }
+  /*-----Portal "headline" Trending 4/25/16-----*/
   /*-----End Portal "headline" Trending 4/21/16-----*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
