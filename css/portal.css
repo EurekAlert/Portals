@@ -393,6 +393,7 @@ h1.portal_title {
 .trending .thumb,
 .headline .thumb {
   margin-top: 20px;
+  margin-right: 10px;
 }
 .portal-articles .trending header h2 {
   font-size: 17px;
@@ -495,6 +496,16 @@ ul.nav.navbar-nav li a {
 }
 a.view-all-breaking-news {
   margin: 50px;
+}
+.science-thumb img {
+  max-width: 60px;
+  height: auto;
+  margin-left: 13px;
+  padding: 2px;
+  float: right;
+}
+#sidebar-content .widget .article-links li {
+  margin: 0 0 30px 0;
 }
 @media (min-width: 768px) {
   #navigation-minimal .navbar.navbar-inverse .nav-pills > li > a {
