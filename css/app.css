@@ -1532,12 +1532,12 @@ dl.meta.stacked dd.red {
   color: #888888;
 }
 /*-----Portal Trending 4/21/16-----*/
-.portal-articles .headline header h2 {
+.headline header h2 {
   color: #333333;
   font-size: 17px;
   line-height: 20px;
 }
-.portal-articles .headline header .meta_institute {
+.headline header .meta_institute {
   font-size: 12px;
   line-height: 17px;
 }
