@@ -606,6 +606,9 @@ a.view-all-breaking-news {
   }
 }
 div.release_date {
-  margin-top: -10px;
   margin-bottom: -15px;
+}
+div.release_date small {
+  color: #999;
+  font-weight: 400;
 }
