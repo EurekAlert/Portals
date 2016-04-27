@@ -634,11 +634,11 @@ a.view-all-breaking-news {
     border: 1px solid #b9babc;
   }
 }
-div.release_date {
+.headline div.release_date {
   margin-top: 0px;
   margin-bottom: 5px;
 }
-div.release_date small {
+.headline div.release_date small {
   color: #999;
   font-weight: 400;
 }
