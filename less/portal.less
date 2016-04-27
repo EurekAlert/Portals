@@ -119,14 +119,11 @@ h1.portal_title {
     }
 		//Added 4/6/16
 
-	.navbar-nav {
-			
+	.navbar-nav {	
 			li {
-				a {
-					
+				a {			
 				color: @yellow;
 				border: 1px solid @gray-light;
-//			background: rgba(128, 128, 128, 0.24);
 				border-radius: 2px;
 				margin-top: 2px;
 				margin-right: 8px;
@@ -135,6 +132,30 @@ h1.portal_title {
 			}
 		}
   }
+	
+	// Added 4/27/16
+	
+	&.logged-out {
+    .navbar-toggle {
+      span.icon-bar {
+        background-color: @yellow;
+      }
+    }
+
+	.navbar-nav {	
+			li {
+				a {	
+				border: 1px solid @gray-light;
+				border-radius: 2px;
+				margin-top: 2px;
+				margin-right: 8px;
+				padding: 6px 5px;
+			}	
+			}
+		}
+  }
+	
+	
 	
 	
 
@@ -775,14 +796,39 @@ a.view-all-breaking-news {
 
 
 // Responsive
-
 @media (min-width: @screen-sm-min) {
-
-  #navigation-minimal {
-    .navbar.navbar-inverse .nav-pills > li > a {
-      padding: 11px 12px;
+// Added 4/27/16... Makes sure Logged-in /Logged out btn styles shows up across all screen sizes. Logged out gets used for demo portal pages. Logged-in gets used for portal-pios.html
+    #navigation-minimal {
+		.navbar.navbar-inverse {
+			.nav-pills {
+				li {
+					a {
+      			padding: 11px 12px;
+						&.logged-out{
+							border: 1px solid @gray-light;
+							border-radius: 2px;
+							margin-top: 2px;
+							padding: 6px 5px;
+							line-height: 20px;
+						}
+						&.logged-in {
+							.logged-out;
+							color:@yellow;
+							&.home {
+								border:none;
+								padding: 11px 12px;
+								border-radius: 0;
+								margin-top: 0;
+								line-height: normal;	
+							}
+						}
     }
+				}
+			}
+		} 
   }
+	
+	
 
   #portal-header {
     text-align: left;
@@ -900,12 +946,6 @@ a.view-all-breaking-news {
 		background: @bgGray url('@{base-url}/images/e4/bg.gradient.png') 0 50px repeat-x;
   }
 
-  #navigation-minimal {
-    .navbar.navbar-inverse .nav-pills > li > a {
-      padding: 11px 18px;
-    }
-  }
-
   .thumbnail {
 		margin: -30px auto -20px -8px;
 		width: 301.671px;
@@ -931,9 +971,11 @@ a.view-all-breaking-news {
 // Creates some space between Date & rest of article; Changes small tags text color to #999 for breaking news article dates 4/26/16
 
 div.release_date {
-	margin-bottom:-15px;
+	margin-top: 0px;
+	margin-bottom: 5px;
 	& small {
 		color:#999;
+		font-weight: 400;
 	}
 }
 
