@@ -769,15 +769,20 @@ a.view-all-breaking-news {
 
 
 .science-thumb {
-	max-width: 60px;	
-	height:auto;
-	margin-left: 13px;
+//	position: relative;
+	max-width: 50px;	
+	height:50px;
+	margin-left: 20px;
 	padding: 4px;
 	border: 1px solid @lightGray;
 	background: @white;
+	overflow: hidden;
 	img {
-	width: 100%;	
+	width: auto;	
 	height:auto;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
 //	border: 1px solid @lightGray;
 		}
 }
@@ -793,6 +798,9 @@ a.view-all-breaking-news {
 		}
 	}
 }
+
+
+
 
 
 // Responsive
@@ -937,7 +945,7 @@ a.view-all-breaking-news {
     color: @gray;
   }
 }
-
+	
 }
 
 @media (min-width: @screen-md-min) {
@@ -967,6 +975,24 @@ a.view-all-breaking-news {
   }
 
 }
+
+
+
+
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+	
+	// 4/28/16
+	
+	.article-links {
+		li {
+			a {
+     line-height: 2;
+		}
+	}
+}
+}
+
 
 // Creates some space between Date & rest of article; Changes small tags text color to #999 for breaking news article dates 4/26/16...
 	//4/27/16 added .headline

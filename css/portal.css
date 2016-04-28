@@ -494,16 +494,20 @@ a.view-all-breaking-news {
   margin: 50px;
 }
 .science-thumb {
-  max-width: 60px;
-  height: auto;
-  margin-left: 13px;
+  max-width: 50px;
+  height: 50px;
+  margin-left: 20px;
   padding: 4px;
   border: 1px solid #b9babc;
   background: #ffffff;
+  overflow: hidden;
 }
 .science-thumb img {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 #sidebar-content .widget .article-links li {
   margin: 0 0 30px 0;
@@ -632,6 +636,11 @@ a.view-all-breaking-news {
     margin: -8px -8px -23px;
     padding: 20px;
     border: 1px solid #b9babc;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .article-links li a {
+    line-height: 2;
   }
 }
 .headline div.release_date {
