@@ -770,7 +770,7 @@ a.view-all-breaking-news {
 
 .science-thumb {
 //	position: relative;
-	max-width: 87px;	
+	width: 87px;	
 	height:87px;
 	margin-right: 10px;
 	padding: 3px;
@@ -783,21 +783,29 @@ a.view-all-breaking-news {
 	max-width: 100%;
 	max-height: 100%;
 	overflow: hidden;
-//	border: 1px solid @lightGray;
 		}
 }
 
-
-
-#sidebar-content {
-	.widget {
-		.article-links {
-			li {
-				padding: 4px 0 30px 0;
-			}
-		}
+.science-thumb-right {
+	width: 87px;	
+	height:87px;
+	margin-left: 10px;
+	padding: 3px;
+	border: 1px solid @lightGray;
+	background: @white;
+	overflow: hidden;
+	img {
+		width: auto;	
+		height:auto;
+		max-width: 100%;
+		max-height: 100%;
+		overflow: hidden;
 	}
 }
+
+
+
+
 
 
 
@@ -980,22 +988,31 @@ a.view-all-breaking-news {
 
 
 
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-min) {
+@media (min-width: @screen-xs-max) and (max-width: @screen-sm-max) {
 	
 	// 4/28/16 For News From Science Widget Spacing issue on on screens between 621px-767px;
 	
-	.article-links {
-		li {
-			a {
-				margin: 30px 0;
+	.science-thumb {
+		width: 150px;
+		height: 150px;
+		padding: 8px;
+		margin-right: 20px;
+	}	
+	
+	
+	#sidebar-content {
+	.widget {
+		.article-links {
+			li {
+//				padding: 4px 0 50px 0;
+			}
 		}
 	}
 }
 	
-	.science-thumb {
-		float: right;
-	}	
 }
+
+
 
 
 // Creates some space between Date & rest of article; Changes small tags text color to #999 for breaking news article dates 4/26/16...

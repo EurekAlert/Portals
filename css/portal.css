@@ -494,7 +494,7 @@ a.view-all-breaking-news {
   margin: 50px;
 }
 .science-thumb {
-  max-width: 87px;
+  width: 87px;
   height: 87px;
   margin-right: 10px;
   padding: 3px;
@@ -509,8 +509,21 @@ a.view-all-breaking-news {
   max-height: 100%;
   overflow: hidden;
 }
-#sidebar-content .widget .article-links li {
-  padding: 4px 0 30px 0;
+.science-thumb-right {
+  width: 87px;
+  height: 87px;
+  margin-left: 10px;
+  padding: 3px;
+  border: 1px solid #b9babc;
+  background: #ffffff;
+  overflow: hidden;
+}
+.science-thumb-right img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #navigation-minimal .navbar.navbar-inverse .nav-pills li a {
@@ -638,12 +651,12 @@ a.view-all-breaking-news {
     border: 1px solid #b9babc;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  .article-links li a {
-    margin: 30px 0;
-  }
+@media (min-width: 767px) and (max-width: 991px) {
   .science-thumb {
-    float: right;
+    width: 150px;
+    height: 150px;
+    padding: 8px;
+    margin-right: 20px;
   }
 }
 .headline div.release_date {
