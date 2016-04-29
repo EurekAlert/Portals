@@ -1542,6 +1542,12 @@ dl.meta.stacked dd.red {
   font-size: 12px;
   line-height: 17px;
 }
+.headline header .reltime {
+  color: #333333;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
 /*-----End Portal Trending 4/21/16-----*/
 .article .page_title {
   color: #2b2b2b;
