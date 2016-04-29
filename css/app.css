@@ -2523,6 +2523,9 @@ a.multimedia .mm_sidebar span {
     margin: 15px 0 0;
   }
   /*-----Portal "headline" Trending 4/25/16-----*/
+  .headline {
+    margin: 0 0 25px;
+  }
   /*-----End Portal "headline" Trending 4/21/16-----*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
