@@ -535,15 +535,48 @@ a.view-all-breaking-news {
   border-radius: 3px;
   margin-bottom: 10px;
 }
-.article-links li.marinescience {
+.article-links li a:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #000000 !important;
+}
+.article-links li:hover {
+  transition: 1s;
+  background-color: #fff;
+}
+.article-links li:hover img {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: .5;
+}
+.article-links li .science-thumb-right {
+  border: 1px solid #c7d8e2;
+}
+.article-links.marinescience li {
   border: 1px solid #dbf6f7;
   border-bottom: 2px solid #dbf6f7;
   background: #f0fbfc;
 }
-.article-links li.cancer {
+.article-links.marinescience li:hover {
+  transition: .75s;
+  background: #fcfefe;
+}
+.article-links.marinescience li .science-thumb-right {
+  border: 1px solid #c6f1f2;
+}
+.article-links.cancer li {
   border: 1px solid #f8e1e3;
   border-bottom: 2px solid #f8e1e3;
   background: #fdf6f6;
+}
+.article-links.cancer li:hover {
+  transition: .75s;
+  background: #ffffff;
+}
+.article-links.cancer li .science-thumb-right {
+  border: 1px solid #f3ccd0;
 }
 @media (min-width: 768px) {
   #navigation-minimal .navbar.navbar-inverse .nav-pills li a {

@@ -815,19 +815,54 @@ a.view-all-breaking-news {
     border-radius: 3px;
     margin-bottom: 10px;
     a {
-      // font-size: 13px !important;
+      &:hover {
+        .transition(1s)
+        color: @black !important;
+      }
     }
-    &.marinescience{
+
+    &:hover {
+      .transition(1s)
+      background-color: #fff;
+      img {
+        .transition(1s);
+        opacity: .5;
+      }
+    }
+    .science-thumb-right {
+      border: 1px solid darken(#d8e4eb,5%);
+    }
+  }
+
+  &.marinescience {
+    li {
       border: 1px solid #dbf6f7;
       border-bottom: 2px solid #dbf6f7;
       // border-top: 2px solid #005080;
       background: lighten(#dbf6f7,5%);
+      &:hover {
+        .transition(.75s)
+        background: lighten(#dbf6f7,8%);
+      }
+      .science-thumb-right {
+        border: 1px solid darken(#dbf6f7,5%);
+      }
     }
-    &.cancer{
+  }
+
+  &.cancer {
+    li {
       border: 1px solid #f8e1e3;
       border-bottom: 2px solid #f8e1e3;
       // border-top: 2px solid #005080;
       background: lighten(#f8e1e3,5%);
+      &:hover {
+        transition: .75s;
+        background: lighten(#f8e1e3,8%);
+      }
+      .science-thumb-right {
+        border: 1px solid darken(#f8e1e3,5%);
+      }
     }
   }
 
