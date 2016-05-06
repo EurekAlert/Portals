@@ -199,75 +199,6 @@ h1.portal_title {
 #portal-navbar.aqua .dropdown-toggle.collapsed:hover {
   color: #ffffff;
 }
-#portal-navbar.red {
-  background: #b9babc;
-}
-#portal-navbar.red .dropdown-toggle {
-  color: #f1f1f1;
-  background: #929397;
-}
-#portal-navbar.red .dropdown-toggle:hover {
-  color: #ffffff;
-}
-#portal-navbar.red .dropdown-toggle.collapsed {
-  color: #ffffff;
-  background: #b9babc;
-}
-#portal-navbar.red .dropdown-toggle.collapsed:hover {
-  color: #ffffff;
-}
-#portal-navbar.red #portal-nav ul li a {
-  color: #f1f1f1;
-}
-#portal-navbar.red #portal-nav ul li a:hover {
-  color: #ffffff;
-}
-#portal-navbar.red2 {
-  background: #d43946;
-}
-#portal-navbar.red2 .dropdown-toggle {
-  color: #f1f1f1;
-  background: #9e222d;
-}
-#portal-navbar.red2 .dropdown-toggle:hover {
-  color: #ffffff;
-}
-#portal-navbar.red2 .dropdown-toggle.collapsed {
-  color: #ffffff;
-  background: #d43946;
-}
-#portal-navbar.red2 .dropdown-toggle.collapsed:hover {
-  color: #ffffff;
-}
-#portal-navbar.red2 #portal-nav ul li a {
-  color: #f1f1f1;
-}
-#portal-navbar.red2 #portal-nav ul li a:hover {
-  color: #ffffff;
-}
-#portal-navbar.red3 {
-  background: #979797;
-}
-#portal-navbar.red3 .dropdown-toggle {
-  color: #f1f1f1;
-  background: #717171;
-}
-#portal-navbar.red3 .dropdown-toggle:hover {
-  color: #ffffff;
-}
-#portal-navbar.red3 .dropdown-toggle.collapsed {
-  color: #ffffff;
-  background: #979797;
-}
-#portal-navbar.red3 .dropdown-toggle.collapsed:hover {
-  color: #ffffff;
-}
-#portal-navbar.red3 #portal-nav ul li a {
-  color: #f1f1f1;
-}
-#portal-navbar.red3 #portal-nav ul li a:hover {
-  color: #ffffff;
-}
 #portal-navbar.red4 {
   background: #7f222a;
 }
@@ -542,6 +473,8 @@ a.view-all-breaking-news {
   color: #000000 !important;
 }
 .article-links li:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   background-color: #fff;
 }
@@ -560,7 +493,9 @@ a.view-all-breaking-news {
   background: #f0fbfc;
 }
 .article-links.marinescience li:hover {
-  transition: .75s;
+  -webkit-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
   background: #fcfefe;
 }
 .article-links.marinescience li .science-thumb-right {
@@ -714,12 +649,4 @@ a.view-all-breaking-news {
   .article-links ul {
     list-style: initial;
   }
-}
-.headline div.release_date {
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
-.headline div.release_date small {
-  color: #999;
-  font-weight: 400;
 }

@@ -347,110 +347,6 @@ h1.portal_title {
     }
   }
 
-	 &.red {
-    background: @lightGray;
-
-    .dropdown-toggle {
-      color: @bgGray;
-      background: darken(@lightGray, 15%);
-
-      &:hover {
-        color: @white;
-      }
-
-      &.collapsed {
-        color: @white;
-        background: @lightGray;
-
-        &:hover {
-          color: @white;
-        }
-      }
-    }
-
-		 #portal-nav ul li a {
-			 color:@bgGray;
-			 &:hover {
-				 color: lighten(@bgGray,25%);
-			 }
-		 }
-
-//		  #portal-nav {
-//    ul {
-//
-//
-//      li {
-//        border-left: 1px solid @bgGray;
-//				&:first-child {
-//          border-left: none;
-//        }
-//			}
-//			}
-//		 }
-
-  }
-
-
-
-	 &.red2 {
-    background: #d43946;
-
-    .dropdown-toggle {
-      color: @bgGray;
-      background: darken(#d43946, 15%);
-
-      &:hover {
-        color: @white;
-      }
-
-      &.collapsed {
-        color: @white;
-        background: #d43946;
-
-        &:hover {
-          color: @white;
-        }
-      }
-    }
-
-		 #portal-nav ul li a {
-			 color:@bgGray;
-			 &:hover {
-				 color: lighten(@bgGray,25%);
-			 }
-		 }
-  }
-
-	&.red3 {
-    background: #979797;
-
-    .dropdown-toggle {
-      color: @bgGray;
-      background: darken(#979797, 15%);
-
-      &:hover {
-        color: @white;
-      }
-
-      &.collapsed {
-        color: @white;
-        background: #979797;
-
-        &:hover {
-          color: @white;
-        }
-      }
-    }
-
-		 #portal-nav ul li a {
-			 color:@bgGray;
-			 &:hover {
-				 color: lighten(@bgGray,25%);
-			 }
-		 }
-  }
-
-
 	&.red4 {
     background: #7f222a;
 
@@ -603,20 +499,6 @@ h1.portal_title {
     }
   }
 }
-//Added dividers back to trending and breaking news sections 4/25/16
-//.trending,
-//.headline {
-//	position: relative;
-//	padding: 18px 10px;
-//	margin-right: -10px;
-//	margin-left: -10px;
-//	border-bottom: 1px solid #b9babc;
-//  overflow: hidden;
-//	.thumb {
-//		margin-top:20px;
-//		margin-right: 10px;
-//	}
-//}
 
 // article headlines
 .portal-articles {
@@ -816,13 +698,13 @@ a.view-all-breaking-news {
     margin-bottom: 10px;
     a {
       &:hover {
-        .transition(1s)
+        .transition(1s);
         color: @black !important;
       }
     }
 
     &:hover {
-      .transition(1s)
+      .transition(1s);
       background-color: #fff;
       img {
         .transition(1s);
@@ -841,7 +723,7 @@ a.view-all-breaking-news {
       // border-top: 2px solid #005080;
       background: lighten(#dbf6f7,5%);
       &:hover {
-        .transition(.75s)
+        .transition(.75s);
         background: lighten(#dbf6f7,8%);
       }
       .science-thumb-right {
@@ -964,14 +846,6 @@ a.view-all-breaking-news {
     }
   }
 
-	// Added Dividers back into Trending & Breaking News Articles 4/25/16
-
-//	.headline {
-//		border-bottom: none;
-//		padding: 0;
-//		margin: 0 0 25px;
-//	}
-
   .newsletter {
 		background: transparent url('@{base-url}/img/newsletter-bg-tablet.jpg') center center no-repeat;
     margin: -20px -20px -35px;
@@ -1071,16 +945,3 @@ a.view-all-breaking-news {
 }
 
 
-
-
-// Creates some space between Date & rest of article; Changes small tags text color to #999 for breaking news article dates 4/26/16...
-	//4/27/16 added .headline
-
-.headline div.release_date {
-	margin-top: 0px;
-	margin-bottom: 5px;
-	& small {
-		color:#999;
-		font-weight: 400;
-	}
-}
