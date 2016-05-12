@@ -144,7 +144,7 @@ h1.portal_title {
   transform: translateY(-50%);
   text-align: center;
 }
-#portal-header .aaas_badge {
+#portal-header .sponsor_badge {
   display: inline-block;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.4);
@@ -155,7 +155,7 @@ h1.portal_title {
   font-weight: 600;
   letter-spacing: 1px;
 }
-#portal-header .aaas_badge img {
+#portal-header .sponsor_badge img {
   display: block;
   margin: 0 auto;
   width: auto;
@@ -543,12 +543,12 @@ a.view-all-breaking-news {
     -ms-transform: none;
     transform: none;
   }
-  #portal-header .aaas_badge {
+  #portal-header .sponsor_badge {
     position: absolute;
     bottom: 15px;
     right: 15px;
   }
-  #portal-header .aaas_badge span {
+  #portal-header .sponsor_badge span {
     display: none;
   }
   #portal-nav ul {
