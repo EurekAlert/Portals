@@ -353,6 +353,7 @@ h1.portal_title {
   margin-top: 10px;
   padding: 0;
   color: #333333;
+  font-size: 17px;
 }
 a.callout {
   display: block;
@@ -623,6 +624,9 @@ a.view-all-breaking-news {
   .thumbnail .img-wrapper {
     padding: 0;
   }
+  .thumbnail .caption {
+    font-size: 14px;
+  }
   a.callout {
     max-width: none;
     margin: -8px -8px -23px;
@@ -645,6 +649,9 @@ a.view-all-breaking-news {
     list-style: initial;
   }
   .article-links li a {
+    font-size: 17px;
+  }
+  .thumbnail .caption {
     font-size: 17px;
   }
 }
