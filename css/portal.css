@@ -644,4 +644,7 @@ a.view-all-breaking-news {
   .article-links ul {
     list-style: initial;
   }
+  .article-links li a {
+    font-size: 17px;
+  }
 }
