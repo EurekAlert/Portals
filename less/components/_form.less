@@ -1,0 +1,45 @@
+.panel{
+	border-radius: 0;
+	&.panel-default {
+		.panel-body{
+			border-radius: 0;
+			.form-group {
+				input {
+					border-bottom: 1px solid #bbb;
+					
+				}
+			}
+			select {
+				color: #000000;
+				background-color: #ffffff;
+    		font-weight: 500;
+    		font-size: 14px;
+				height: 35px;
+				margin-top: 10px;
+    		width: 100%;
+    		z-index: 0;
+			}
+			hr {
+				border-color: #bbb;
+				border-style:solid;
+				margin-top: 15px;
+			}
+			.btn-group {
+				input[type="submit"] {
+					background: @red;
+    			border: none;
+    			border-bottom: 1px solid @red;
+    			border-radius: 1px;
+    			color: @white;
+    			padding: 20px 40px;
+					.transition(.2s);
+					&:hover {
+						background: lighten(@red, 5%);
+
+					}
+
+				}
+			}
+		}
+	}
+}

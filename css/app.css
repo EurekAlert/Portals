@@ -1714,7 +1714,7 @@ dl.meta.stacked dd.red {
 .article .article_disclaimer p:last-child {
   margin-bottom: 0;
 }
-/*-----Sidebar Contnet-----*/
+/*-----Sidebar Content-----*/
 #sidebar-content {
   background: #ffffff;
 }
@@ -1724,6 +1724,7 @@ dl.meta.stacked dd.red {
 #sidebar-content hr {
   margin: 0 -20px;
   border-color: #b9babc;
+  border-style: solid;
 }
 #sidebar-content hr.major {
   height: 8px;
@@ -2229,6 +2230,45 @@ a.multimedia .mm_sidebar span {
 .contact-info,
 .original-source {
   font-size: 13.25px;
+}
+/*-----Form Content-----*/
+.panel {
+  border-radius: 0;
+}
+.panel.panel-default .panel-body {
+  border-radius: 0;
+}
+.panel.panel-default .panel-body .form-group input {
+  border-bottom: 1px solid #bbb;
+}
+.panel.panel-default .panel-body select {
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  height: 35px;
+  margin-top: 10px;
+  width: 100%;
+  z-index: 0;
+}
+.panel.panel-default .panel-body hr {
+  border-color: #bbb;
+  border-style: solid;
+  margin-top: 15px;
+}
+.panel.panel-default .panel-body .btn-group input[type="submit"] {
+  background: #dc0002;
+  border: none;
+  border-bottom: 1px solid #dc0002;
+  border-radius: 1px;
+  color: #ffffff;
+  padding: 20px 40px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.panel.panel-default .panel-body .btn-group input[type="submit"]:hover {
+  background: #f60002;
 }
 /*-----Footer-----*/
 #footer {
