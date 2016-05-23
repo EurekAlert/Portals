@@ -373,6 +373,27 @@ a.callout h3 i.fa {
 a.callout h3 i.fa.orange {
   color: #ff6600;
 }
+a.callout.credit {
+  padding: 20px 15px 10px 10px;
+  vertical-align: middle;
+}
+a.callout .credit-photo {
+  width: 30%;
+  text-align: center;
+  margin-right: 4px;
+}
+a.callout .credit-photo img {
+  width: 80%;
+  margin: auto;
+  vertical-align: middle;
+}
+.credit-text {
+  overflow: auto;
+}
+.credit-text p span {
+  font-size: 10px;
+  color: #909090;
+}
 .newsletter {
   border: 1px solid #b9babc;
   margin: 0 auto -15px;
