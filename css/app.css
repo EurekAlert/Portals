@@ -611,7 +611,7 @@ hr.trending {
 }
 .nav > li.mega-dropdown .nav-stacked > li > a {
   line-height: 14px;
-  padding: 8px 0;
+  padding: 7px 0;
   color: #4f4f4f;
 }
 .nav > li.mega-dropdown .nav-stacked > li > a:hover {
@@ -733,7 +733,7 @@ hr.trending {
 }
 .break {
   margin: 0;
-  height: 10px;
+  height: 8px;
 }
 .title {
   margin-top: 10px;
